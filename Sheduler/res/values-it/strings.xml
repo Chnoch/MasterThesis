@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Orari svizzeri</string>
+    <string name="favourites">Preferiti</string>
+    <string name="delete">cancella</string>
+    <string name="show_trains">Mostra treni</string>
+    <string name="show_buses">Mostra autobus</string>
+    <string name="rate_app">Vota questa app</string>
+    <string name="no_internet">Connessione ad Internet non disponibile</string>
+    <string name="no_location">Impossibile stabilire la tua posizione</string>
+    <string name="upd_stationboard">Aggiorno la stationboard</string>
+    <string name="upd_location">Aggiorno la tua posizione</string>
+    <string name="settings">Impostazioni</string>
+    <string name="buy_ticket_sms">Buy ticket SMS</string>
+    <string name="buy_dialog_ok">Invia SMS</string>
+    <string name="cancel">Annula</string>
+    <string name="half_fare">Metà prezzo</string>
+    <string name="day_pass">Carta giornaliera</string>
+    <string name="msg_sent_ok">Messaggio inviato</string>
+    <string name="msg_sent_error">Impossibile inviare il messaggio</string>
+</resources>

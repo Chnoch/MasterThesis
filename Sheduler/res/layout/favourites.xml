@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+    <!--show switch-->
+    <!--<TextView-->
+            <!--android:text="General"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="left"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:background="#D7D7D7"-->
+            <!--android:scrollbars="none"-->
+            <!--style="?android:attr/listSeparatorTextViewStyle"/>-->
+
+    <CheckBox android:id="@+id/checkbox_trains"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/show_trains"
+              android:layout_margin="5dp"
+              android:checked="true"
+              android:onClick="changeViewState"/>
+    <CheckBox android:id="@+id/checkbox_buses"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/show_buses"
+              android:layout_margin="5dp"
+              android:checked="true"
+              android:onClick="changeViewState"/>
+
+    <TextView
+            android:text="@string/favourites"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="#222"
+            android:height="30dp"
+            android:scrollbars="none"
+            style="?android:attr/listSeparatorTextViewStyle"/>
+
+    <ListView android:id="@+id/fav"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              />
+    <RelativeLayout
+            android:id="@+id/InnerRelativeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="bottom">
+        <Button
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:text="@string/rate_app"
+                android:onClick="rateApplication"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:drawableLeft="@drawable/ic_heart" android:paddingRight="40dp">
+        </Button>
+    </RelativeLayout>
+
+</LinearLayout>

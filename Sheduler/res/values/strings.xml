@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Swiss stationboards</string>
+    <string name="favourites">Favorites</string>
+    <string name="bus_stop">Fribourg gare</string>
+    <string name="delete">delete</string>
+    <string name="destination">Villars-sur-Glane, gare</string>
+    <string name="show_trains">Show trains</string>
+    <string name="show_buses">Show buses</string>
+    <string name="rate_app">Rate this app</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="no_location">Cannot obtain location</string>
+    <string name="upd_stationboard">Updating stationboard</string>
+    <string name="upd_location">Updating location</string>
+    <string name="settings">Settings</string>
+    <string name="buy_ticket_sms">Buy ticket SMS</string>
+    <string name="buy_dialog_ok">Send SMS</string>
+    <string name="set_location">Set location</string>
+    <string name="cancel">Cancel</string>
+    <string name="half_fare">Half-Fare</string>
+    <string name="day_pass">Day Pass</string>
+    <string name="msg_sent_ok">Message sent</string>
+    <string name="msg_sent_error">Failed to send message</string>
+    <string name="location_hint">Station name</string>
+    <string name="ok">@android:string/ok</string>
+
+    <color name="blue_btn">#ff2F7CE3</color>
+    <color name="red_btn">#ffD83B38</color>
+    <color name="pink_btn">#ff3F2072</color>
+    <color name="green_btn">#ff53B401</color>
+    <color name="brown_btn">#ff833816</color>
+    <color name="yellow_btn">#ffFFD012</color>
+    <color name="orange_btn">#ffF08B32</color>
+    <color name="default_btn">#ff666666</color>
+    <color name="red_highlight">#66ca1312</color>
+    <color name="divider">#808080</color>
+</resources>
