@@ -9,5 +9,4 @@ def main():
     data.start_training(model)
     model.draw_graph()
 
-
 main()

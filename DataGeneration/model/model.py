@@ -8,9 +8,10 @@ __author__ = 'Chnoch'
 
 class Model:
 
-    def __init__(self):
+    def __init__(self, max_weight):
         self.G = nx.Graph()
         self.nodes = list()
+        self.max_weight = max_weight
 
     def get_graph(self):
         return self.G
@@ -18,10 +19,18 @@ class Model:
     def add_node(self, node):
         self.G.add_node(node)
 
-    def add_edge(self, from_node, to_node, date):
+    def add_edge(self, from_node, to_node, edge):
+        if from_node.station_id == to_node.station_id:
+            return
 
-        if from_node.station_id != to_node.station_id:
-            self.G.add_edge(from_node, to_node, date=date)
+        if self.G.number_of_edges() >= self.max_weight:
+            self.remove_oldest_edge()
+
+        self.G.add_edge(from_node, to_node, edge=edge)
+
+    def remove_oldest_edge(self):
+        edge_to_remove = self.G.edges(data=True)[-1]
+        self.G.remove_edge(edge_to_remove)
 
     def draw_graph(self):
         pos = nx.spring_layout(self.G)

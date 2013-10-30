@@ -1,5 +1,6 @@
 import json
 from model.node import Node
+from model.edge import Edge
 from pprint import pprint
 from dateutil.parser import parse
 
@@ -23,7 +24,8 @@ class TrainingData:
             if not prev_node is None:
                 date_time = record["date"] + ' ' + record["time"]
                 date = parse(date_time)
-                model.add_edge(node, prev_node, date)
+                edge = Edge(date)
+                model.add_edge(node, prev_node, edge)
 
     def import_file(self, filename):
         with open(filename) as data_file:
