@@ -25,6 +25,7 @@ class TrainingData:
                 date = parse(date_time)
                 model.add_edge(node, prev_node, date)
 
+
     def import_file(self, filename):
         with open(filename) as data_file:
             data = json.load(data_file)

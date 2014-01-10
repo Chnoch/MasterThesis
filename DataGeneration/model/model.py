@@ -1,5 +1,4 @@
 import networkx as nx
-from numpy.ma.core import _frommethod
 import matplotlib.pyplot as plt
 from node import Node
 
