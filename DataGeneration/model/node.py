@@ -7,3 +7,6 @@ class Node:
         self.station_id = station_id
         self.station = station
 
+    def __repr__(self):
+        return "Node " + self.station
+
