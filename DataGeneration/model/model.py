@@ -49,9 +49,16 @@ class Model:
             if node.station_id == station_id:
                 return node
 
-    def get_edges_for_station(self, station_id):
+    def get_edges_by_nodes_for_station(self, station_id):
         node = self.find_node(station_id)
-        edges = (edge[2] for edge in self.G.edges(node, data=True))
+        edges = dict()
+        for edge in self.G.edges(node, data=True):
+            node_id = edge[1].node_id
+            if not node_id in edges:
+                edges[node_id] = []
+            edges[node_id].append(edge[2])
+
+        # edges = (edge[2] for edge in self.G.edges(node, data=True))
         return edges
 
 

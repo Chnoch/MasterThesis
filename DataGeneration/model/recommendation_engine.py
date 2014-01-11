@@ -15,7 +15,9 @@ class RecommendationEngine:
 
     def get_recommendation(self, user_id, station_id, current_date):
         possible_connections = {}
-        edges = self.model.get_edges_for_station(station_id)
+        nodes = self.model.get_edges_by_nodes_for_station(station_id)
+        for nodePair in nodes.items():
+
         for edgeDict in edges:
             edge = edgeDict['edge']
             date = edge.date
@@ -33,8 +35,18 @@ class RecommendationEngine:
     def compare_dates(self, current_date, date):
         delta = datetime.timedelta(days=0, hours=date.hour - current_date.hour,
                                    minutes=date.minute - current_date.minute, seconds=date.second - current_date.second)
+
+        likeliness = 0
+
+        if current_date.weekday == date.weekday:
+            likeliness +=
+
         # print 'delta: ' + delta.__str__()
-        if delta.seconds < RecommendationEngine.time_threshold:
+        if 0 < delta.seconds < RecommendationEngine.time_threshold:
             return 100 if delta.seconds == 0 else float(delta.seconds) / float(RecommendationEngine.time_threshold) * 100
         else:
             return -1
+
+
+    def get_edges_with_same_station(self, edges):
+        OrderedDict()

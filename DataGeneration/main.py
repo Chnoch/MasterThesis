@@ -5,13 +5,13 @@ from test.testing import Testing
 __author__ = 'Chnoch'
 
 def main():
-    id = '1'
-    data = TrainingData(id)
+    testing_id = '1'
+    data = TrainingData(testing_id)
     model = Model(40)
     data.start_training(model)
     # model.draw_graph()
 
-    test = Testing(id, model)
+    test = Testing(testing_id, model)
     test.start_test()
 
 
