@@ -51,7 +51,7 @@ class Model:
 
     def get_edges_by_nodes_for_station(self, station_id):
         node = self.find_node(station_id)
-        edges = dict()
+        edges = {}
         for edge in self.G.edges(node, data=True):
             node_id = edge[1].node_id
             if not node_id in edges:

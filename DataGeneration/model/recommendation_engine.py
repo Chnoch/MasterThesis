@@ -17,13 +17,18 @@ class RecommendationEngine:
         possible_connections = {}
         nodes = self.model.get_edges_by_nodes_for_station(station_id)
         for nodePair in nodes.items():
+            node = nodePair.key
+            edges = nodePair.value
 
-        for edgeDict in edges:
-            edge = edgeDict['edge']
-            date = edge.date
-            likeliness = self.compare_dates(current_date, date)
-            if likeliness > -1:
-                possible_connections[edge] = likeliness
+            possible_connections[node] = 0
+            for edgeDict in edges:
+                edge = edgeDict['edge']
+                date = edge.date
+                likeliness = self.compare_dates(current_date, date)
+                if likeliness > -1:
+                    possible_connections[node] += likeliness
+
+            possible_connections[node] = possible_connections[node] / float(len(edges))
 
         ordered_connections = OrderedDict(sorted(possible_connections.items(), key=lambda t: t[1]))
         if 0 < ordered_connections.__len__():
@@ -38,11 +43,11 @@ class RecommendationEngine:
 
         likeliness = 0
 
-        if current_date.weekday == date.weekday:
-            likeliness +=
+        # if current_date.weekday == date.weekday:
+            # likeliness +=
 
         # print 'delta: ' + delta.__str__()
-        if 0 < delta.seconds < RecommendationEngine.time_threshold:
+        if delta.seconds < RecommendationEngine.time_threshold and 0 < delta.seconds:
             return 100 if delta.seconds == 0 else float(delta.seconds) / float(RecommendationEngine.time_threshold) * 100
         else:
             return -1
