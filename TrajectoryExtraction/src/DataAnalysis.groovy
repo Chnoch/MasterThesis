@@ -8,7 +8,10 @@ class DataAnalysis {
 //        distributionOfStops(dataEntries)
 //        averageOnPeopleAndStops(dataEntries)
 //        averageOnStopUtilization(cleanEntries)
-        timeOfDayDistribution(cleanEntries)
+//        timeOfDayDistribution(cleanEntries)
+//        dayOfMonthDistribution(cleanEntries)
+//        numberOfStopsByUser(cleanEntries)
+        numberOfStationsPerUser(cleanEntries)
     }
 
     def static distributionOfStops(dataEntries) {
@@ -32,6 +35,18 @@ class DataAnalysis {
         }.each { k, v ->
             println v
         }
+
+        def count = 0.0f
+        def sum = 0.0f
+
+        stopMap.each { k, v ->
+            sum += v
+            count++
+        }
+
+        println 'Total number of Stations: ' + count
+        println 'Total number of Stops: ' + sum
+        println 'Average number of Stops per station: ' + (sum / count)
     }
 
     def static removeDuplicateEntries(dataEntries) {
@@ -96,7 +111,7 @@ class DataAnalysis {
 
     }
 
-    def static averageOnStopUtilization(dataEntries) {
+    def static averageOnStationUtilization(dataEntries) {
 
     }
 
@@ -111,11 +126,81 @@ class DataAnalysis {
             timeMap[calendar.get(Calendar.HOUR_OF_DAY)] += 1
         }
 
-        timeMap.each {k, v ->
+        timeMap.each { k, v ->
             println k
-        }.each { k,v ->
+        }.each { k, v ->
             println v
         }
+    }
 
+    def static dayOfMonthDistribution(dataEntries) {
+        def timeMap = [:]
+        (1..31).each { it ->
+            timeMap[it] = 0
+        }
+
+        dataEntries.each {
+            def calendar = it.timestampStart.toCalendar()
+            timeMap[calendar.get(Calendar.DAY_OF_MONTH)] += 1
+        }
+
+        timeMap.each { k, v ->
+            println k
+        }.each { k, v ->
+            println v
+        }
+    }
+
+    def static numberOfStopsByUser(dataEntries) {
+        def stopMap = [:]
+
+        dataEntries.each { it ->
+            if (stopMap.containsKey(it.userId)) {
+                stopMap[it.userId] += 1
+            } else {
+                stopMap[it.userId] = 1
+            }
+        }
+
+        stopMap.sort { a, b ->
+            b.value <=> a.value
+        }.each { k, v ->
+            println k
+        }.each { k, v ->
+            println v
+        }
+    }
+
+    def static numberOfStationsPerUser(dataEntries) {
+        def stopMap = [:]
+
+        dataEntries.each { it ->
+            if (stopMap.containsKey(it.userId)) {
+                if (!stopMap[it.userId].contains(it.stationId)) {
+                    stopMap[it.userId].add(it.stationId)
+                }
+            } else {
+                stopMap[it.userId] = new HashSet()
+                stopMap[it.userId].add(it.stationId)
+            }
+        }
+
+        stopMap.sort { a, b ->
+            b.value.size() <=> a.value.size()
+        }.each { k, v ->
+            println k
+        }.each { k, v ->
+            println v.size()
+        }
+
+        def sum=0
+        def count = 0
+
+        stopMap.each { k, v ->
+            sum += v.size()
+            count++
+        }
+
+        println 'Average number of stations per person: ' + (sum / count)
     }
 }
