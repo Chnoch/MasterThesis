@@ -11,7 +11,8 @@ class DataAnalysis {
 //        timeOfDayDistribution(cleanEntries)
 //        dayOfMonthDistribution(cleanEntries)
 //        numberOfStopsByUser(cleanEntries)
-        numberOfStationsPerUser(cleanEntries)
+//        numberOfStationsPerUser(cleanEntries)
+        numberOfStationsPerAverageUser(cleanEntries)
     }
 
     def static distributionOfStops(dataEntries) {
@@ -193,7 +194,7 @@ class DataAnalysis {
             println v.size()
         }
 
-        def sum=0
+        def sum = 0
         def count = 0
 
         stopMap.each { k, v ->
@@ -202,5 +203,50 @@ class DataAnalysis {
         }
 
         println 'Average number of stations per person: ' + (sum / count)
+    }
+
+    def static numberOfStationsPerAverageUser(dataEntries) {
+        def userMap = [:]
+        def stations = new HashSet()
+
+        dataEntries.each { it ->
+            if (userMap.containsKey(it.userId)) {
+                if (userMap[it.userId].containsKey(it.stationId)) {
+                    userMap[it.userId][it.stationId] += 1
+                } else {
+                    userMap[it.userId].put(it.stationId, 1)
+                }
+            } else {
+                userMap[it.userId] = [:]
+                userMap[it.userId].put(it.stationId, 1)
+            }
+
+            stations.add(it.stationId)
+        }
+
+        def stationAverages = [:]
+
+        stations.each { it ->
+            def cumulatedAccesses = 0.0f
+            def numberOfUsers = 0.0f
+            userMap.each { k, v ->
+                if (v.containsKey(it)) {
+                    cumulatedAccesses += v[it]
+                    numberOfUsers++
+                }
+            }
+
+            stationAverages[it] = cumulatedAccesses / numberOfUsers
+        }
+
+        stationAverages.sort { a, b ->
+            a.value <=> b.value
+        }.each { k, v ->
+            println k
+        }.each { k, v ->
+            println v
+        }
+
+
     }
 }
