@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b730987-eab1-48fa-8527-03139669ef8d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/BaselineModel.groovy" afterPath="$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/BaselineModel.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TrajectoryExtraction.iws" />
@@ -111,8 +110,8 @@
           <file leaf-file-name="BaselineModel.groovy" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/BaselineModel.groovy">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.49361023" vertical-offset="694" max-vertical-offset="1649">
-                  <caret line="58" column="30" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
+                <state vertical-scroll-proportion="0.75559103" vertical-offset="870" max-vertical-offset="1649">
+                  <caret line="78" column="10" selection-start-line="78" selection-start-column="10" selection-end-line="78" selection-end-column="10" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                     <element signature="e#80#116#0" expanded="true" />
@@ -885,7 +884,7 @@
       <workItem from="1404997933432" duration="1126000" />
       <workItem from="1405106229267" duration="5000" />
       <workItem from="1405106270949" duration="77000" />
-      <workItem from="1405106353201" duration="4291000" />
+      <workItem from="1405106353201" duration="4930000" />
     </task>
     <task id="LOCAL-00001" summary="adding commit of several files, python and groovy, data analysis, data parsing, etc.">
       <created>1404835541946</created>
@@ -915,11 +914,15 @@
       <created>1405110419464</created>
       <updated>1405110419464</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added basic visualization option to baseline model">
+      <created>1405110869975</created>
+      <updated>1405110869975</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25971000" />
+    <option name="totallyTimeSpent" value="26610000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1134" extended-state="6" />
@@ -975,7 +978,8 @@
     <MESSAGE value="removing old files" />
     <MESSAGE value="adding new config file" />
     <MESSAGE value="separated logic in different modules; added baseline graph model; integrated gremlin graph library" />
-    <option name="LAST_COMMIT_MESSAGE" value="separated logic in different modules; added baseline graph model; integrated gremlin graph library" />
+    <MESSAGE value="added basic visualization option to baseline model" />
+    <option name="LAST_COMMIT_MESSAGE" value="added basic visualization option to baseline model" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1399,8 +1403,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/BaselineModel.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49361023" vertical-offset="694" max-vertical-offset="1649">
-          <caret line="58" column="30" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.75559103" vertical-offset="870" max-vertical-offset="1649">
+          <caret line="78" column="10" selection-start-line="78" selection-start-column="10" selection-end-line="78" selection-end-column="10" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#80#116#0" expanded="true" />
