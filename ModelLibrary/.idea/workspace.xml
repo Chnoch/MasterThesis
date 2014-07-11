@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b730987-eab1-48fa-8527-03139669ef8d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/BaselineModel.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/DataInitialization.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/Main.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/ant_1_8_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/blueprints_core_2_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/gremlin_groovy_2_5_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/BaselineModel.groovy" afterPath="$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/BaselineModel.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebInterface/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../WebInterface/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\Workspaces\MasterThesis\ModelLibrary\DataAnalysis\src\Data.groovy" afterPath="$PROJECT_DIR$/DataParsing/src/ch/chnoch/mt/dataparsing/Data.groovy" />
-      <change type="MOVED" beforePath="D:\Workspaces\MasterThesis\ModelLibrary\DataAnalysis\src\DataAnalysis.groovy" afterPath="$PROJECT_DIR$/DataAnalysis/src/ch/chnoch/mt/dataanalysis/DataAnalysis.groovy" />
-      <change type="MOVED" beforePath="D:\Workspaces\MasterThesis\ModelLibrary\DataAnalysis\src\DataEntry.groovy" afterPath="$PROJECT_DIR$/DataParsing/src/ch/chnoch/mt/dataparsing/DataEntry.groovy" />
-      <change type="MOVED" beforePath="D:\Workspaces\MasterThesis\ModelLibrary\DataAnalysis\src\Main.groovy" afterPath="$PROJECT_DIR$/DataAnalysis/src/ch/chnoch/mt/dataanalysis/Main.groovy" />
     </list>
     <ignored path="TrajectoryExtraction.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -120,14 +108,14 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="BaselineModel.groovy" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="BaselineModel.groovy" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/BaselineModel.groovy">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="190" max-vertical-offset="1020">
-                  <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+                <state vertical-scroll-proportion="0.49361023" vertical-offset="694" max-vertical-offset="1649">
+                  <caret line="58" column="30" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
-                    <element signature="e#80#117#0" expanded="true" />
+                    <element signature="e#80#116#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -143,11 +131,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="TinkerGraph.java" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="TinkerGraph.java" pinned="false" current="false" current-in-tab="false">
             <entry file="jar://$USER_HOME$/.ideaLibSources/blueprints-core-2.5.0-sources.jar!/com/tinkerpop/blueprints/impls/tg/TinkerGraph.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.41763726" vertical-offset="3948" max-vertical-offset="7973">
-                  <caret line="262" column="0" selection-start-line="262" selection-start-column="0" selection-end-line="262" selection-end-column="0" />
+                <state vertical-scroll-proportion="-18.2" vertical-offset="3540" max-vertical-offset="7973">
+                  <caret line="265" column="5" selection-start-line="265" selection-start-column="5" selection-end-line="265" selection-end-column="5" />
                   <folding>
                     <element signature="e#10109#10110#0" expanded="true" />
                     <element signature="e#10172#10173#0" expanded="true" />
@@ -245,8 +233,8 @@
         <option value="$PROJECT_DIR$/DataAnalysis/src/ch/chnoch/mt/dataanalysis/DataAnalysis.groovy" />
         <option value="$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/Main.groovy" />
         <option value="$PROJECT_DIR$/DataParsing/src/ch/chnoch/mt/dataparsing/Data.groovy" />
-        <option value="$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/BaselineModel.groovy" />
         <option value="$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/DataInitialization.groovy" />
+        <option value="$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/BaselineModel.groovy" />
       </list>
     </option>
   </component>
@@ -457,6 +445,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="baselinemodel" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModelLibrary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModelLibrary" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BaselineModel" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -879,7 +885,7 @@
       <workItem from="1404997933432" duration="1126000" />
       <workItem from="1405106229267" duration="5000" />
       <workItem from="1405106270949" duration="77000" />
-      <workItem from="1405106353201" duration="3822000" />
+      <workItem from="1405106353201" duration="4291000" />
     </task>
     <task id="LOCAL-00001" summary="adding commit of several files, python and groovy, data analysis, data parsing, etc.">
       <created>1404835541946</created>
@@ -905,11 +911,15 @@
       <created>1404998228671</created>
       <updated>1404998228671</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="separated logic in different modules; added baseline graph model; integrated gremlin graph library">
+      <created>1405110419464</created>
+      <updated>1405110419464</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25502000" />
+    <option name="totallyTimeSpent" value="25971000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1134" extended-state="6" />
@@ -964,7 +974,8 @@
     <MESSAGE value="adding some config files" />
     <MESSAGE value="removing old files" />
     <MESSAGE value="adding new config file" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding new config file" />
+    <MESSAGE value="separated logic in different modules; added baseline graph model; integrated gremlin graph library" />
+    <option name="LAST_COMMIT_MESSAGE" value="separated logic in different modules; added baseline graph model; integrated gremlin graph library" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -974,12 +985,6 @@
           <line>304</line>
           <properties />
           <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/BaselineModel.groovy</url>
-          <line>46</line>
-          <properties />
-          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="13" />
@@ -1355,17 +1360,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/BaselineModel.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="190" max-vertical-offset="1020">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#80#117#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.ideaLibSources/blueprints-core-2.5.0-sources.jar!/com/tinkerpop/blueprints/util/DefaultGraphQuery.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.1851239" vertical-offset="989" max-vertical-offset="2941">
@@ -1392,13 +1386,24 @@
     </entry>
     <entry file="jar://$USER_HOME$/.ideaLibSources/blueprints-core-2.5.0-sources.jar!/com/tinkerpop/blueprints/impls/tg/TinkerGraph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41763726" vertical-offset="3948" max-vertical-offset="7973">
-          <caret line="262" column="0" selection-start-line="262" selection-start-column="0" selection-end-line="262" selection-end-column="0" />
+        <state vertical-scroll-proportion="-18.2" vertical-offset="3540" max-vertical-offset="7973">
+          <caret line="265" column="5" selection-start-line="265" selection-start-column="5" selection-end-line="265" selection-end-column="5" />
           <folding>
             <element signature="e#10109#10110#0" expanded="true" />
             <element signature="e#10172#10173#0" expanded="true" />
             <element signature="e#13035#13036#0" expanded="true" />
             <element signature="e#13085#13086#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/BaselineModel.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49361023" vertical-offset="694" max-vertical-offset="1649">
+          <caret line="58" column="30" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#80#116#0" expanded="true" />
           </folding>
         </state>
       </provider>
