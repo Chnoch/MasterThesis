@@ -1,6 +1,9 @@
 /**
  * Created by Chnoch on 17.06.2014.
  */
+
+package ch.chnoch.mt.dataparsing
+
 class DataEntry {
     private userId
     private timestampStart

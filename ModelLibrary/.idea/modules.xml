@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BaselineModel/BaselineModel.iml" filepath="$PROJECT_DIR$/BaselineModel/BaselineModel.iml" />
       <module fileurl="file://$PROJECT_DIR$/DataAnalysis/DataAnalysis.iml" filepath="$PROJECT_DIR$/DataAnalysis/DataAnalysis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataParsing/DataParsing.iml" filepath="$PROJECT_DIR$/DataParsing/DataParsing.iml" />
       <module fileurl="file://$PROJECT_DIR$/ModelLibrary.iml" filepath="$PROJECT_DIR$/ModelLibrary.iml" />
     </modules>
   </component>

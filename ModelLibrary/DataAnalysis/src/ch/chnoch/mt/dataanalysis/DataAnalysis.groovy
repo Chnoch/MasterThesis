@@ -1,18 +1,20 @@
 /**
  * Created by Chnoch on 07.07.2014.
  */
+package ch.chnoch.mt.dataanalysis
+
 class DataAnalysis {
 
     def static startDataAnalysis(dataEntries) {
-        def cleanEntries = removeDuplicateEntries(dataEntries)
+//        def cleanEntries = removeDuplicateEntries(dataEntries)
 //        distributionOfStops(dataEntries)
 //        averageOnPeopleAndStops(dataEntries)
-//        averageOnStopUtilization(cleanEntries)
-//        timeOfDayDistribution(cleanEntries)
-//        dayOfMonthDistribution(cleanEntries)
-//        numberOfStopsByUser(cleanEntries)
-//        numberOfStationsPerUser(cleanEntries)
-        numberOfStationsPerAverageUser(cleanEntries)
+//        averageOnStopUtilization(dataEntries)
+//        timeOfDayDistribution(dataEntries)
+//        dayOfMonthDistribution(dataEntries)
+//        numberOfStopsByUser(dataEntries)
+//        numberOfStationsPerUser(dataEntries)
+        numberOfStationsPerAverageUser(dataEntries)
     }
 
     def static distributionOfStops(dataEntries) {
@@ -48,33 +50,6 @@ class DataAnalysis {
         println 'Total number of Stations: ' + count
         println 'Total number of Stops: ' + sum
         println 'Average number of Stops per station: ' + (sum / count)
-    }
-
-    def static removeDuplicateEntries(dataEntries) {
-        dataEntries.sort { a, b ->
-            a.timestampStart <=> b.timestampStart
-            a.stationId <=> b.stationId
-            a.userId <=> b.userId
-        }
-
-        def remainingEntries = []
-
-        def previousEntryAdded = false
-        for (def i = 0; i < dataEntries.size() - 2; i++) {
-            def current = dataEntries[i]
-            def next = dataEntries[i + 1]
-            if (!(current.userId == next.userId &&
-                    current.stationId == next.stationId &&
-                    next.timestampStart - current.timestampStart < 60 &&
-                    previousEntryAdded)) {
-                remainingEntries.add(current)
-                previousEntryAdded = true
-            } else {
-                previousEntryAdded = false
-            }
-        }
-
-        return remainingEntries
     }
 
     def static averageOnPeopleAndStops(dataEntries) {
