@@ -56,8 +56,8 @@ grails.project.dependency.resolution = {
         test "org.grails:grails-datastore-test-support:1.0-grails-2.4"
 
         // Gremlin
-        compile 'com.tinkerpop:gremlin-groovy:2.5.0'
-        compile 'com.tinkerpop.blueprints:blueprints-neo4j-graph:2.5.0'
+//        compile 'com.tinkerpop:gremlin-groovy:2.5.0'
+//        compile 'com.tinkerpop.blueprints:blueprints-neo4j-graph:2.5.0'
     }
 
     plugins {

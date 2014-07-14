@@ -3,6 +3,7 @@
  */
 package ch.chnoch.mt.baselinemodel
 
+import ch.chnoch.mt.model.ModelInterface
 import com.tinkerpop.blueprints.Edge
 import com.tinkerpop.blueprints.Graph
 import com.tinkerpop.blueprints.Vertex
@@ -19,7 +20,7 @@ import org.apache.commons.collections15.Transformer
 import javax.swing.JFrame
 import java.awt.Dimension
 
-class BaselineModel {
+class BaselineModel implements ModelInterface {
     def graph
     def userId
 
@@ -27,7 +28,10 @@ class BaselineModel {
         Gremlin.load()
         userId = user
         graph = new TinkerGraph()
+    }
 
+    public getGraph() {
+        return graph
     }
 
     def addVertex(def vertex) {

@@ -4,23 +4,32 @@
 
 package ch.chnoch.mt.dataparsing
 class Data {
-    static getDefaultDataSet() {
-        def dataEntries = Data.readFile('D:\\Workspaces\\MasterThesis\\ModelLibrary\\assets\\learning_data.csv')
+    public static getDefaultDataSet() {
+        def filename = 'D:\\Workspaces\\MasterThesis\\ModelLibrary\\assets\\learning_data.csv'
+        def file = new File(filename)
+        return getDataSetFromFile(file, false)
+    }
+
+    public static getCleanedDataSet() {
+        return Data.removeDuplicateEntries(Data.getDefaultDataSet())
+    }
+
+    public static getDataSetFromFile(file, removeDuplicates) {
+        def dataEntries = Data.readFile(file)
         dataEntries.sort { a, b ->
             a.timestampStart <=> b.timestampStart
             a.userId <=> b.userId
         }
+
+        if (removeDuplicates) {
+            dataEntries = removeDuplicateEntries(dataEntries)
+        }
         return dataEntries
     }
 
-    static getCleanedDataSet() {
-        return Data.removeDuplicateEntries(Data.getDefaultDataSet())
-    }
-
-    static readFile(filename) {
+    static readFile(file) {
         def dataEntries = []
 
-        def file = new File(filename)
         if (file) {
             file.splitEachLine(',') { fields ->
                 def entry = parseLine(fields)

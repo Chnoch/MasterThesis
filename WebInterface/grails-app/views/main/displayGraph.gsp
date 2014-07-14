@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: Chnoch
-  Date: 10.07.2014
-  Time: 16:08
+  Date: 14.07.2014
+  Time: 15:55
 --%>
 
 <%@ page contentType="text/html;charset=UTF-8" %>
@@ -12,10 +12,6 @@
 </head>
 
 <body>
-<div class="container-fluid">
-    <div class="row">
-        Upload data for basic visualization
-    </div>
-</div>
+
 </body>
 </html>

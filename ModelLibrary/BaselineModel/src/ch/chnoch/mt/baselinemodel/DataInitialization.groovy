@@ -10,7 +10,7 @@ class DataInitialization {
         this.dataEntries = dataEntries
     }
 
-    def start(def userId) {
+    def createModel(def userId) {
         def userEntries = dataEntries.findAll{ it -> it.userId == userId}
 
         def model = new BaselineModel(userId)
@@ -28,6 +28,6 @@ class DataInitialization {
             }
         }
 
-        model.printGraph()
+        return model
     }
 }

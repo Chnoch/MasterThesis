@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../ModelLibrary/BaselineModel/BaselineModel.iml" filepath="$PROJECT_DIR$/../ModelLibrary/BaselineModel/BaselineModel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ModelLibrary/DataParsing/DataParsing.iml" filepath="$PROJECT_DIR$/../ModelLibrary/DataParsing/DataParsing.iml" />
       <module fileurl="file://$PROJECT_DIR$/WebInterface.iml" filepath="$PROJECT_DIR$/WebInterface.iml" />
       <module fileurl="file://$PROJECT_DIR$/WebInterface-grailsPlugins.iml" filepath="$PROJECT_DIR$/WebInterface-grailsPlugins.iml" />
     </modules>
