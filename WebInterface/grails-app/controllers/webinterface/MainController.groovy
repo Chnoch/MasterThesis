@@ -39,6 +39,6 @@ class MainController {
         def model = modelService.createModel(file, user)
         session.setAttribute("model", model)
         def graph = model.getGraph()
-        [model: model, graph: graph]
+        [model: model, graph: graph, user: user]
     }
 }

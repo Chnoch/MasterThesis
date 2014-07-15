@@ -1,33 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4d45bf1c-63f6-4b9a-9e03-3d1430674803" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/Curry-1.0.1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ModelLibrary/META-INF/MANIFEST.MF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ModelLibrary/.idea/artifacts/ModelLibrary_jar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/ModelLibrary_jar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/dracula_algorithms.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/dracula_graffle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/dracula_graph.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ModelLibrary/.idea/libraries/gremlin.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/gremlin.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/raphael-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/seedrandom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="DELETED" beforePath="D:\Workspaces\MasterThesis\ModelLibrary\.idea\libraries\ant_1_8_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Workspaces\MasterThesis\ModelLibrary\.idea\libraries\blueprints_core_2_5_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Workspaces\MasterThesis\ModelLibrary\.idea\libraries\gremlin_groovy_2_5_0.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/Config.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
+    <list default="true" id="4d45bf1c-63f6-4b9a-9e03-3d1430674803" name="Default" comment="added correct integration of groovy modules into grails application; first working version with displaying of graphs.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/webinterface/MainController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/webinterface/MainController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/services/webinterface/ModelService.groovy" afterPath="$PROJECT_DIR$/grails-app/services/webinterface/ModelService.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/main/displayGraph.gsp" afterPath="$PROJECT_DIR$/grails-app/views/main/displayGraph.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" afterPath="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/main/selectFile.gsp" afterPath="$PROJECT_DIR$/grails-app/views/main/selectFile.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/main/selectUser.gsp" afterPath="$PROJECT_DIR$/grails-app/views/main/selectUser.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/stacktrace.log" afterPath="$PROJECT_DIR$/target/stacktrace.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ModelLibrary/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../ModelLibrary/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="WebInterface.iws" />
@@ -115,8 +91,8 @@
       <file leaf-file-name="MainController.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/webinterface/MainController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-24.608696" vertical-offset="114" max-vertical-offset="850">
-              <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+            <state vertical-scroll-proportion="-16.47826" vertical-offset="318" max-vertical-offset="850">
+              <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -125,15 +101,15 @@
       <file leaf-file-name="displayGraph.gsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/views/main/displayGraph.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.2727273" vertical-offset="240" max-vertical-offset="1190">
-              <caret line="52" column="28" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.4367589" vertical-offset="204" max-vertical-offset="1309">
+              <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
               <folding>
-                <marker date="1405439340514" expanded="true" signature="518:1738" placeholder="&lt;xml/&gt;" />
-                <marker date="1405439340514" expanded="true" signature="534:1738" placeholder="&lt;xml/&gt;" />
-                <marker date="1405439340514" expanded="true" signature="543:1730" placeholder="&lt;xml/&gt;" />
-                <marker date="1405439340514" expanded="true" signature="574:1721" placeholder="&lt;xml/&gt;" />
-                <marker date="1405439340514" expanded="true" signature="574:1721" placeholder="&lt;xml/&gt;" />
-                <marker date="1405439340514" expanded="true" signature="574:1721" placeholder="&lt;xml/&gt;" />
+                <marker date="1405444780845" expanded="true" signature="518:1928" placeholder="&lt;xml/&gt;" />
+                <marker date="1405444780845" expanded="true" signature="534:1928" placeholder="&lt;xml/&gt;" />
+                <marker date="1405444780845" expanded="true" signature="543:1920" placeholder="&lt;xml/&gt;" />
+                <marker date="1405444780845" expanded="true" signature="764:1911" placeholder="&lt;xml/&gt;" />
+                <marker date="1405444780845" expanded="true" signature="764:1911" placeholder="&lt;xml/&gt;" />
+                <marker date="1405444780845" expanded="true" signature="764:1911" placeholder="&lt;xml/&gt;" />
               </folding>
             </state>
           </provider>
@@ -886,17 +862,21 @@
       <workItem from="1404998305288" duration="5325000" />
       <workItem from="1405344291849" duration="6331000" />
       <workItem from="1405417614511" duration="25000" />
-      <workItem from="1405417688859" duration="6100000" />
+      <workItem from="1405417688859" duration="7254000" />
     </task>
     <task id="LOCAL-00001" summary="added connection between web interface and Data Parsing / model. Basic initialization of web views">
       <created>1405350512223</created>
       <updated>1405350512223</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added correct integration of groovy modules into grails application; first working version with displaying of graphs.">
+      <created>1405439421825</created>
+      <updated>1405439421825</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17781000" />
+    <option name="totallyTimeSpent" value="18935000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1134" extended-state="6" />
@@ -910,7 +890,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3992016" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3992016" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934132" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -955,7 +935,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="added connection between web interface and Data Parsing / model. Basic initialization of web views" />
-    <option name="LAST_COMMIT_MESSAGE" value="added connection between web interface and Data Parsing / model. Basic initialization of web views" />
+    <MESSAGE value="added correct integration of groovy modules into grails application; first working version with displaying of graphs." />
+    <option name="LAST_COMMIT_MESSAGE" value="added correct integration of groovy modules into grails application; first working version with displaying of graphs." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -983,12 +964,12 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="374">
           <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
           <folding>
-            <marker date="1405439340514" expanded="true" signature="518:1738" placeholder="&lt;xml/&gt;" />
-            <marker date="1405439340514" expanded="true" signature="534:1738" placeholder="&lt;xml/&gt;" />
-            <marker date="1405439340514" expanded="true" signature="543:1730" placeholder="&lt;xml/&gt;" />
-            <marker date="1405439340514" expanded="true" signature="574:1721" placeholder="&lt;xml/&gt;" />
-            <marker date="1405439340514" expanded="true" signature="574:1721" placeholder="&lt;xml/&gt;" />
-            <marker date="1405439340514" expanded="true" signature="574:1721" placeholder="&lt;xml/&gt;" />
+            <marker date="1405444780845" expanded="true" signature="518:1928" placeholder="&lt;xml/&gt;" />
+            <marker date="1405444780845" expanded="true" signature="534:1928" placeholder="&lt;xml/&gt;" />
+            <marker date="1405444780845" expanded="true" signature="543:1920" placeholder="&lt;xml/&gt;" />
+            <marker date="1405444780845" expanded="true" signature="764:1911" placeholder="&lt;xml/&gt;" />
+            <marker date="1405444780845" expanded="true" signature="764:1911" placeholder="&lt;xml/&gt;" />
+            <marker date="1405444780845" expanded="true" signature="764:1911" placeholder="&lt;xml/&gt;" />
           </folding>
         </state>
       </provider>
@@ -1064,12 +1045,12 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="374">
           <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
           <folding>
-            <marker date="1405439340514" expanded="true" signature="518:1738" placeholder="&lt;xml/&gt;" />
-            <marker date="1405439340514" expanded="true" signature="534:1738" placeholder="&lt;xml/&gt;" />
-            <marker date="1405439340514" expanded="true" signature="543:1730" placeholder="&lt;xml/&gt;" />
-            <marker date="1405439340514" expanded="true" signature="574:1721" placeholder="&lt;xml/&gt;" />
-            <marker date="1405439340514" expanded="true" signature="574:1721" placeholder="&lt;xml/&gt;" />
-            <marker date="1405439340514" expanded="true" signature="574:1721" placeholder="&lt;xml/&gt;" />
+            <marker date="1405444780845" expanded="true" signature="518:1928" placeholder="&lt;xml/&gt;" />
+            <marker date="1405444780845" expanded="true" signature="534:1928" placeholder="&lt;xml/&gt;" />
+            <marker date="1405444780845" expanded="true" signature="543:1920" placeholder="&lt;xml/&gt;" />
+            <marker date="1405444780845" expanded="true" signature="764:1911" placeholder="&lt;xml/&gt;" />
+            <marker date="1405444780845" expanded="true" signature="764:1911" placeholder="&lt;xml/&gt;" />
+            <marker date="1405444780845" expanded="true" signature="764:1911" placeholder="&lt;xml/&gt;" />
           </folding>
         </state>
       </provider>
@@ -1361,23 +1342,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/webinterface/MainController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.608696" vertical-offset="114" max-vertical-offset="850">
-          <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+        <state vertical-scroll-proportion="-16.47826" vertical-offset="318" max-vertical-offset="850">
+          <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/main/displayGraph.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2727273" vertical-offset="240" max-vertical-offset="1190">
-          <caret line="52" column="28" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.4367589" vertical-offset="204" max-vertical-offset="1309">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
           <folding>
-            <marker date="1405439340514" expanded="true" signature="518:1738" placeholder="&lt;xml/&gt;" />
-            <marker date="1405439340514" expanded="true" signature="534:1738" placeholder="&lt;xml/&gt;" />
-            <marker date="1405439340514" expanded="true" signature="543:1730" placeholder="&lt;xml/&gt;" />
-            <marker date="1405439340514" expanded="true" signature="574:1721" placeholder="&lt;xml/&gt;" />
-            <marker date="1405439340514" expanded="true" signature="574:1721" placeholder="&lt;xml/&gt;" />
-            <marker date="1405439340514" expanded="true" signature="574:1721" placeholder="&lt;xml/&gt;" />
+            <marker date="1405444780845" expanded="true" signature="518:1928" placeholder="&lt;xml/&gt;" />
+            <marker date="1405444780845" expanded="true" signature="534:1928" placeholder="&lt;xml/&gt;" />
+            <marker date="1405444780845" expanded="true" signature="543:1920" placeholder="&lt;xml/&gt;" />
+            <marker date="1405444780845" expanded="true" signature="764:1911" placeholder="&lt;xml/&gt;" />
+            <marker date="1405444780845" expanded="true" signature="764:1911" placeholder="&lt;xml/&gt;" />
+            <marker date="1405444780845" expanded="true" signature="764:1911" placeholder="&lt;xml/&gt;" />
           </folding>
         </state>
       </provider>

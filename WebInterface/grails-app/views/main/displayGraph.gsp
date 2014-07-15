@@ -18,6 +18,13 @@
 </head>
 
 <body>
+<div class="user">
+    <h1>${user}</h1>
+</div>
+<div class="graph-info">
+    <div>Number of Nodes: ${graph.vertices.size()}</div>
+    <div>Number of Edges: ${graph.edges.size()}</div>
+</div>
 <div id="graph"></div>
 
 <script type="text/javascript">
