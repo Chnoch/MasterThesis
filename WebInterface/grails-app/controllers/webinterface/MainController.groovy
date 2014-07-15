@@ -13,24 +13,32 @@ class MainController {
     }
 
     def selectUser() {
-        def f = request.getFile('data')
+        def f = request.getFile("data")
         if (f.empty) {
             flash.message = 'file cannot be empty'
             render(view: 'uploadForm')
             return
         }
 
-        session.setAttribute("file", f)
+        def file = new File('data')
+        f.transferTo(file)
+        session.setAttribute("file", file)
 
-        def userList = modelService.getUsersFromFile(f)
-        respond userList
+        def userList = modelService.getUsersFromFile(file)
+        [userList: userList]
     }
 
     def displayGraph() {
         def user = params.user
+        if (!user) {
+            user = session.getAttribute("user")
+        } else {
+            session.setAttribute("user", user)
+        }
         def file = session.getAttribute("file")
         def model = modelService.createModel(file, user)
         session.setAttribute("model", model)
-        respond true
+        def graph = model.getGraph()
+        [model: model, graph: graph]
     }
 }

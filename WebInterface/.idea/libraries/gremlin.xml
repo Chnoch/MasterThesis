@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="gremlin">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../ModelLibrary/BaselineModel/lib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/../ModelLibrary/BaselineModel/lib" recursive="false" />
+  </library>
+</component>

@@ -12,9 +12,9 @@
 </head>
 
 <body>
-<g:form class="form-horizontal" name="fileUpload" action="selectUser" >
+<g:form class="form-horizontal" name="fileUpload" action="selectUser" method="post" enctype="multipart/form-data">
     <input type="file" name="data" />
-    <button type="submit" class="btn"></button>
+    <button type="submit" class="btn">Submit File</button>
 </g:form>
 </body>
 </html>

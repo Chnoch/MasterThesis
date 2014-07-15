@@ -9,7 +9,7 @@ class ModelService {
 
     def createModel(file, user) {
         def dataEntries = Data.getDataSetFromFile(file, true)
-        def dataInit = DataInitialization(dataEntries)
+        def dataInit = new DataInitialization(dataEntries)
         return dataInit.createModel(user)
     }
 
@@ -32,7 +32,7 @@ class ModelService {
         }
 
         stopMap.sort { a, b ->
-            b.value <=> a.value
+            a.value <=> b.value
         }
         return stopMap
     }

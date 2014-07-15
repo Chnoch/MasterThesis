@@ -12,9 +12,9 @@
 </head>
 
 <body>
-<g:form class="form-horizontal" name="displayGraph" action="selectUser" >
+<g:form class="form-horizontal" name="displayGraph" action="displayGraph" >
     <g:select name="user" from="${userList}"/>
-    <button type="submit" class="btn"></button>
+    <button type="submit" class="btn">Select User</button>
 </g:form>
 
 </body>
