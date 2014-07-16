@@ -7,12 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b730987-eab1-48fa-8527-03139669ef8d" name="Default" comment="added basic visualization option to baseline model">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebInterface/grails-app/conf/UrlMappings.groovy" afterPath="$PROJECT_DIR$/../WebInterface/grails-app/conf/UrlMappings.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebInterface/grails-app/views/main/selectFile.gsp" afterPath="$PROJECT_DIR$/../WebInterface/grails-app/views/main/selectFile.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebInterface/target/stacktrace.log" afterPath="$PROJECT_DIR$/../WebInterface/target/stacktrace.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebInterface/web-app/css/web.css" afterPath="$PROJECT_DIR$/../WebInterface/web-app/css/web.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/DataTesting.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/BaselineModel.groovy" afterPath="$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/BaselineModel.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataParsing/src/ch/chnoch/mt/dataparsing/Data.groovy" afterPath="$PROJECT_DIR$/DataParsing/src/ch/chnoch/mt/dataparsing/Data.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/Main.groovy" afterPath="$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/Main.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebInterface/.idea/vcs.xml" afterPath="$PROJECT_DIR$/../WebInterface/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebInterface/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../WebInterface/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="D:\Workspaces\MasterThesis\ModelLibrary\BaselineModel\src\ch\chnoch\mt\baselinemodel\DataInitialization.groovy" afterPath="$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/DataTraining.groovy" />
     </list>
     <ignored path="TrajectoryExtraction.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,22 +68,22 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties converted="true" />
     <breakpoint_rules converted="true" />
+    <ui_properties converted="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="TrajectoryExtraction" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6212121">
+    <splitter split-orientation="horizontal" split-proportion="0.66477275">
       <split-first>
         <leaf>
           <file leaf-file-name="Data.groovy" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/DataParsing/src/ch/chnoch/mt/dataparsing/Data.groovy">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="1632">
-                  <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2193">
+                  <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
@@ -117,41 +119,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="BaselineModel.groovy" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/BaselineModel.groovy">
+          <file leaf-file-name="DataTraining.groovy" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/DataTraining.groovy">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="1462" max-vertical-offset="1836">
-                  <caret line="86" column="68" selection-start-line="86" selection-start-column="68" selection-end-line="86" selection-end-column="68" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="TinkerGraphFactory.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="jar://$USER_HOME$/.ideaLibSources/blueprints-core-2.5.0-sources.jar!/com/tinkerpop/blueprints/impls/tg/TinkerGraphFactory.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="969">
-                  <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="TinkerGraph.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="jar://$USER_HOME$/.ideaLibSources/blueprints-core-2.5.0-sources.jar!/com/tinkerpop/blueprints/impls/tg/TinkerGraph.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="4505" max-vertical-offset="8024">
-                  <caret line="265" column="5" selection-start-line="265" selection-start-column="5" selection-end-line="265" selection-end-column="5" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="DataInitialization.groovy" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/DataInitialization.groovy">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="663">
-                  <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="612">
+                  <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
                   <folding />
                 </state>
               </provider>
@@ -160,8 +132,18 @@
           <file leaf-file-name="Main.groovy" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/Main.groovy">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.23141362" vertical-offset="0" max-vertical-offset="955">
-                  <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+                <state vertical-scroll-proportion="0.7060703" vertical-offset="153" max-vertical-offset="884">
+                  <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="DataTesting.groovy" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/DataTesting.groovy">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="47" max-vertical-offset="765">
+                  <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
                   <folding />
                 </state>
               </provider>
@@ -174,7 +156,7 @@
           <file leaf-file-name="DataEntry.groovy" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/DataParsing/src/ch/chnoch/mt/dataparsing/DataEntry.groovy">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.55737704" vertical-offset="0" max-vertical-offset="976">
+                <state vertical-scroll-proportion="0.8408037" vertical-offset="0" max-vertical-offset="697">
                   <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
                   <folding />
                 </state>
@@ -232,9 +214,11 @@
         <option value="$PROJECT_DIR$/DataAnalysis/src/Main.groovy" />
         <option value="$PROJECT_DIR$/DataAnalysis/src/ch/chnoch/mt/dataanalysis/Main.groovy" />
         <option value="$PROJECT_DIR$/DataAnalysis/src/ch/chnoch/mt/dataanalysis/DataAnalysis.groovy" />
-        <option value="$PROJECT_DIR$/DataParsing/src/ch/chnoch/mt/dataparsing/Data.groovy" />
         <option value="$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/DataInitialization.groovy" />
+        <option value="$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/DataTraining.groovy" />
         <option value="$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/BaselineModel.groovy" />
+        <option value="$PROJECT_DIR$/DataParsing/src/ch/chnoch/mt/dataparsing/Data.groovy" />
+        <option value="$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/DataTesting.groovy" />
         <option value="$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/Main.groovy" />
       </list>
     </option>
@@ -279,6 +263,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -294,6 +279,42 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ModelLibrary" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModelLibrary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModelLibrary" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataParsing" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModelLibrary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModelLibrary" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataParsing" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dataparsing" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -391,7 +412,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -607,9 +627,6 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -631,8 +648,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner />
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
@@ -654,6 +670,10 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
       <method />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -800,6 +820,7 @@
       <workItem from="1405417733617" duration="1359000" />
       <workItem from="1405501148060" duration="665000" />
       <workItem from="1405503257841" duration="736000" />
+      <workItem from="1405527892605" duration="7553000" />
     </task>
     <task id="LOCAL-00001" summary="adding commit of several files, python and groovy, data analysis, data parsing, etc.">
       <created>1404835541946</created>
@@ -841,7 +862,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33816000" />
+    <option name="totallyTimeSpent" value="41369000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1134" extended-state="6" />
@@ -861,18 +882,18 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3273453" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24973376" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17305644" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18796591" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283433" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3283433" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283433" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -902,15 +923,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.ideaLibSources/blueprints-core-2.5.0-sources.jar!/com/tinkerpop/blueprints/impls/tg/TinkerGraph.java</url>
-          <line>304</line>
-          <properties />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="13" />
+      <option name="time" value="35" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -918,14 +931,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/Main.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="306">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DataParsing/src/ch/chnoch/mt/dataparsing/DataEntry.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="714">
@@ -1241,22 +1246,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataParsing/src/ch/chnoch/mt/dataparsing/Data.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="1581">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/DataInitialization.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="663">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.ideaLibSources/blueprints-core-2.5.0-sources.jar!/com/tinkerpop/blueprints/util/DefaultGraphQuery.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.1851239" vertical-offset="989" max-vertical-offset="2941">
@@ -1278,14 +1267,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.ideaLibSources/blueprints-core-2.5.0-sources.jar!/com/tinkerpop/blueprints/impls/tg/TinkerGraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4505" max-vertical-offset="8024">
-          <caret line="265" column="5" selection-start-line="265" selection-start-column="5" selection-end-line="265" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DataAnalysis/src/ch/chnoch/mt/dataanalysis/DataAnalysis.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2822" max-vertical-offset="3944">
@@ -1294,26 +1275,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/BaselineModel.groovy">
+    <entry file="file://$PROJECT_DIR$/DataParsing/src/ch/chnoch/mt/dataparsing/DataEntry.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1564">
-          <caret line="86" column="68" selection-start-line="86" selection-start-column="68" selection-end-line="86" selection-end-column="68" />
+        <state vertical-scroll-proportion="0.8408037" vertical-offset="0" max-vertical-offset="697">
+          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataParsing/src/ch/chnoch/mt/dataparsing/DataEntry.groovy">
+    <entry file="file://$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/DataTraining.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55737704" vertical-offset="0" max-vertical-offset="976">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="612">
+          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataParsing/src/ch/chnoch/mt/dataparsing/Data.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2193">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ideaLibSources/blueprints-core-2.5.0-sources.jar!/com/tinkerpop/blueprints/impls/tg/TinkerGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4507" max-vertical-offset="7650">
+          <caret line="309" column="25" selection-start-line="309" selection-start-column="25" selection-end-line="309" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/BaselineModel.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6853035" vertical-offset="778" max-vertical-offset="1853">
+          <caret line="86" column="22" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/DataTesting.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="47" max-vertical-offset="765">
+          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/Main.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23141362" vertical-offset="0" max-vertical-offset="955">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.7060703" vertical-offset="153" max-vertical-offset="884">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding />
         </state>
       </provider>

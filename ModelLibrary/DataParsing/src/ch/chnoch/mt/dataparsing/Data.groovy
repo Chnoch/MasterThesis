@@ -3,15 +3,49 @@
  */
 
 package ch.chnoch.mt.dataparsing
+
 class Data {
+
+    public static dataSet
+    public static cleanedDataSet
+
+
+    public static getCleanedTrainingDataSetForUser(userId) {
+        def completeSet = Data.cleanedDataSet
+        def completeTrainingSet = completeSet.findAll { it -> it.userId == userId }
+        completeTrainingSet.sort { a, b ->
+            a.timestampStart <=> b.timestampStart
+        }
+        def trainingSet = completeTrainingSet.subList(0, (int) (completeTrainingSet.size() / 3 * 2))
+        return trainingSet
+    }
+
+    public static getCleanedTestingDataSetForUser(userId) {
+        def completeSet = Data.cleanedDataSet
+        def completeTestingSet = completeSet.findAll { it -> it.userId == userId }
+        completeTestingSet.sort { a, b ->
+            a.timestampStart <=> b.timestampStart
+        }
+
+        def testingSet = completeTestingSet.subList((int) (completeTestingSet.size() / 3 * 2), completeTestingSet.size())
+        return testingSet
+    }
+
+
     public static getDefaultDataSet() {
-        def filename = 'D:\\Workspaces\\MasterThesis\\ModelLibrary\\assets\\learning_data.csv'
-        def file = new File(filename)
-        return getDataSetFromFile(file, false)
+        if (!dataSet) {
+            def filename = 'D:\\Workspaces\\MasterThesis\\ModelLibrary\\assets\\learning_data.csv'
+            def file = new File(filename)
+            dataSet = getDataSetFromFile(file, false)
+        }
+        return dataSet
     }
 
     public static getCleanedDataSet() {
-        return Data.removeDuplicateEntries(Data.getDefaultDataSet())
+        if (!cleanedDataSet) {
+            cleanedDataSet = Data.removeDuplicateEntries(Data.getDefaultDataSet())
+        }
+        return cleanedDataSet
     }
 
     public static getDataSetFromFile(file, removeDuplicates) {

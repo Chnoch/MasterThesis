@@ -52,23 +52,39 @@ class BaselineModel implements ModelInterface {
         def toVertex = getVertex(toVertexId)
         def newEdge = true
         def edges = graph.getEdges()
-        edges.each {edge ->
+        edges.each { edge ->
             if (edge.outVertex == fromVertex && edge.inVertex == toVertex) {
                 def count = edge.getProperty("count")
-                edge.setProperty("count", count+1)
+                edge.setProperty("count", count + 1)
                 newEdge = false
             }
         }
         if (fromVertex != null && toVertex != null && newEdge) {
-            def e = graph.addEdge(timestamp.toString(), fromVertex, toVertex, timestamp.toString())
-            e.setProperty("count", 1)
+            def edgeId = fromVertexId + '-' + toVertexId
+            def edge = graph.addEdge(edgeId, fromVertex, toVertex, edgeId)
+            edge.setProperty("count", 1)
         }
     }
 
-
     def hasVertex(def vertexId) {
         def vertex = graph.getVertex(vertexId)
-        return  vertex != null
+        return vertex != null
+    }
+
+    def getSuggestion(def vertexId) {
+        def vertex = graph.getVertex(vertexId)
+        if (vertex == null) {
+            return null
+        }
+        def tempEdge
+        def maxCount = 0
+        vertex.outEdges?.each { key, edge ->
+            if (edge.size() > maxCount) {
+                tempEdge = edge.find { true }.outVertex
+                maxCount = edge.size()
+            }
+        }
+        return tempEdge?.id
     }
 
     def printGraph() {
