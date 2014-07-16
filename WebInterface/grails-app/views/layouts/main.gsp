@@ -17,21 +17,34 @@
 
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="<g:resource dir="css" file="web.css"></g:resource>">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <g:layoutHead/>
 </head>
 
 <body>
+
 <nav class="navbar navbar-default" role="navigation">
-    <div class="container-fluid">
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class=" navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li class="active"><g:link controller="main" action="selectFile">Upload Data</g:link></li>
-            </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+    <div class="container">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">MasterThesis</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class=" navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><g:link controller="main" action="selectFile">Upload Data</g:link></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </div>
 </nav>
-<g:layoutBody/>
+
+<div class="container">
+    <div class="container-fluid">
+        <g:layoutBody/>
+    </div>
+</div>
 </body>
 </html>

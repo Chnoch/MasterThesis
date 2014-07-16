@@ -4,10 +4,6 @@ class MainController {
 
     def modelService
 
-    def index() {
-        respond true
-    }
-
     def selectFile() {
         respond true
     }

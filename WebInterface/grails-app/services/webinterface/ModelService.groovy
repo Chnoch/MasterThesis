@@ -21,19 +21,17 @@ class ModelService {
     }
 
     private sortByImportance(dataEntries) {
-        def stopMap = [:]
+        def userMap = [:]
 
         dataEntries.each { it ->
-            if (stopMap.containsKey(it.userId)) {
-                stopMap[it.userId] += 1
+            if (userMap.containsKey(it.userId)) {
+                userMap[it.userId] += 1
             } else {
-                stopMap[it.userId] = 1
+                userMap[it.userId] = 1
             }
         }
 
-        stopMap.sort { a, b ->
-            a.value <=> b.value
-        }
-        return stopMap
+        userMap = userMap.sort { -it.value }
+        return userMap
     }
 }

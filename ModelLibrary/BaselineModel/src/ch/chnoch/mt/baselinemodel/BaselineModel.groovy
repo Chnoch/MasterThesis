@@ -50,10 +50,18 @@ class BaselineModel implements ModelInterface {
     def addEdge(def timestamp, def fromVertexId, def toVertexId) {
         def fromVertex = getVertex(fromVertexId)
         def toVertex = getVertex(toVertexId)
-        if (fromVertex != null && toVertex != null) {
-            graph.addEdge(timestamp.toString(), fromVertex, toVertex, timestamp.toString())
-        } else {
-            println 'vertices not yet added'
+        def newEdge = true
+        def edges = graph.getEdges()
+        edges.each {edge ->
+            if (edge.outVertex == fromVertex && edge.inVertex == toVertex) {
+                def count = edge.getProperty("count")
+                edge.setProperty("count", count+1)
+                newEdge = false
+            }
+        }
+        if (fromVertex != null && toVertex != null && newEdge) {
+            def e = graph.addEdge(timestamp.toString(), fromVertex, toVertex, timestamp.toString())
+            e.setProperty("count", 1)
         }
     }
 
@@ -78,7 +86,7 @@ class BaselineModel implements ModelInterface {
 
         def edgeLabelTransformer = new Transformer<Edge, String>() {
             public String transform(Edge edge) {
-                return edge.getLabel();
+                return edge.getProperty("count");
             }
         };
 

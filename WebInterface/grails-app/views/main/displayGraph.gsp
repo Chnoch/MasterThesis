@@ -41,12 +41,12 @@
 
         var st;
         <g:each in="${graph.edges}" var="edge">
-        %{--st =, label: "${edge.id}",--}%
-            %{--"label-style": {--}%
-                %{--"font-size": 20--}%
-            %{--}--}%
-        %{--};--}%
-        g.addEdge("${edge.inVertex.id}", "${edge.outVertex.id}",  { directed: true});
+        st ={directed: true, label: "${edge.getProperty("count")}",
+            "label-style": {
+                "font-size": 14
+            }
+        };
+        g.addEdge("${edge.inVertex.id}", "${edge.outVertex.id}", st);
         </g:each>
 
         /* layout the graph using the Spring layout implementation */
@@ -54,17 +54,6 @@
 
         /* draw the graph using the RaphaelJS draw implementation */
         var renderer = new Graph.Renderer.Raphael('graph', g, width, height);
-
-        redraw = function () {
-            layouter.layout();
-            renderer.draw();
-        };
-        hide = function (id) {
-            g.nodes[id].hide();
-        };
-        show = function (id) {
-            g.nodes[id].show();
-        };
     });
 </script>
 
