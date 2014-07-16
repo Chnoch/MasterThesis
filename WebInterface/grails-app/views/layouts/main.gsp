@@ -19,6 +19,12 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="<g:resource dir="css" file="web.css"></g:resource>">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    %{--<link rel="stylesheet" href="//cdn.datatables.net/1.10.1/css/jquery.dataTables.css">--}%
+    <script src="//cdn.datatables.net/1.10.1/js/jquery.dataTables.js"></script>
+    <link rel="stylesheet"
+          href="//cdn.datatables.net/plug-ins/be7019ee387/integration/bootstrap/3/dataTables.bootstrap.css">
+    <script src="//cdn.datatables.net/plug-ins/be7019ee387/integration/bootstrap/3/dataTables.bootstrap.js"></script>
     <g:layoutHead/>
 </head>
 
@@ -42,9 +48,9 @@
 </nav>
 
 <div class="container">
-    <div class="container-fluid">
-        <g:layoutBody/>
-    </div>
+    %{--<div class="container-fluid">--}%
+    <g:layoutBody/>
+    %{--</div>--}%
 </div>
 </body>
 </html>

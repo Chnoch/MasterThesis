@@ -15,9 +15,9 @@ class ModelService {
 
     def getUsersFromFile(file) {
         def users = sortByImportance(Data.getDataSetFromFile(file, true))
-        def userIds = users.collect {k,v -> k}
+//        def userIds = users.collect {k,v -> k}
 
-        return userIds
+        return users
     }
 
     private sortByImportance(dataEntries) {

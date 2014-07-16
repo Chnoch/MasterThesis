@@ -7,19 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b730987-eab1-48fa-8527-03139669ef8d" name="Default" comment="added basic visualization option to baseline model">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../WebInterface/web-app/css/web.css" />
-      <change type="DELETED" beforePath="D:\Workspaces\MasterThesis\WebInterface\grails-app\views\index.gsp" afterPath="" />
-      <change type="DELETED" beforePath="D:\Workspaces\MasterThesis\WebInterface\grails-app\views\main\index.gsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/BaselineModel.groovy" afterPath="$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/BaselineModel.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/Main.groovy" afterPath="$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/Main.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebInterface/grails-app/controllers/webinterface/MainController.groovy" afterPath="$PROJECT_DIR$/../WebInterface/grails-app/controllers/webinterface/MainController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebInterface/grails-app/services/webinterface/ModelService.groovy" afterPath="$PROJECT_DIR$/../WebInterface/grails-app/services/webinterface/ModelService.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebInterface/grails-app/conf/UrlMappings.groovy" afterPath="$PROJECT_DIR$/../WebInterface/grails-app/conf/UrlMappings.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebInterface/grails-app/views/main/displayGraph.gsp" afterPath="$PROJECT_DIR$/../WebInterface/grails-app/views/main/displayGraph.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebInterface/.idea/libraries/gremlin.xml" afterPath="$PROJECT_DIR$/../WebInterface/.idea/libraries/gremlin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebInterface/grails-app/views/layouts/main.gsp" afterPath="$PROJECT_DIR$/../WebInterface/grails-app/views/layouts/main.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebInterface/grails-app/views/main/selectFile.gsp" afterPath="$PROJECT_DIR$/../WebInterface/grails-app/views/main/selectFile.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebInterface/target/stacktrace.log" afterPath="$PROJECT_DIR$/../WebInterface/target/stacktrace.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebInterface/web-app/css/web.css" afterPath="$PROJECT_DIR$/../WebInterface/web-app/css/web.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebInterface/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../WebInterface/.idea/workspace.xml" />
     </list>
@@ -75,8 +66,8 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <breakpoint_rules converted="true" />
     <ui_properties converted="true" />
+    <breakpoint_rules converted="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -119,7 +110,7 @@
           <file leaf-file-name="DataAnalysis.groovy" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/DataAnalysis/src/ch/chnoch/mt/dataanalysis/DataAnalysis.groovy">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="2822" max-vertical-offset="3944">
+                <state vertical-scroll-proportion="0.0" vertical-offset="2839" max-vertical-offset="3961">
                   <caret line="167" column="24" selection-start-line="167" selection-start-column="24" selection-end-line="167" selection-end-column="24" />
                   <folding />
                 </state>
@@ -129,7 +120,7 @@
           <file leaf-file-name="BaselineModel.groovy" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/BaselineModel.groovy">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1564">
+                <state vertical-scroll-proportion="0.0" vertical-offset="1462" max-vertical-offset="1836">
                   <caret line="86" column="68" selection-start-line="86" selection-start-column="68" selection-end-line="86" selection-end-column="68" />
                   <folding />
                 </state>
@@ -169,7 +160,7 @@
           <file leaf-file-name="Main.groovy" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/Main.groovy">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.35303515" vertical-offset="0" max-vertical-offset="626">
+                <state vertical-scroll-proportion="0.23141362" vertical-offset="0" max-vertical-offset="955">
                   <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
                   <folding />
                 </state>
@@ -183,7 +174,7 @@
           <file leaf-file-name="DataEntry.groovy" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/DataParsing/src/ch/chnoch/mt/dataparsing/DataEntry.groovy">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.8408037" vertical-offset="0" max-vertical-offset="697">
+                <state vertical-scroll-proportion="0.55737704" vertical-offset="0" max-vertical-offset="976">
                   <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
                   <folding />
                 </state>
@@ -370,7 +361,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -401,6 +391,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -616,6 +607,9 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -637,7 +631,8 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
       <method />
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
@@ -659,10 +654,6 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner />
       <method />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -807,7 +798,8 @@
       <workItem from="1405106353201" duration="5245000" />
       <workItem from="1405344509820" duration="4131000" />
       <workItem from="1405417733617" duration="1359000" />
-      <workItem from="1405501148060" duration="664000" />
+      <workItem from="1405501148060" duration="665000" />
+      <workItem from="1405503257841" duration="736000" />
     </task>
     <task id="LOCAL-00001" summary="adding commit of several files, python and groovy, data analysis, data parsing, etc.">
       <created>1404835541946</created>
@@ -849,7 +841,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33079000" />
+    <option name="totallyTimeSpent" value="33816000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1134" extended-state="6" />
@@ -869,18 +861,18 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283433" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24973376" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18796591" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3283433" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283433" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283433" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1294,14 +1286,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataParsing/src/ch/chnoch/mt/dataparsing/DataEntry.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8408037" vertical-offset="0" max-vertical-offset="697">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DataAnalysis/src/ch/chnoch/mt/dataanalysis/DataAnalysis.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2822" max-vertical-offset="3944">
@@ -1318,9 +1302,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/DataParsing/src/ch/chnoch/mt/dataparsing/DataEntry.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55737704" vertical-offset="0" max-vertical-offset="976">
+          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/BaselineModel/src/ch/chnoch/mt/baselinemodel/Main.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35303515" vertical-offset="0" max-vertical-offset="626">
+        <state vertical-scroll-proportion="0.23141362" vertical-offset="0" max-vertical-offset="955">
           <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
           <folding />
         </state>

@@ -18,10 +18,15 @@
 </head>
 
 <body>
-<div class="user">
-    <h1>${user}</h1>
+<div class="col-sm-12 title">
+    <h1 class="pull-left">User ${user}</h1>
+    <div class="pull-right select-button">
+        <g:link action="selectUser" class="btn btn-primary">
+            Select different User
+        </g:link>
+    </div>
 </div>
-<div class="graph-info">
+<div class="col-sm-12 graph-info">
     <div>Number of Nodes: ${graph.vertices.size()}</div>
     <div>Number of Edges: ${graph.edges.size()}</div>
 </div>

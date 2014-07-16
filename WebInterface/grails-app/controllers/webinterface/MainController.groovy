@@ -5,27 +5,32 @@ class MainController {
     def modelService
 
     def selectFile() {
+        session.setAttribute("file", null)
         respond true
     }
 
     def selectUser() {
-        def f = request.getFile("data")
-        if (f.empty) {
-            flash.message = 'file cannot be empty'
-            render(view: 'uploadForm')
-            return
+        def file = session.getAttribute("file")
+        if (!file) {
+            if (params.defaultFile) {
+                file = grailsAttributes.getApplicationContext().
+                        getResource("assets/learning_data.csv").getFile()
+            } else {
+                def f = request.getFile("data")
+
+                file = new File('data')
+                f.transferTo(file)
+            }
+
+            session.setAttribute("file", file)
         }
 
-        def file = new File('data')
-        f.transferTo(file)
-        session.setAttribute("file", file)
-
-        def userList = modelService.getUsersFromFile(file)
-        [userList: userList]
+        def userMap = modelService.getUsersFromFile(file)
+        [userMap: userMap]
     }
 
     def displayGraph() {
-        def user = params.user
+        def user = params.id
         if (!user) {
             user = session.getAttribute("user")
         } else {
