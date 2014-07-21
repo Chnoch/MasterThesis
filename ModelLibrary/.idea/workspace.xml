@@ -106,8 +106,8 @@
           <file leaf-file-name="DataAnalysis.groovy" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/DataAnalysis/src/ch/chnoch/mt/dataanalysis/DataAnalysis.groovy">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.7779553" vertical-offset="3100" max-vertical-offset="4709">
-                  <caret line="211" column="0" selection-start-line="211" selection-start-column="0" selection-end-line="211" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.615016" vertical-offset="3100" max-vertical-offset="4709">
+                  <caret line="205" column="23" selection-start-line="205" selection-start-column="23" selection-end-line="205" selection-end-column="23" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                   </folding>
@@ -918,7 +918,7 @@
       <workItem from="1405501148060" duration="665000" />
       <workItem from="1405503257841" duration="736000" />
       <workItem from="1405527892605" duration="9046000" />
-      <workItem from="1405950673185" duration="3036000" />
+      <workItem from="1405950673185" duration="3520000" />
     </task>
     <task id="LOCAL-00001" summary="adding commit of several files, python and groovy, data analysis, data parsing, etc.">
       <created>1404835541946</created>
@@ -964,14 +964,18 @@
       <created>1405953107886</created>
       <updated>1405953107886</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="added another remaining chart, average user, weekdays, weekend">
+      <created>1405953937445</created>
+      <updated>1405953937445</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45898000" />
+    <option name="totallyTimeSpent" value="46382000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1134" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1134" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1450,8 +1454,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DataAnalysis/src/ch/chnoch/mt/dataanalysis/DataAnalysis.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7779553" vertical-offset="3100" max-vertical-offset="4709">
-          <caret line="211" column="0" selection-start-line="211" selection-start-column="0" selection-end-line="211" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.615016" vertical-offset="3100" max-vertical-offset="4709">
+          <caret line="205" column="23" selection-start-line="205" selection-start-column="23" selection-end-line="205" selection-end-column="23" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
