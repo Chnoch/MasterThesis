@@ -14,7 +14,9 @@ class DataAnalysis {
 //        dayOfMonthDistribution(dataEntries)
 //        numberOfStopsByUser(dataEntries)
 //        numberOfStationsPerUser(dataEntries)
-        numberOfStationsPerAverageUser(dataEntries)
+//        numberOfStationsPerAverageUser(dataEntries)
+        numberOfStationsPerAverageUserForWeekdays(dataEntries)
+        numberOfStationsPerAverageUserForWeekend(dataEntries)
     }
 
     def static distributionOfStops(dataEntries) {
@@ -180,10 +182,38 @@ class DataAnalysis {
         println 'Average number of stations per person: ' + (sum / count)
     }
 
+    def static numberOfStationsPerAverageUserForWeekdays(dataEntries) {
+        println '----------------WEEKDAYS----------------'
+        def weekdayEntries = []
+        dataEntries.each {
+            def calendar = it.timestampStart.toCalendar()
+            def day = calendar.get(Calendar.DAY_OF_WEEK)
+            if (!(day in [Calendar.SUNDAY, Calendar.SATURDAY])) {
+                weekdayEntries.add(it)
+            }
+        }
+        numberOfStationsPerAverageUser(weekdayEntries)
+        println '----------------END WEEKDAYS----------------'
+    }
+
+    def static numberOfStationsPerAverageUserForWeekend(dataEntries) {
+        println '----------------WEEKEND----------------'
+        def weekendEntries = []
+        dataEntries.each {
+            def calendar = it.timestampStart.toCalendar()
+            def day = calendar.get(Calendar.DAY_OF_WEEK)
+            if (day in [Calendar.SUNDAY, Calendar.SATURDAY]) {
+                weekendEntries.add(it)
+            }
+        }
+        numberOfStationsPerAverageUser(weekendEntries)
+        println '----------------END WEEKEND----------------'
+    }
+
     def static numberOfStationsPerAverageUser(dataEntries) {
         def userMap = [:]
-        def stations = new HashSet()
 
+        // sorting the data entries by user and station accesses
         dataEntries.each { it ->
             if (userMap.containsKey(it.userId)) {
                 if (userMap[it.userId].containsKey(it.stationId)) {
@@ -195,33 +225,47 @@ class DataAnalysis {
                 userMap[it.userId] = [:]
                 userMap[it.userId].put(it.stationId, 1)
             }
-
-            stations.add(it.stationId)
         }
 
-        def stationAverages = [:]
+        // sorting all the users maps by the number of accesses
+        userMap.each { userID, stationMap ->
+            userMap[userID] = stationMap.sort { -it.value }
+        }
 
-        stations.each { it ->
-            def cumulatedAccesses = 0.0f
-            def numberOfUsers = 0.0f
-            userMap.each { k, v ->
-                if (v.containsKey(it)) {
-                    cumulatedAccesses += v[it]
-                    numberOfUsers++
+        // figuring out max value of stations to account for
+        def maxValue = 0
+        userMap.each { k, v ->
+            if (v.size() > maxValue) {
+                maxValue = v.size()
+            }
+        }
+
+        // remove users with very few (5) accesses on their top station.
+        def workingUserMap = [:]
+        userMap.each { k, v ->
+            if (v.iterator()[0]?.value > 5) {
+                workingUserMap.put(k, v)
+            }
+        }
+
+        // generating the average over all users
+        def graph = [:]
+        (0..maxValue).each { i ->
+            def value = 0.0f
+            def count = 0.0f
+            workingUserMap.each { userID, stationMap ->
+                try {
+                    value += stationMap.iterator()[i]?.value
+                    count++
+                } catch (def e) {
                 }
             }
-
-            stationAverages[it] = cumulatedAccesses / numberOfUsers
+            graph[i] = value / count
         }
-
-        stationAverages.sort { a, b ->
-            a.value <=> b.value
-        }.each { k, v ->
+        graph.each { k, v ->
             println k
         }.each { k, v ->
             println v
         }
-
-
     }
 }

@@ -5,9 +5,11 @@
 //def timestampStart = '2013-12-28T22:44:43'
 //def date = Date.parse("yyyy-MM-dd'T'HH:mm:ss", timestampStart)
 //println date
+def m = [ b:1, a:2 ]
 
-def nD = new Date()
+// Sort by descending value
+m = m.sort { -it.value }
 
-Calendar cal = nD.toCalendar()
-println cal.get(Calendar.HOUR_OF_DAY)
-println nD.getHours()
+println m // prints [a:2, b:1]
+println m.iterator()[0].value
+println m[1]
