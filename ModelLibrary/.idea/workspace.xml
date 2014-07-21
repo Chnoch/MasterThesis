@@ -6,12 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b730987-eab1-48fa-8527-03139669ef8d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebInterface/.idea/vcs.xml" afterPath="$PROJECT_DIR$/../WebInterface/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebInterface/target/work/web.xml.tmp" afterPath="$PROJECT_DIR$/../WebInterface/target/work/web.xml.tmp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebInterface/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../WebInterface/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="3b730987-eab1-48fa-8527-03139669ef8d" name="Default" comment="" />
     <ignored path="TrajectoryExtraction.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -920,7 +915,7 @@
       <workItem from="1405501148060" duration="665000" />
       <workItem from="1405503257841" duration="736000" />
       <workItem from="1405527892605" duration="9046000" />
-      <workItem from="1405950673185" duration="2437000" />
+      <workItem from="1405950673185" duration="2975000" />
     </task>
     <task id="LOCAL-00001" summary="adding commit of several files, python and groovy, data analysis, data parsing, etc.">
       <created>1404835541946</created>
@@ -970,7 +965,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45299000" />
+    <option name="totallyTimeSpent" value="45837000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1134" extended-state="6" />
