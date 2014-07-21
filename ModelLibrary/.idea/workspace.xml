@@ -7,8 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b730987-eab1-48fa-8527-03139669ef8d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataAnalysis/src/ch/chnoch/mt/dataanalysis/DataAnalysis.groovy" afterPath="$PROJECT_DIR$/DataAnalysis/src/ch/chnoch/mt/dataanalysis/DataAnalysis.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataAnalysis/src/Test.groovy" afterPath="$PROJECT_DIR$/DataAnalysis/src/Test.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebInterface/.idea/vcs.xml" afterPath="$PROJECT_DIR$/../WebInterface/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebInterface/target/work/web.xml.tmp" afterPath="$PROJECT_DIR$/../WebInterface/target/work/web.xml.tmp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -922,7 +920,7 @@
       <workItem from="1405501148060" duration="665000" />
       <workItem from="1405503257841" duration="736000" />
       <workItem from="1405527892605" duration="9046000" />
-      <workItem from="1405950673185" duration="2405000" />
+      <workItem from="1405950673185" duration="2437000" />
     </task>
     <task id="LOCAL-00001" summary="adding commit of several files, python and groovy, data analysis, data parsing, etc.">
       <created>1404835541946</created>
@@ -964,11 +962,15 @@
       <created>1405546248785</created>
       <updated>1405546248785</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="added another remaining chart, average user, weekdays, weekend">
+      <created>1405953107886</created>
+      <updated>1405953107886</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45267000" />
+    <option name="totallyTimeSpent" value="45299000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1134" extended-state="6" />
@@ -1026,7 +1028,8 @@
     <MESSAGE value="separated logic in different modules; added baseline graph model; integrated gremlin graph library" />
     <MESSAGE value="added basic visualization option to baseline model" />
     <MESSAGE value="added almost working first version of prediction. count &amp; percentages are somehow messed up. Otherwise it should be fine." />
-    <option name="LAST_COMMIT_MESSAGE" value="added almost working first version of prediction. count &amp; percentages are somehow messed up. Otherwise it should be fine." />
+    <MESSAGE value="added another remaining chart, average user, weekdays, weekend" />
+    <option name="LAST_COMMIT_MESSAGE" value="added another remaining chart, average user, weekdays, weekend" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
