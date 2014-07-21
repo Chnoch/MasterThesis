@@ -6,7 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b730987-eab1-48fa-8527-03139669ef8d" name="Default" comment="" />
+    <list default="true" id="3b730987-eab1-48fa-8527-03139669ef8d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WebInterface" afterPath="$PROJECT_DIR$/../WebInterface" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="TrajectoryExtraction.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -103,8 +106,8 @@
           <file leaf-file-name="DataAnalysis.groovy" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/DataAnalysis/src/ch/chnoch/mt/dataanalysis/DataAnalysis.groovy">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.56070286" vertical-offset="3100" max-vertical-offset="4709">
-                  <caret line="203" column="56" selection-start-line="203" selection-start-column="56" selection-end-line="203" selection-end-column="56" />
+                <state vertical-scroll-proportion="0.7779553" vertical-offset="3100" max-vertical-offset="4709">
+                  <caret line="211" column="0" selection-start-line="211" selection-start-column="0" selection-end-line="211" selection-end-column="0" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                   </folding>
@@ -915,7 +918,7 @@
       <workItem from="1405501148060" duration="665000" />
       <workItem from="1405503257841" duration="736000" />
       <workItem from="1405527892605" duration="9046000" />
-      <workItem from="1405950673185" duration="2975000" />
+      <workItem from="1405950673185" duration="3036000" />
     </task>
     <task id="LOCAL-00001" summary="adding commit of several files, python and groovy, data analysis, data parsing, etc.">
       <created>1404835541946</created>
@@ -965,7 +968,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45837000" />
+    <option name="totallyTimeSpent" value="45898000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1134" extended-state="6" />
@@ -1447,8 +1450,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DataAnalysis/src/ch/chnoch/mt/dataanalysis/DataAnalysis.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56070286" vertical-offset="3100" max-vertical-offset="4709">
-          <caret line="203" column="56" selection-start-line="203" selection-start-column="56" selection-end-line="203" selection-end-column="56" />
+        <state vertical-scroll-proportion="0.7779553" vertical-offset="3100" max-vertical-offset="4709">
+          <caret line="211" column="0" selection-start-line="211" selection-start-column="0" selection-end-line="211" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
