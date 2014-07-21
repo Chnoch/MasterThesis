@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d45bf1c-63f6-4b9a-9e03-3d1430674803" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ModelLibrary/BaselineModel/src/ch/chnoch/mt/baselinemodel/BaselineModel.groovy" afterPath="$PROJECT_DIR$/../ModelLibrary/BaselineModel/src/ch/chnoch/mt/baselinemodel/BaselineModel.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ModelLibrary/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../ModelLibrary/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -630,7 +629,7 @@
       <workItem from="1405503399964" duration="10984000" />
       <workItem from="1405949734892" duration="431000" />
       <workItem from="1405950279698" duration="18000" />
-      <workItem from="1405950311906" duration="2218000" />
+      <workItem from="1405950311906" duration="2349000" />
     </task>
     <task id="LOCAL-00001" summary="added connection between web interface and Data Parsing / model. Basic initialization of web views">
       <created>1405350512223</created>
@@ -660,11 +659,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35709000" />
+    <option name="totallyTimeSpent" value="35840000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1134" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934132" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
