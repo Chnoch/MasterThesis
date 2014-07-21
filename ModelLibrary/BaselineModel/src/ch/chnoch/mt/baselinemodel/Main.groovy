@@ -27,15 +27,15 @@ userIds.each { userId ->
     if (none) sumNone += none
     if (!percentage?.isNaN() && percentage > 0) {
         println 'User ' + userId + ' = ' + percentage * 100 + '%'
-        count += (countSuggestion-none)
+        count ++
         sum += percentage * 100
     }
 //    }
 }
 
 
-println 'Complete Dataset: ' + sum / (count - sumNone).toFloat() + '%'
-println 'Complete Count: ' + count + ' entries'
+println 'Complete Dataset: ' + sum / (count).toFloat() + '%'
+println 'Complete Count: ' + count + ' users'
 println 'Correct suggestion occured for ' + (int) sumCorrect + ' entries'
 println 'Wrong suggestion occured for ' + (int) sumWrong + ' entries'
 println 'No suggestions occured for ' + sumNone + ' entries'
