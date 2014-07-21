@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="gremlin">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../ModelLibrary/BaselineModel/lib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ideaLibSources/blueprints-core-2.5.0-sources.jar!/" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/../ModelLibrary/BaselineModel/lib" recursive="false" />
+  </library>
+</component>
