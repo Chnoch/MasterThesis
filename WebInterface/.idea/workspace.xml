@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d45bf1c-63f6-4b9a-9e03-3d1430674803" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ModelLibrary/DataParsing/src/ch/chnoch/mt/dataparsing/Data.groovy" afterPath="$PROJECT_DIR$/../ModelLibrary/DataParsing/src/ch/chnoch/mt/dataparsing/Data.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/ModelLibrary_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/ModelLibrary_jar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/services/webinterface/ModelService.groovy" afterPath="$PROJECT_DIR$/grails-app/services/webinterface/ModelService.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ModelLibrary/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../ModelLibrary/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -142,8 +142,8 @@
       <file leaf-file-name="ModelService.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/services/webinterface/ModelService.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.62460065" vertical-offset="0" max-vertical-offset="663">
-              <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.7060703" vertical-offset="0" max-vertical-offset="663">
+              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -869,7 +869,7 @@
       <workItem from="1405503399964" duration="10984000" />
       <workItem from="1405949734892" duration="431000" />
       <workItem from="1405950279698" duration="18000" />
-      <workItem from="1405950311906" duration="4675000" />
+      <workItem from="1405950311906" duration="4795000" />
     </task>
     <task id="LOCAL-00001" summary="added connection between web interface and Data Parsing / model. Basic initialization of web views">
       <created>1405350512223</created>
@@ -895,15 +895,19 @@
       <created>1405953664171</created>
       <updated>1405953664171</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="made the WebInterface compatible with OpenShift PAAS.">
+      <created>1406022101718</created>
+      <updated>1406022101718</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38166000" />
+    <option name="totallyTimeSpent" value="38286000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1134" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1134" extended-state="7" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934132" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -963,7 +967,8 @@
     <MESSAGE value="added some contextual information to the graph, started work on prettyfying layout" />
     <MESSAGE value="first good looking and finely working web version" />
     <MESSAGE value="Change for WebInterface" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change for WebInterface" />
+    <MESSAGE value="made the WebInterface compatible with OpenShift PAAS." />
+    <option name="LAST_COMMIT_MESSAGE" value="made the WebInterface compatible with OpenShift PAAS." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1342,8 +1347,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/services/webinterface/ModelService.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62460065" vertical-offset="0" max-vertical-offset="663">
-          <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.7060703" vertical-offset="0" max-vertical-offset="663">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
           <folding />
         </state>
       </provider>

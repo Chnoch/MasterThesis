@@ -8,15 +8,13 @@ import ch.chnoch.mt.baselinemodel.*
 class ModelService {
 
     def createModel(file, user) {
-        def dataEntries = Data.getDataSetFromFile(file, true)
-        def dataInit = new DataInitialization(dataEntries)
-        return dataInit.createModel(user)
+        def dataEntries = Data.getFullCleanedDataSetForUserFromFile(file, user)
+        def dataTraining = new DataTraining(user, dataEntries)
+        return dataTraining.createModel()
     }
 
     def getUsersFromFile(file) {
         def users = sortByImportance(Data.getDataSetFromFile(file, true))
-//        def userIds = users.collect {k,v -> k}
-
         return users
     }
 
