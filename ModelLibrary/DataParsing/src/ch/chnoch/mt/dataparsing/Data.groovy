@@ -12,12 +12,7 @@ class Data {
 
     public static getCleanedTrainingDataSetForUser(userId) {
         def completeSet = Data.cleanedDataSet
-        def completeTrainingSet = completeSet.findAll { it -> it.userId == userId }
-        completeTrainingSet.sort { a, b ->
-            a.timestampStart <=> b.timestampStart
-        }
-        def trainingSet = completeTrainingSet.subList(0, (int) (completeTrainingSet.size() / 3 * 2))
-        return trainingSet
+        return getUserTrainingDataSet(completeSet, userId)
     }
 
     public static getCleanedTestingDataSetForUser(userId) {
@@ -59,6 +54,30 @@ class Data {
             dataEntries = removeDuplicateEntries(dataEntries)
         }
         return dataEntries
+    }
+
+    public static getCleanedTrainingDataSetForUserFromFile(file, userId) {
+        def completeSet = Data.getDataSetFromFile(file, true)
+        return getUserTrainingDataSet(completeSet, userId)
+    }
+
+    public static getFullCleanedDataSetForUserFromFile(file, userId) {
+        def completeSet = Data.getDataSetFromFile(file, true)
+
+        def userSet = completeSet.findAll { it -> it.userId == userId }
+        userSet.sort { a, b ->
+            a.timestampStart <=> b.timestampStart
+        }
+        return userSet
+    }
+
+    private static getUserTrainingDataSet(completeSet, userId) {
+        def completeTrainingSet = completeSet.findAll { it -> it.userId == userId }
+        completeTrainingSet.sort { a, b ->
+            a.timestampStart <=> b.timestampStart
+        }
+        def trainingSet = completeTrainingSet.subList(0, (int) (completeTrainingSet.size() / 3 * 2))
+        return trainingSet
     }
 
     static readFile(file) {

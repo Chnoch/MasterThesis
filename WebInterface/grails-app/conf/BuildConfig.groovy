@@ -60,6 +60,10 @@ grails.project.dependency.resolution = {
         // runtime 'org.postgresql:postgresql:9.3-1101-jdbc41'
         test "org.grails:grails-datastore-test-support:1.0-grails-2.4"
 
+        compile ('org.codehaus.groovy.modules.http-builder:http-builder:0.6') {
+            excludes 'groovy'
+        }
+
         // Gremlin
 //        compile 'com.tinkerpop:gremlin-groovy:2.5.0'
 //        compile 'com.tinkerpop.blueprints:blueprints-neo4j-graph:2.5.0'
