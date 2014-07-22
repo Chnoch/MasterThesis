@@ -20,31 +20,27 @@
 
 <body>
 <div class="col-sm-12 title">
-    <h1>Select User</h1>
+    <h1>Stations</h1>
 </div>
 
 <div class="col-sm-12">
     <table id="datatable" class="table table-striped table-bordered">
         <thead>
         <tr role="row">
-            <th class="sorting_disabled">User ID</th>
-            <th class="sorting_disabled"># of Entries</th>
+            <th class="sorting_disabled">Station ID</th>
+            <th class="sorting_disabled">Station Name</th>
         </tr>
         </thead>
         <tbody>
-        <g:each in="${userMap}" var="user" status="i">
+        <g:each in="${stationList}" var="station" status="i">
             <tr role="row" class="${i % 2 == 0 ? 'even' : 'odd'}">
-                <td><g:link action="displayGraph" id="${user.key}">${user.key}</g:link></td>
-                <td>${user.value}</td>
+                <td>${station.id}</td>
+                <td>${station.name}</td>
             </tr>
         </g:each>
         </tbody>
     </table>
 </div>
-%{--<g:form class="form-horizontal" name="displayGraph" action="displayGraph">--}%
-%{--<g:select name="user" from="${userList}"/>--}%
-%{--<button type="submit" class="btn">Select User</button>--}%
-%{--</g:form>--}%
 
 </body>
 </html>
