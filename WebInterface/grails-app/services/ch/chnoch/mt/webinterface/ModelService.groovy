@@ -1,4 +1,4 @@
-package webinterface
+package ch.chnoch.mt.webinterface
 
 import grails.transaction.Transactional
 import ch.chnoch.mt.dataparsing.*

@@ -1,4 +1,4 @@
-package webinterface
+package ch.chnoch.mt.webinterface
 
 class MainController {
 
@@ -39,7 +39,6 @@ class MainController {
         def file = session.getAttribute("file")
         def model = modelService.createModel(file, user)
         session.setAttribute("model", model)
-        def graph = model.getGraph()
         [model: model, graph: graph, user: user]
     }
 }

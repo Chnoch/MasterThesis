@@ -1,4 +1,4 @@
-package webinterface
+package ch.chnoch.mt.webinterface
 
 class Station {
 

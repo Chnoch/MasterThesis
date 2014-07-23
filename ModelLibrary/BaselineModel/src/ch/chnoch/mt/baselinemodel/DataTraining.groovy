@@ -13,7 +13,6 @@ class DataTraining {
     }
 
     def createModel() {
-
         def model = new BaselineModel(userId)
         trainingSet.eachWithIndex { entry, i ->
             model.addVertex(entry.stationId)

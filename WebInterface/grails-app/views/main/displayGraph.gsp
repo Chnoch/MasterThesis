@@ -4,7 +4,10 @@
   Date: 14.07.2014
   Time: 15:55
 --%>
-
+<%@ page import="com.myproject.MyService" %>
+<%
+    def stationServiceService = grailsApplication.classLoader.loadClass('ch.chnoch.mt.webinterface.StationService').newInstance()
+%>
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
@@ -42,7 +45,7 @@
 
         /* add a simple node */
         <g:each in="${graph.vertices}" var="node" status="i">
-        g.addNode("${node.id}");
+        g.addNode("${stationService.getStationName(node.id)}");
         </g:each>
 
         var st;

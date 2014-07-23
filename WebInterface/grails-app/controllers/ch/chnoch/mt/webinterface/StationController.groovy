@@ -1,4 +1,4 @@
-package webinterface
+package ch.chnoch.mt.webinterface
 
 class StationController {
 
@@ -15,6 +15,10 @@ class StationController {
         f.transferTo(file)
 
         stationService.initializeStations(file)
+        redirect(action: 'showStations')
+    }
+
+    def showStations() {
         [stationList: Station.list()]
     }
 
