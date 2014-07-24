@@ -13,7 +13,13 @@ class StationService {
         def stationIds = allStationIds.toSet()
         def http = new HTTPBuilder('http://transport.opendata.ch/v1/stationboard')
         def failedIds = []
+//        def count = 0
         stationIds.each { stationId ->
+//            if (count > 10) {
+//                return
+//            } else {
+//                count++
+//            }
             try {
                 queryStation(http, stationId)
             } catch (def e) {
@@ -38,24 +44,26 @@ class StationService {
     }
 
     private queryStation(http, stationId) {
-        http.get(query: [id: stationId]) { resp, json ->
-            if (json.station) {
-                def station = new Station(id: stationId, name: json.station.name)
-                station.save()
-                println stationId + ': ' + json.station.name
+        if (!Station.findByStationId(stationId)) {
+            http.get(query: [id: stationId]) { resp, json ->
+                if (json.station) {
+                    def station = new Station(stationId: stationId, name: json.station.name)
+                    station.save()
+                    println stationId + ': ' + json.station.name
+                }
             }
         }
     }
 
     def getStationName(id) {
         if (!id) {
-            return id
+            return id + ' name'
         }
 
-        def station = Station.findById(id)
+        def station = Station.findByStationId(id)
 
         if (!station) {
-            return id
+            return id + ' name'
         }
 
         return station.name

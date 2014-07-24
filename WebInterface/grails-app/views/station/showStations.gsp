@@ -34,7 +34,7 @@
         <tbody>
         <g:each in="${stationList}" var="station" status="i">
             <tr role="row" class="${i % 2 == 0 ? 'even' : 'odd'}">
-                <td>${station.id}</td>
+                <td>${station.stationId}</td>
                 <td>${station.name}</td>
             </tr>
         </g:each>

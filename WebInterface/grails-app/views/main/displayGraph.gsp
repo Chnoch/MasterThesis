@@ -4,10 +4,7 @@
   Date: 14.07.2014
   Time: 15:55
 --%>
-<%@ page import="com.myproject.MyService" %>
-<%
-    def stationServiceService = grailsApplication.classLoader.loadClass('ch.chnoch.mt.webinterface.StationService').newInstance()
-%>
+<%@ page import="ch.chnoch.mt.webinterface.StationService" %>
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
@@ -18,6 +15,7 @@
     <g:javascript src="dracula_algorithms.js"></g:javascript>
     <g:javascript src="dracula_graffle.js"></g:javascript>
     <g:javascript src="dracula_graph.js"></g:javascript>
+    <g:javascript src="main.js"></g:javascript>
 </head>
 
 <body>
@@ -28,41 +26,26 @@
             Select different User
         </g:link>
     </div>
+    <div class="pull-right select-button">
+        <a onclick="javascript:hideBottomVertices();" id="hide-vertices" class="btn btn-primary">
+            Hide Unimportant Vertices
+        </a>
+        <a onclick="javascript:showBottomVertices();" id="show-vertices" class="btn btn-primary hide">
+            Show Unimportant Vertices
+        </a>
+    </div>
 </div>
 <div class="col-sm-12 graph-info">
-    <div>Number of Nodes: ${graph.vertices.size()}</div>
-    <div>Number of Edges: ${graph.edges.size()}</div>
+    <div>Number of Nodes: ${verticesSize}</div>
+    <div>Number of Edges: ${edgesSize}</div>
 </div>
 <div id="graph"></div>
 
 
 <script type="text/javascript">
     $(function () {
-        var width = 800;
-        var height = 600;
-
-        var g = new Graph();
-
-        /* add a simple node */
-        <g:each in="${graph.vertices}" var="node" status="i">
-        g.addNode("${stationService.getStationName(node.id)}");
-        </g:each>
-
-        var st;
-        <g:each in="${graph.edges}" var="edge">
-        st ={directed: true, label: "${edge.getProperty("count")}",
-            "label-style": {
-                "font-size": 14
-            }
-        };
-        g.addEdge("${edge.inVertex.id}", "${edge.outVertex.id}", st);
-        </g:each>
-
-        /* layout the graph using the Spring layout implementation */
-        var layouter = new Graph.Layout.Spring(g);
-
-        /* draw the graph using the RaphaelJS draw implementation */
-        var renderer = new Graph.Renderer.Raphael('graph', g, width, height);
+        var graphJSON = JSON.parse('${raw(graph)}');
+        createGraph('graph', graphJSON, true);
     });
 </script>
 

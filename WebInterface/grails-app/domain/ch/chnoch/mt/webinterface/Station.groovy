@@ -2,7 +2,7 @@ package ch.chnoch.mt.webinterface
 
 class Station {
 
-    String id
+    String stationId
     String name
 
     static constraints = {

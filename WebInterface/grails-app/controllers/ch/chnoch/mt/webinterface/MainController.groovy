@@ -1,8 +1,11 @@
 package ch.chnoch.mt.webinterface
 
+import grails.converters.JSON
+
 class MainController {
 
     def modelService
+    def stationService
 
     def selectFile() {
         session.setAttribute("file", null)
@@ -39,6 +42,27 @@ class MainController {
         def file = session.getAttribute("file")
         def model = modelService.createModel(file, user)
         session.setAttribute("model", model)
-        [model: model, graph: graph, user: user]
+        def graph = model.getGraph()
+        graph.vertices.each { node ->
+            def name = stationService.getStationName(node.id)
+            node.setProperty('name', name)
+        }
+        def graphJSON = modelService.createJSONFromGraph(graph, false).toString()
+        [verticesSize: graph.vertices.size(),
+         edgesSize: graph.edges.size(),
+         graph: graphJSON,
+         user: user]
+    }
+
+    def getBottomVertices() {
+        def model = session.getAttribute("model")
+        if (!model) {
+            render '' as JSON
+            return
+        }
+
+        def graph = model.getGraph()
+        def json = modelService.createJSONFromGraph(graph, true)
+        render json as JSON
     }
 }
