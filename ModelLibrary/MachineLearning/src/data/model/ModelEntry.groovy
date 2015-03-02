@@ -4,7 +4,10 @@ package data.model
  * Created by Chnoch on 27.02.2015.
  */
 class ModelEntry {
-    def timestampStart, timestampEnd, userId, stationId
+    Date timestampStart
+    Date timestampEnd
+    String userId
+    String stationId
 
     private ModelEntry() {
 

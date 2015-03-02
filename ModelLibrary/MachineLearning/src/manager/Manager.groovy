@@ -19,4 +19,7 @@ def dataCleanup =  new DataCleanup()
 dataCleanup.parseModel(model)
 
 def modelToWeka = new ModelToWekaDataConverter()
-modelToWeka.convertToWeka(model)
+def arffFilename = 'D:\\Workspaces\\MasterThesis\\ModelLibrary\\assets\\log_data_training_january_15.arff'
+def arffFile = new File(arffFilename)
+modelToWeka.saveToFile(model, arffFile)
+//modelToWeka.convertToWeka(model)
