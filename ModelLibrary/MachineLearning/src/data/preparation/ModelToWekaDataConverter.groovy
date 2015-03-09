@@ -19,14 +19,15 @@ class ModelToWekaDataConverter {
         ArffSaver saver = new ArffSaver();
         saver.setInstances(instances);
         saver.setFile(file);
-        saver.setDestination(file);
+//        saver.setDestination(file);
         saver.writeBatch();
     }
 
     public convertToWeka(model) {
         def dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
-        def timestampStart = new Attribute('timestampStart', dateFormat, new ProtectedProperties(new Properties()))
-        def timestampEnd = new Attribute('timestampEnd', dateFormat, new ProtectedProperties(new Properties()))
+        FastVector attributeVector = new FastVector()
+        def timestampStart = new Attribute('timestampStart')
+        def timestampEnd = new Attribute('timestampEnd')
         def userId = new Attribute('userId')
         def stationId = new Attribute('stationId')
         def attrs = new FastVector(4)
@@ -38,10 +39,10 @@ class ModelToWekaDataConverter {
 
         model.getAllEntries().each { it ->
             def instance = new Instance(4)
-            instance.setValue(timestampStart, it.timestampStart.format(dateFormat))
-            instance.setValue(timestampEnd, it.timestampEnd.format(dateFormat))
-            instance.setValue(userId, it.userId.toString())
-            instance.setValue(stationId, it.stationId.toString())
+            instance.setValue(timestampStart, it.timestampStart.time)
+            instance.setValue(timestampEnd, it.timestampEnd.time)
+            instance.setValue(userId, it.userId.toLong())
+            instance.setValue(stationId, it.stationId.toLong())
             data.add(instance)
         }
 
