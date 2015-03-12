@@ -34,4 +34,14 @@ class Model {
             it.stationId == stationId
         }
     }
+
+    public getUsers() {
+        def users = []
+        model.each { it ->
+            if (!users.contains(it.userId)) {
+                users.add(it.userId)
+            }
+        }
+        return users
+    }
 }

@@ -19,7 +19,6 @@ class ModelToWekaDataConverter {
         ArffSaver saver = new ArffSaver();
         saver.setInstances(instances);
         saver.setFile(file);
-//        saver.setDestination(file);
         saver.writeBatch();
     }
 
