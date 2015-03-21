@@ -1,6 +1,7 @@
 package data.preparation
 
 import data.model.Bag
+import data.model.User
 
 /**
  * Created by Chnoch on 12.03.2015.
@@ -28,14 +29,17 @@ class BagConverter {
 
     public createBagsForUser(model) {
         def users = model.getUsers();
+        def userList = new ArrayList<User>()
         def bags = [:]
 
-        users.each { user ->
-            def userBags = createBags(model.getEntriesForUser(user), user)
-            bags.put(user, userBags)
+        users.each { userId ->
+            def userBags = createBags(model.getEntriesForUser(userId), userId)
+            def user = new User(userId);
+            user.setBags(userBags)
+            userList.add(user)
         }
 
-        return bags
+        return userList
     }
 
     private createBags(data, user) {
@@ -50,7 +54,7 @@ class BagConverter {
                 bagStart = it
                 previous = it
             } else {
-                if (it.timestampStart.time - previous.timestampStart.time < 5 * 1000 * 60) {
+                if (it.timestampStart.time - previous.timestampStart.time < 10 * 1000 * 60) {
                     // Part of bag
                     previous = it
                 } else {

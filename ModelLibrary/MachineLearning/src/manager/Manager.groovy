@@ -4,6 +4,9 @@ import data.preparation.BagConverter
 import data.preparation.CSVToModelConverter
 import data.preparation.DataCleanup
 import data.preparation.ModelToWekaDataConverter
+import data.preparation.UserToWekaDataConverter
+import data.preparation.WekaInstances
+import data.training.DecisionTreeEvaluation
 
 /**
  * Created by Chnoch on 27.02.2015.
@@ -26,10 +29,22 @@ def createBags() {
     def bagConverter = new BagConverter()
 //    def stats = bagConverter.createStatisticsOfData(model)
 //    stats.each{println it + ';'}
-    def bags = bagConverter.createBagsForUser(model)
-    bags.each { key, value ->
-        if (value.size() > 50) {
-            println 'user: ' + key + '; Amount of Bags: ' + value.size()
+    def users = bagConverter.createBagsForUser(model)
+    def userToWeka = new UserToWekaDataConverter()
+    def filepath = 'D:\\Workspaces\\MasterThesis\\ModelLibrary\\assets\\users\\'
+    userToWeka.saveUsersToFile(users, filepath)
+}
+
+def trainModel() {
+    def model = getCleanModel()
+    def filepath = 'D:\\Workspaces\\MasterThesis\\ModelLibrary\\assets\\users\\'
+
+    def users = model.getUsers()
+    users.each { user ->
+        def instances = WekaInstances.loadWekaInstances(user, filepath)
+        if (instances) {
+            def decisionTree = new DecisionTreeEvaluation(instances)
+            decisionTree.evaluateModel()
         }
     }
 }
@@ -46,4 +61,4 @@ def getCleanModel() {
     return model
 }
 
-createBags()
+trainModel()
