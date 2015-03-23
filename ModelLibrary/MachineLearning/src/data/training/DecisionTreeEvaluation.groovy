@@ -1,6 +1,8 @@
 package data.training
 
 import weka.classifiers.Evaluation
+import weka.classifiers.bayes.NaiveBayes
+import weka.classifiers.functions.LinearRegression
 import weka.classifiers.trees.J48
 
 /**
@@ -16,12 +18,14 @@ class DecisionTreeEvaluation {
     def evaluateModel() {
         String[] options = new String[1];
         options[0] = "-U";            // unpruned tree
-        J48 tree = new J48();         // new instance of tree
-        tree.setOptions(options);     // set the options
-        tree.buildClassifier(instances);   // build classifier
+//        NaiveBayes naiveBayes = new NaiveBayes();         // new instance of tree
+//        tree.setOptions(options);     // set the options
+//        naiveBayes.buildClassifier(instances);   // build classifier
+        LinearRegression regression = new LinearRegression();
+        regression.buildClassifier(instances);
 
         Evaluation eval = new Evaluation(instances);
-        eval.crossValidateModel(tree, instances, 10, new Random(1));
+        eval.crossValidateModel(regression, instances, 10, new Random(1));
 
         System.out.println(eval.toSummaryString("\nResults\n======\n", false));
     }

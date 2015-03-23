@@ -43,6 +43,7 @@ def trainModel() {
     users.each { user ->
         def instances = WekaInstances.loadWekaInstances(user, filepath)
         if (instances) {
+            instances.setClassIndex(0)
             def decisionTree = new DecisionTreeEvaluation(instances)
             decisionTree.evaluateModel()
         }
@@ -62,3 +63,4 @@ def getCleanModel() {
 }
 
 trainModel()
+//createBags()

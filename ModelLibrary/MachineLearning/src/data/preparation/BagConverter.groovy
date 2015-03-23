@@ -46,22 +46,26 @@ class BagConverter {
         data.sort { a, b ->
             a.timestampStart <=> b.timestampStart
         }
+//        println data
 
         def bags = []
         def previous, bagStart
-        data.each { it ->
+        data.each { dataPoint ->
             if (bagStart == null) {
-                bagStart = it
-                previous = it
+                bagStart = dataPoint
+                previous = dataPoint
             } else {
-                if (it.timestampStart.time - previous.timestampStart.time < 10 * 1000 * 60) {
+                println user + ': ' + dataPoint.timestampStart.time - previous.timestampStart.time
+                if (dataPoint.timestampStart.time - previous.timestampStart.time < 20 * 1000 * 60) {
                     // Part of bag
-                    previous = it
+                    previous = dataPoint
                 } else {
-                    def bag = new Bag(bagStart.timestampStart, previous.timestampStart, user, bagStart.stationId, previous.stationId)
-                    bags.add(bag)
-                    bagStart = it
-                    previous = it
+                    if (bagStart.stationId != previous.stationId) {
+                        def bag = new Bag(bagStart.timestampStart, previous.timestampStart, user, bagStart.stationId, previous.stationId)
+                        bags.add(bag)
+                    }
+                    bagStart = dataPoint
+                    previous = dataPoint
                 }
             }
         }

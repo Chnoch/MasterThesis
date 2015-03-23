@@ -13,7 +13,7 @@ class UserToWekaDataConverter {
 
     public saveUsersToFile(users, filepath) {
         users.each { user ->
-            if (user.bags.size() > 50) {
+            if (user.bags.size() > 5) {
                 def file = new File(filepath + user.userId + '.arff')
 
                 def instances = convertToWeka(user.bags)

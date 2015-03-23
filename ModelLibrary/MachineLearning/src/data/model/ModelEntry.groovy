@@ -20,5 +20,9 @@ class ModelEntry {
         stationId = station
     }
 
+    public String toString() {
+        return 'user: ' + userId + ', timestampStart: ' + timestampStart.getTime() + ', timestampEnd: ' +timestampEnd.getTime() + ', stationId: ' + stationId
+    }
+
 
 }
