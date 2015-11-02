@@ -1,4 +1,4 @@
-package data.training
+package ch.chnoch.mt.machinelearning.data.training
 
 import weka.classifiers.Evaluation
 import weka.classifiers.bayes.NaiveBayes

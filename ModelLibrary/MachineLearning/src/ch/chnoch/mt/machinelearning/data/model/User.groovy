@@ -1,4 +1,4 @@
-package data.model
+package ch.chnoch.mt.machinelearning.data.model
 
 /**
  * Created by Chnoch on 21.03.2015.

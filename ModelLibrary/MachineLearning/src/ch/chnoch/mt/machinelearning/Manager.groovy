@@ -1,12 +1,12 @@
-package manager
+package ch.chnoch.mt.machinelearning
 
-import data.preparation.BagConverter
-import data.preparation.CSVToModelConverter
-import data.preparation.DataCleanup
-import data.preparation.ModelToWekaDataConverter
-import data.preparation.UserToWekaDataConverter
-import data.preparation.WekaInstances
-import data.training.DecisionTreeEvaluation
+import ch.chnoch.mt.machinelearning.data.preparation.BagConverter
+import ch.chnoch.mt.machinelearning.data.preparation.CSVToModelConverter
+import ch.chnoch.mt.machinelearning.data.preparation.DataCleanup
+import ch.chnoch.mt.machinelearning.data.preparation.ModelToWekaDataConverter
+import ch.chnoch.mt.machinelearning.data.preparation.UserToWekaDataConverter
+import ch.chnoch.mt.machinelearning.data.preparation.WekaInstances
+import ch.chnoch.mt.machinelearning.data.training.DecisionTreeEvaluation
 
 /**
  * Created by Chnoch on 27.02.2015.
@@ -33,6 +33,15 @@ def createBags() {
     def userToWeka = new UserToWekaDataConverter()
     def filepath = 'D:\\Workspaces\\MasterThesis\\ModelLibrary\\assets\\users\\'
     userToWeka.saveUsersToFile(users, filepath)
+}
+
+def createStations() {
+    def model = getCleanModel()
+    def modelToWeka = new ModelToWekaDataConverter()
+//    def arffFilename = 'D:\\Workspaces\\MasterThesis\\ModelLibrary\\assets\\log_data_training_january_15.arff'
+    def filepath = 'D:\\Workspaces\\MasterThesis\\ModelLibrary\\assets\\users\\'
+
+    modelToWeka.saveToFileForUsers(model, filepath)
 }
 
 def trainModel() {
@@ -62,5 +71,6 @@ def getCleanModel() {
     return model
 }
 
-trainModel()
+createStations()
+//trainModel()
 //createBags()

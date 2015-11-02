@@ -1,4 +1,4 @@
-package data.preparation
+package ch.chnoch.mt.machinelearning.data.preparation
 
 import weka.core.Attribute
 import weka.core.FastVector

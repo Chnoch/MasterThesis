@@ -1,7 +1,7 @@
-package data.preparation
+package ch.chnoch.mt.machinelearning.data.preparation
 
-import data.model.Bag
-import data.model.User
+import ch.chnoch.mt.machinelearning.data.model.Bag
+import ch.chnoch.mt.machinelearning.data.model.User
 
 /**
  * Created by Chnoch on 12.03.2015.
