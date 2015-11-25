@@ -42,16 +42,14 @@ class CSVToModelConverter {
         def timestampStart = Date.parse("yyyy-MM-dd'T'HH:mm:ss", timestampStartString)
         def timestampStop = Date.parse("yyyy-MM-dd'T'HH:mm:ss'Z'", timestampStopString)
 
-        def hourOfDay = Integer.parseInt(timestampStart.format("HH").toString());
+        def hourOfDay = Integer.parseInt(timestampStart.format("HH"));
+        def minuteOfHour = Integer.parseInt(timestampStart.format("mm"));
         def calendar = timestampStart.toCalendar()
         def day = calendar.get(Calendar.DAY_OF_WEEK)
 
-        def dayOfWeek = Integer.parseInt(day.toString());
-        def weekday = true
-        if (day in [Calendar.SUNDAY, Calendar.SATURDAY]) {
-            weekday = false
-        }
+        def dayOfWeek = day;
+        def weekday = !(day in [Calendar.SUNDAY, Calendar.SATURDAY])
 
-        return new ModelEntry(timestampStart, timestampStop, userId, stationId, hourOfDay, dayOfWeek, weekday)
+        return new ModelEntry(timestampStart, timestampStop, userId, stationId, hourOfDay, minuteOfHour, dayOfWeek, weekday)
     }
 }

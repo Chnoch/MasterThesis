@@ -72,5 +72,5 @@ def getCleanModel() {
 }
 
 createStations()
-//trainModel()
+trainModel()
 //createBags()

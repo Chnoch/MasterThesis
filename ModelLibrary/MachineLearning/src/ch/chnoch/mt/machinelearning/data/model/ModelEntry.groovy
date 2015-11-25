@@ -8,6 +8,7 @@ class ModelEntry {
     Date timestampEnd
 
     int hourOfDay
+    int minuteOfHour
     int dayOfWeek
     boolean weekday
 
@@ -19,12 +20,13 @@ class ModelEntry {
 
     }
 
-    public ModelEntry(start, end, user, station, hourOfDay, dayOfWeek, weekday) {
+    public ModelEntry(start, end, user, station, hourOfDay, minuteOfHour, dayOfWeek, weekday) {
         this.timestampStart = start
         this.timestampEnd = end
         this.userId = user
         this.stationId = station
         this.hourOfDay = hourOfDay
+        this.minuteOfHour = minuteOfHour
         this.dayOfWeek = dayOfWeek
         this.weekday = weekday
     }

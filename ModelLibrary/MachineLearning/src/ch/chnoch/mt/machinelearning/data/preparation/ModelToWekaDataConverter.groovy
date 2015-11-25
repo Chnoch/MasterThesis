@@ -2,6 +2,7 @@ package ch.chnoch.mt.machinelearning.data.preparation
 
 import com.sun.org.apache.xpath.internal.operations.Bool
 import weka.core.Attribute
+import weka.core.DenseInstance
 import weka.core.FastVector
 import weka.core.Instance
 import weka.core.Instances
@@ -38,43 +39,63 @@ class ModelToWekaDataConverter {
         }
     }
 
-    public convertToWeka(entries) {
-        def dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
-        FastVector attributeVector = new FastVector()
-        def timestampStart = new Attribute('timestampStart')
-        def timestampEnd = new Attribute('timestampEnd')
-        def userId = new Attribute('userId')
-        def stationId = new Attribute('stationId')
-        def hourOfDay = new Attribute('hourOfDay')
-        def dayOfWeek = new Attribute('dayOfWeek')
-        def weekdayVector = new FastVector(2)
-        weekdayVector.addElement("true");
-        weekdayVector.addElement("false");
-        def weekday = new Attribute('weekday', weekdayVector)
-        def previousStationId = new Attribute('previousStationId')
-        def attrs = new FastVector(8)
-        attrs.addElement(timestampStart)
-        attrs.addElement(timestampEnd)
-        attrs.addElement(userId)
-        attrs.addElement(stationId)
-        attrs.addElement(hourOfDay)
-        attrs.addElement(dayOfWeek)
-        attrs.addElement(weekday)
-        attrs.addElement(previousStationId)
-
-
-        def data = new Instances('test', attrs, 0)
+    private getStationIds(entries) {
+        // Create list to hold nominal values "first", "second", "third"
+        def stationValues = new HashSet<String>()
 
         entries.each { it ->
-            def instance = new Instance(8)
-            instance.setValue(timestampStart, it.timestampStart.time)
-            instance.setValue(timestampEnd, it.timestampEnd.time)
-            instance.setValue(userId, it.userId.toLong())
-            instance.setValue(stationId, it.stationId.toLong())
+            stationValues.add(it.stationId)
+        }
+
+        stationValues.add('null')
+
+        return stationValues.toList()
+    }
+
+    private convertToWeka(entries) {
+        def stationIds = getStationIds(entries)
+        def hoursOfDay = (0..23).collect({ it.toString() })
+        def minutesOfHour = (0..59).collect({ it.toString() })
+
+        def daysOfWeek = (0..7).collect({ it.toString() })
+
+
+//        def timestampStart = new Attribute('timestampStart')
+//        def timestampEnd = new Attribute('timestampEnd')
+        def stationId = new Attribute('stationId', stationIds)
+        def hourOfDay = new Attribute('hourOfDay', hoursOfDay)
+        def minuteOfHour = new Attribute('minuteOfHour', minutesOfHour)
+        def dayOfWeek = new Attribute('dayOfWeek', daysOfWeek)
+        def weekdayVector = new ArrayList()
+        weekdayVector.add("true");
+        weekdayVector.add("false");
+        def weekday = new Attribute('weekday', weekdayVector)
+        def previousStationId = new Attribute('previousStationId', stationIds)
+
+
+        def attrs = new ArrayList()
+//        attrs.add(timestampStart)
+//        attrs.add(timestampEnd)
+        attrs.add(stationId)
+        attrs.add(hourOfDay)
+        attrs.add(minuteOfHour)
+        attrs.add(dayOfWeek)
+        attrs.add(weekday)
+        attrs.add(previousStationId)
+
+
+        def data = new Instances('users', attrs, 0)
+
+        entries.each { it ->
+            def instance = new DenseInstance(6)
+//            instance.setValue(timestampStart, it.timestampStart.time)
+//            instance.setValue(timestampEnd, it.timestampEnd.time)
+            instance.setValue(stationId, it.stationId)
             instance.setValue(hourOfDay, it.hourOfDay)
+            instance.setValue(minuteOfHour, it.minuteOfHour)
             instance.setValue(dayOfWeek, it.dayOfWeek)
             instance.setValue(weekday, it.weekday.toString())
-            instance.setValue(previousStationId, it.previousStationId?.toLong() ?: 0)
+            instance.setValue(previousStationId, it.previousStationId?:'null')
             data.add(instance)
         }
 

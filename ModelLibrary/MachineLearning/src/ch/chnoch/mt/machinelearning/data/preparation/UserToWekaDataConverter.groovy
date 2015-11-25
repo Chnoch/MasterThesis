@@ -1,6 +1,7 @@
 package ch.chnoch.mt.machinelearning.data.preparation
 
 import weka.core.Attribute
+import weka.core.DenseInstance
 import weka.core.FastVector
 import weka.core.Instance
 import weka.core.Instances
@@ -43,7 +44,7 @@ class UserToWekaDataConverter {
         def data = new Instances('test', attrs, 0)
 
         bags.each { bag ->
-            def instance = new Instance(5)
+            def instance = new DenseInstance(5)
             instance.setValue(timestampStart, bag.timestampStartBag.time)
             instance.setValue(timestampEnd, bag.timestampEndBag.time)
             instance.setValue(userId, bag.userId.toLong())

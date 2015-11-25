@@ -21,11 +21,12 @@ class DecisionTreeEvaluation {
 //        NaiveBayes naiveBayes = new NaiveBayes();         // new instance of tree
 //        tree.setOptions(options);     // set the options
 //        naiveBayes.buildClassifier(instances);   // build classifier
-        LinearRegression regression = new LinearRegression();
-        regression.buildClassifier(instances);
+        J48 classifier = new J48();
+        classifier.setOptions(options)
+        classifier.buildClassifier(instances);
 
         Evaluation eval = new Evaluation(instances);
-        eval.crossValidateModel(regression, instances, 10, new Random(1));
+        eval.crossValidateModel(classifier, instances, instances.size() > 10 ? 10 : instances.size(), new Random(1));
 
         System.out.println(eval.toSummaryString("\nResults\n======\n", false));
     }

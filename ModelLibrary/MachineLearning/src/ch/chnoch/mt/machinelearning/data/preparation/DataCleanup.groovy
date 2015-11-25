@@ -29,13 +29,28 @@ class DataCleanup {
         }
 
         def previousEntry
+
         modelEntries.each() { entry ->
-            use(TimeCategory) {
-                if (previousEntry?.timestampStart > (entry.timestampStart - 10.minutes)) {
+
+            def timestamp = entry.timestampStart
+            def previousTimestamp = previousEntry?.timestampStart
+
+            def hourOfDay = Integer.parseInt(timestamp.format("HH"));
+            def calendar = timestamp.toCalendar()
+            def day = calendar.get(Calendar.DAY_OF_WEEK)
+
+            def previousHourOfDay = previousTimestamp?.format("HH")?.toInteger();
+            def previousCalendar = previousTimestamp?.toCalendar()
+            def previousDay = previousCalendar?.get(Calendar.DAY_OF_WEEK)
+
+            if (entry?.userId == previousEntry?.userId) {
+                if (day == previousDay && !(hourOfDay > 4 && previousHourOfDay < 4)) {
+                    entry.previousStationId = previousEntry.stationId
+                } else if (previousDay == (day - 1) % 7 && hourOfDay < 4) {
                     entry.previousStationId = previousEntry.stationId
                 }
-                previousEntry = entry
             }
+            previousEntry = entry
         }
     }
 
