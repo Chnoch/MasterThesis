@@ -27,7 +27,7 @@ class ModelToWekaDataConverter {
     public saveToFileForUsers(model, filepath) {
         model.getUsers().each { user ->
             def userEntries = model.getEntriesForUser(user)
-            if (userEntries.size() > 5) {
+            if (userEntries.size() > 1) {
                 def instances = convertToWeka(userEntries)
                 def file = new File(filepath + user + '.arff')
 
@@ -59,7 +59,6 @@ class ModelToWekaDataConverter {
 
         def daysOfWeek = (0..7).collect({ it.toString() })
 
-
 //        def timestampStart = new Attribute('timestampStart')
 //        def timestampEnd = new Attribute('timestampEnd')
         def stationId = new Attribute('stationId', stationIds)
@@ -71,6 +70,7 @@ class ModelToWekaDataConverter {
         weekdayVector.add("false");
         def weekday = new Attribute('weekday', weekdayVector)
         def previousStationId = new Attribute('previousStationId', stationIds)
+        def nextStationId = new Attribute('nextStationId', stationIds)
 
 
         def attrs = new ArrayList()
@@ -82,12 +82,13 @@ class ModelToWekaDataConverter {
         attrs.add(dayOfWeek)
         attrs.add(weekday)
         attrs.add(previousStationId)
+        attrs.add(nextStationId)
 
 
         def data = new Instances('users', attrs, 0)
 
         entries.each { it ->
-            def instance = new DenseInstance(6)
+            def instance = new DenseInstance(attrs.size())
 //            instance.setValue(timestampStart, it.timestampStart.time)
 //            instance.setValue(timestampEnd, it.timestampEnd.time)
             instance.setValue(stationId, it.stationId)
@@ -95,7 +96,8 @@ class ModelToWekaDataConverter {
             instance.setValue(minuteOfHour, it.minuteOfHour)
             instance.setValue(dayOfWeek, it.dayOfWeek)
             instance.setValue(weekday, it.weekday.toString())
-            instance.setValue(previousStationId, it.previousStationId?:'null')
+            instance.setValue(previousStationId, it.previousStationId ?: 'null')
+            instance.setValue(nextStationId, it.nextStationId ?: 'null')
             data.add(instance)
         }
 

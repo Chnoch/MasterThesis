@@ -26,9 +26,12 @@ class DecisionTreeEvaluation {
         classifier.buildClassifier(instances);
 
         Evaluation eval = new Evaluation(instances);
-        eval.crossValidateModel(classifier, instances, instances.size() > 10 ? 10 : instances.size(), new Random(1));
+        def folds = instances.size() > 10 ? 10 : instances.size()
+        if (folds < 2) folds = 2
+        eval.crossValidateModel(classifier, instances, folds, new Random(1));
 
-        System.out.println(eval.toSummaryString("\nResults\n======\n", false));
+        return eval
+//        System.out.println(eval.toSummaryString("\nResults\n======\n", false));
     }
 }
 

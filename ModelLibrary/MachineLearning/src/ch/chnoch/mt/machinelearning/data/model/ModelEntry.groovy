@@ -5,7 +5,6 @@ package ch.chnoch.mt.machinelearning.data.model
  */
 class ModelEntry {
     Date timestampStart
-    Date timestampEnd
 
     int hourOfDay
     int minuteOfHour
@@ -16,13 +15,15 @@ class ModelEntry {
     String userId
     String stationId
 
+    // This is the main thing to figure out
+    String nextStationId
+
     private ModelEntry() {
 
     }
 
-    public ModelEntry(start, end, user, station, hourOfDay, minuteOfHour, dayOfWeek, weekday) {
+    public ModelEntry(start, user, station, hourOfDay, minuteOfHour, dayOfWeek, weekday) {
         this.timestampStart = start
-        this.timestampEnd = end
         this.userId = user
         this.stationId = station
         this.hourOfDay = hourOfDay
@@ -32,6 +33,6 @@ class ModelEntry {
     }
 
     public String toString() {
-        return 'user: ' + userId + ', timestampStart: ' + timestampStart.getTime() + ', stationId: ' + stationId + ', previousStationId: ' + previousStationId
+        return 'user: ' + userId + ', timestampStart: ' + timestampStart.getTime() + ', stationId: ' + stationId + ', previousStationId: ' + previousStationId + ', nextStationId: ' + nextStationId
     }
 }
