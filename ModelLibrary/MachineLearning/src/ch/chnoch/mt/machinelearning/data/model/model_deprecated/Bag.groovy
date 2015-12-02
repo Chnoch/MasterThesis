@@ -1,4 +1,4 @@
-package ch.chnoch.mt.machinelearning.data.model
+package ch.chnoch.mt.machinelearning.data.model.model_deprecated
 
 /**
  * Created by Chnoch on 12.03.2015.

@@ -1,4 +1,4 @@
-package ch.chnoch.mt.machinelearning.data.preparation
+package ch.chnoch.mt.machinelearning.data.preparation_deprecated
 
 import weka.core.Attribute
 import weka.core.DenseInstance

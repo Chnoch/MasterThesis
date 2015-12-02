@@ -18,9 +18,7 @@ class ModelEntry {
     // This is the main thing to figure out
     String nextStationId
 
-    private ModelEntry() {
-
-    }
+    private ModelEntry() {}
 
     public ModelEntry(start, user, station, hourOfDay, minuteOfHour, dayOfWeek, weekday) {
         this.timestampStart = start
