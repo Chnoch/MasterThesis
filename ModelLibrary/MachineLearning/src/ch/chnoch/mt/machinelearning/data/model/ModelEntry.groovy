@@ -33,4 +33,23 @@ class ModelEntry {
     public String toString() {
         return 'user: ' + userId + ', timestampStart: ' + timestampStart.getTime() + ', stationId: ' + stationId + ', previousStationId: ' + previousStationId + ', nextStationId: ' + nextStationId
     }
+
+    public getElement(element) {
+        switch (element) {
+            case 'stationId':
+                return stationId;
+            case 'hourOfDay':
+                return hourOfDay;
+            case 'minuteOfHour':
+                return minuteOfHour;
+            case 'dayOfWeek':
+                return dayOfWeek;
+            case 'weekday':
+                return weekday;
+            case 'previousStationId':
+                return previousStationId;
+            case 'nextStationId':
+                return nextStationId;
+        }
+    }
 }

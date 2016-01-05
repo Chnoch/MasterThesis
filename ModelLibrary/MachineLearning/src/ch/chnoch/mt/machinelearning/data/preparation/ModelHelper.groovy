@@ -32,10 +32,10 @@ class ModelHelper {
         return model
     }
 
-    public static createWEKAFile(folder, model) {
-        def modelToWeka = new ModelToWekaDataConverter()
-        def arffFilename = folder + 'log_data_training_january_15.arff'
-        def arffFile = new File(arffFilename)
-        modelToWeka.saveToFile(model, arffFile)
-    }
+//    public static createWEKAFile(folder, model) {
+//        def modelToWeka = new ModelToWekaDataConverter()
+//        def arffFilename = folder + 'log_data_training_january_15.arff'
+//        def arffFile = new File(arffFilename)
+//        modelToWeka.saveToFile(model, arffFile)
+//    }
 }

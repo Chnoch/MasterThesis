@@ -1,21 +1,21 @@
-package ch.chnoch.mt.machinelearning.data.evaluation
+package ch.chnoch.mt.machinelearning.data.evaluation.classifiers
 
+import ch.chnoch.mt.machinelearning.data.interfaces.IClassifier
+import weka.classifiers.Classifier
 import weka.classifiers.Evaluation
 import weka.classifiers.trees.J48
-import weka.gui.treevisualizer.PlaceNode2
-import weka.gui.treevisualizer.TreeVisualizer
 
 /**
  * Created by Chnoch on 21.03.2015.
  */
-class DecisionTreeEvaluation {
+class NaiveBayesClassifier implements IClassifier {
     def instances
 
-    public DecisionTreeEvaluation(instances) {
+    public NaiveBayesClassifier(instances) {
         this.instances = instances
     }
 
-    public classifyModel() {
+    public Classifier classifyModel() {
         String[] options = new String[1];
         options[0] = "-U";            // unpruned tree
 //        NaiveBayes naiveBayes = new NaiveBayes();         // new instance of tree
@@ -32,7 +32,7 @@ class DecisionTreeEvaluation {
 //        System.out.println(eval.toSummaryString("\nResults\n======\n", false));
     }
 
-    public evaluateModel(classifier) {
+    public Evaluation evaluateModel(Classifier classifier) {
         Evaluation eval = new Evaluation(instances);
         def folds = instances.size() > 10 ? 10 : instances.size()
         if (folds < 2) folds = 2
