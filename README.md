@@ -3,14 +3,15 @@ MasterThesis
 
 The main repository for my Master Thesis.
 
-# Table of Content
-1. Abstract
-2. Introduction
-3. Theoretical Part
+# Table of Contents
+1. Abstract (motivations of the work, a problem that is addressed, solutions proposed and evaluation, ~1/2 page)
+2. Introduction (the same as abstract but in more detail)
+3. Problem (need to spend a small chapter to describe the task in detail)
+4. Theoretical Part
   1. Machine Learning Basics
   2. Prior Art
   3. Detailed Description of different Classifiers used
-4. Practical Part
+5. Experiments and Evaluation
   1. Introduction / Procedure
   2. Data Set / Data Analysis
   3. Naive Approach
@@ -22,8 +23,8 @@ The main repository for my Master Thesis.
     5. Naive Bayes
     6. HMM / Neural Networks
   5. Comparison of Results
-5. Further Work
 6. Conclusion
+7. Future Work
 
 # Execution Plan
 
