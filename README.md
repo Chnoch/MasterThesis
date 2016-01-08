@@ -38,6 +38,10 @@ We are using different classifiers each with all the different feature sets. We 
 
 - Classifier with Back Propagation (e.g. [MultilayerPerceptron](http://weka.sourceforge.net/doc.dev/weka/classifiers/functions/MultilayerPerceptron.html) or [Hidden Markov Models](http://www.doc.gold.ac.uk/~mas02mg/software/hmmweka/index.html))
 
+## Machine Learning Experiments
+- Precision/Recall/F1 vs Number of most frequent stations
+- Precision/Recall/F1 for different users (frequent/non-frequent)
+
 ## Feature Sets
 
 We have gathered data for the following features. We will use different combinations of feature sets in our evaluation in order to make the most precise predictions.
@@ -49,6 +53,8 @@ We have gathered data for the following features. We will use different combinat
 - Weekday/Weekendday
 - Previous Station
 - Next Station
+
+Stations are categorical and are encoded as one-hot-vectors. Stations that are not in the most frequent set should be encoded as an additional dimention of a vector.
 
 The ground truth, i.e. what's to be predicted is the next Station. We only use data for each user separately, as the classifiers are being too overloaded when using the full data set. So the user is automatically respected for every feature set.
 
