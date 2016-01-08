@@ -54,7 +54,7 @@ We have gathered data for the following features. We will use different combinat
 - Previous Station
 - Next Station
 
-Stations are categorical and are encoded as one-hot-vectors. Stations that are not in the most frequent set should be encoded as an additional dimention of a vector.
+**Stations are categorical and are encoded as one-hot-vectors. Stations that are not in the most frequent set should be encoded as an additional dimention of a vector.**
 
 The ground truth, i.e. what's to be predicted is the next Station. We only use data for each user separately, as the classifiers are being too overloaded when using the full data set. So the user is automatically respected for every feature set.
 
