@@ -1,22 +1,20 @@
 package ch.chnoch.mt.machinelearning.data.evaluation.classifiers
 
-import ch.chnoch.mt.machinelearning.data.interfaces.IClassifier
 import weka.classifiers.Classifier
-import weka.classifiers.Evaluation
-import weka.classifiers.trees.J48
+import weka.classifiers.functions.MultilayerPerceptron
 import weka.classifiers.trees.RandomForest
 
 /**
  * Created by Chnoch on 21.03.2015.
  */
-class RandomForestClassifier extends AbstractClassifier {
+class MultilayerPerceptronClassifier extends AbstractClassifier {
 
-    public RandomForestClassifier(instances) {
+    public MultilayerPerceptronClassifier(instances) {
         super(instances)
     }
 
     public Classifier classifyModel() {
-        RandomForest classifier = new RandomForest()
+        MultilayerPerceptron classifier = new MultilayerPerceptron()
         classifier.buildClassifier(instances);
         return classifier
     }
