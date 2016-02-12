@@ -24,3 +24,4 @@ public abstract class AbstractFeature implements IFeature {
         instance.setValue(this.attribute, entry.getElement(this.property));
     }
 }
+
