@@ -3,27 +3,26 @@ MasterThesis
 
 The main repository for my Master Thesis.
 
-# Table of Content
-1. Abstract
-2. Introduction
-3. Theoretical Part
-  1. Machine Learning Basics
-  2. Prior Art
-  3. Detailed Description of different Classifiers used
-4. Practical Part
+# Table of Contents
+1. Abstract (motivations of the work, a problem that is addressed, solutions proposed and evaluation, ~1/2 page)
+2. Introduction (the same as abstract but in more detail)
+3. Related work (prior works go here)
+4. Sequence prediction
+  1. Task Description (we model our problem as a sequence prediction problem)
+  2. Proposed Solutions (Detailed Description of Different Classifiers used, and how they are going to be used)
+5. Experiments and Evaluation
   1. Introduction / Procedure
   2. Data Set / Data Analysis
   3. Naive Approach
   4. Machine Learning Results
     1. Execution Plan
-    2. Data Preparation / Statistical Pre-Analysis
-    3. Decision Trees
-    4. Random Forest
-    5. Naive Bayes
-    6. HMM / Neural Networks
+    2. Data Preparation / Statistical Analysis
+    3. Decision Trees (Random Forest is included)
+    4. Naive Bayes
+    5. HMM / Neural Networks
   5. Comparison of Results
-5. Further Work
 6. Conclusion
+7. Future Work
 
 # Execution Plan
 
@@ -39,6 +38,10 @@ We are using different classifiers each with all the different feature sets. We 
 
 - Classifier with Back Propagation (e.g. [MultilayerPerceptron](http://weka.sourceforge.net/doc.dev/weka/classifiers/functions/MultilayerPerceptron.html) or [Hidden Markov Models](http://www.doc.gold.ac.uk/~mas02mg/software/hmmweka/index.html))
 
+## Machine Learning Experiments
+- Precision/Recall/F1 vs Number of most frequent stations
+- Precision/Recall/F1 for different users (frequent/non-frequent)
+
 ## Feature Sets
 
 We have gathered data for the following features. We will use different combinations of feature sets in our evaluation in order to make the most precise predictions.
@@ -50,6 +53,8 @@ We have gathered data for the following features. We will use different combinat
 - Weekday/Weekendday
 - Previous Station
 - Next Station
+
+**Stations are categorical and are encoded as one-hot-vectors. Stations that are not in the most frequent set should be encoded as an additional dimention of a vector.**
 
 The ground truth, i.e. what's to be predicted is the next Station. We only use data for each user separately, as the classifiers are being too overloaded when using the full data set. So the user is automatically respected for every feature set.
 
