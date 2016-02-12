@@ -1,11 +1,13 @@
 package ch.chnoch.mt.machinelearning.data.preparation
 
+import ch.chnoch.mt.machinelearning.data.model.Model
+
 /**
  * Created by Chnoch on 14.12.2015.
  */
 class StatisticsPreparation {
 
-    public static prepareStations(model) {
+    public static prepareStations(Model model) {
 
         model.getUsers().each { user ->
             def stations = [:]
@@ -22,7 +24,7 @@ class StatisticsPreparation {
             def finalStations = []
             def tempStations = stations.keySet().toList()
             if (tempStations.size() > 5) {
-                tempStations[0..4].each { finalStations << it}
+                tempStations[0..4].each { finalStations << it }
             } else {
                 finalStations = tempStations
             }

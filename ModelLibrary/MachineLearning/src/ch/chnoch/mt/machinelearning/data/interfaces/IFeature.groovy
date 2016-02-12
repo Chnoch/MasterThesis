@@ -8,5 +8,5 @@ import weka.core.Instance;
  */
 public interface IFeature {
 
-    void setValue(ModelEntry entry, Instance instance);
+    public void setValue(ModelEntry entry, Instance instance);
 }

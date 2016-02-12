@@ -4,12 +4,12 @@ package ch.chnoch.mt.machinelearning.data.model
  * Created by Chnoch on 27.02.2015.
  */
 class Model {
-    private model
-    private availableNextStations
+    private List<ModelEntry> model
+    private Map<String, List> availableNextStations
 
     public Model() {
-        model = new ArrayList()
-        availableNextStations = new HashMap<String, List>()
+        model = new ArrayList<>()
+        availableNextStations = new HashMap<String, List<String>>()
     }
 
     public addEntry(entry) {
@@ -21,23 +21,23 @@ class Model {
     }
 
     public setEntries(entries) {
-        model = new ArrayList()
+        model = new ArrayList<>()
         model.addAll(entries)
     }
 
-    public getEntriesForUser(userId) {
+    public List<ModelEntry> getEntriesForUser(userId) {
         return model.findAll { it ->
             it.userId == userId
         }
     }
 
-    public getEntriesForStation(stationId) {
+    public List<ModelEntry> getEntriesForStation(stationId) {
         return model.findAll { it ->
             it.stationId == stationId
         }
     }
 
-    public getUsers() {
+    public List<String> getUsers() {
         def users = []
         model.each { it ->
             if (!users.contains(it.userId)) {
@@ -50,13 +50,13 @@ class Model {
     public getNextStationsForUser(user) {
         def nextStationList = availableNextStations.get(user)
         if (nextStationList == null) {
-            nextStationList = new ArrayList()
+            nextStationList = new ArrayList<>()
             nextStationList.add('null')
         }
         return nextStationList
     }
 
-    public setAvailableStationsForUser(user, stations) {
+    public setAvailableStationsForUser(String user, List<String> stations) {
         availableNextStations.put(user, stations)
     }
 }

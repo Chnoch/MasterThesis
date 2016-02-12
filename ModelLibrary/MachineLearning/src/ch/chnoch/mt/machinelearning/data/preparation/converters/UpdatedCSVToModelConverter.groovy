@@ -1,30 +1,15 @@
-package ch.chnoch.mt.machinelearning.data.preparation
+package ch.chnoch.mt.machinelearning.data.preparation.converters
 
 import ch.chnoch.mt.machinelearning.data.model.Model
 import ch.chnoch.mt.machinelearning.data.model.ModelEntry
 
 /**
  * Created by Chnoch on 27.02.2015.
+ * The data set and format of the file has changed slightly in mid-2015, that's why we have different parsers for different files
  */
-class UpdatedCSVToModelConverter {
+class UpdatedCSVToModelConverter extends AbstractConverter {
 
-    public convertCSVFile(file) {
-        def model = new Model()
-        parseFile(file, model)
-
-        return model
-    }
-
-    private parseFile(file, model) {
-        file.splitEachLine('\t') { fields ->
-            def entry = parseLine(fields)
-            if (entry.userId) {
-                model.addEntry(entry)
-            }
-        }
-    }
-
-    private parseLine(fields) {
+    protected ModelEntry parseLine(fields) {
         def timestampStartString = fields[0]
         def url = fields[1]
         def params = url.split('\\?')[1].split('&')

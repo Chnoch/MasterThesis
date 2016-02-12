@@ -1,5 +1,6 @@
 package ch.chnoch.mt.machinelearning.data.preparation
 
+import ch.chnoch.mt.machinelearning.data.model.ModelEntry
 import groovy.time.TimeCategory
 
 
@@ -67,8 +68,8 @@ class DataCleanup {
         }
     }
 
-    private static getStationOrNull(entry, questionableEntry) {
-        def timestamp = entry.timestampStart
+    private static getStationOrNull(ModelEntry entry, ModelEntry questionableEntry) {
+        Date timestamp = entry.timestampStart
         def nextTimestamp = questionableEntry?.timestampStart
 
         def hourOfDay = Integer.parseInt(timestamp.format("HH"));
@@ -80,16 +81,12 @@ class DataCleanup {
         def nextDay = nextCalendar?.get(Calendar.DAY_OF_WEEK)
 
         if (entry?.userId == questionableEntry?.userId) {
-//            println('day: ' + day + '; nextDay: ' + nextDay + '; hourOfDay: ' + hourOfDay + '; nextHourOfDay: ' + nextHourOfDay);
             if (day == nextDay && !(hourOfDay > 4 && nextHourOfDay < 4)) {
-//                println('true')
                 return questionableEntry.stationId
             } else if (nextDay == (day - 1) % 7 && hourOfDay < 4) {
-//                println('true')
                 return questionableEntry.stationId
             }
         }
-//        println('false')
         return null
     }
 
@@ -100,11 +97,11 @@ class DataCleanup {
             a.userId <=> b.userId
         }
 
-        def remainingEntries = []
-        def duplicateEntries = []
+        List<ModelEntry> remainingEntries = new ArrayList<>()
+        List<ModelEntry> duplicateEntries = new ArrayList<>()
 
-        def duplicate = false
-        def currentItem = null
+        boolean duplicate = false
+        ModelEntry currentItem = null
         modelEntries.eachWithIndex() { value, index ->
             if (currentItem?.userId == value.userId &&
                     currentItem?.stationId == value.stationId &&

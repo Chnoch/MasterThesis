@@ -1,6 +1,8 @@
 package ch.chnoch.mt.machinelearning.data.preparation
 
-import ch.chnoch.mt.machinelearning.data.evaluation.ModelToWekaDataConverter
+import ch.chnoch.mt.machinelearning.data.interfaces.IConverter
+import ch.chnoch.mt.machinelearning.data.preparation.converters.CSVToModelConverter
+import ch.chnoch.mt.machinelearning.data.preparation.converters.UpdatedCSVToModelConverter
 
 /**
  * Created by Chnoch on 02.12.2015.
@@ -8,11 +10,11 @@ import ch.chnoch.mt.machinelearning.data.evaluation.ModelToWekaDataConverter
 class ModelHelper {
 
     public static getCleanModel(folder) {
-        def filename = folder + 'log_data_training_january_15.csv'
+        String filename = folder + 'log_data_training_january_15.csv'
         def file = new File(filename)
 
         def csvToModelConverter = new CSVToModelConverter()
-        def model = csvToModelConverter.convertCSVFile(file)
+        def model = csvToModelConverter.convert(file)
 
         def dataCleanup = new DataCleanup()
         dataCleanup.parseModel(model)
@@ -20,11 +22,11 @@ class ModelHelper {
     }
 
     public static getCleanUpdatedModel(folder) {
-        def filename = folder + 'stationboard_clean_nov_15.csv'
+        String filename = folder + 'stationboard_clean_nov_15.csv'
         def file = new File(filename)
 
-        def updatedCsvToModelConverter = new UpdatedCSVToModelConverter()
-        def model = updatedCsvToModelConverter.convertCSVFile(file)
+        IConverter converter = new UpdatedCSVToModelConverter()
+        def model = converter.convert(file)
 
         DataCleanup.parseModel(model)
         StatisticsPreparation.prepareStations(model)

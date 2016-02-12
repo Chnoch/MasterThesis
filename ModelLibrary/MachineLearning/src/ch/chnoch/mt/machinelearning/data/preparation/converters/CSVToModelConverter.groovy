@@ -1,4 +1,4 @@
-package ch.chnoch.mt.machinelearning.data.preparation
+package ch.chnoch.mt.machinelearning.data.preparation.converters
 
 import ch.chnoch.mt.machinelearning.data.model.Model
 import ch.chnoch.mt.machinelearning.data.model.ModelEntry
@@ -6,25 +6,9 @@ import ch.chnoch.mt.machinelearning.data.model.ModelEntry
 /**
  * Created by Chnoch on 27.02.2015.
  */
-class CSVToModelConverter {
+public class CSVToModelConverter extends AbstractConverter {
 
-    public convertCSVFile(file) {
-        def model = new Model()
-        parseFile(file, model)
-
-        return model
-    }
-
-    private parseFile(file, model) {
-        file.splitEachLine(',') { fields ->
-            def entry = parseLine(fields)
-            if (entry.userId) {
-                model.addEntry(entry)
-            }
-        }
-    }
-
-    private parseLine(fields) {
+    protected ModelEntry parseLine(fields) {
         def timestampStartString = fields[0]
         def timestampStopString = fields[1]
         def url = fields[2]

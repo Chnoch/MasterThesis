@@ -1,5 +1,7 @@
 package ch.chnoch.mt.machinelearning.data.evaluation.feature
 
+import weka.core.Attribute
+
 /**
  * Created by Chnoch on 05.01.2016.
  */
@@ -9,11 +11,11 @@ class AbstractStationFeature extends AbstractFeature {
 
     public AbstractStationFeature() {}
 
-    protected AbstractStationFeature(attr, prop) {
+    protected AbstractStationFeature(Attribute attr, String prop) {
         super(attr, prop)
     }
 
-    protected getStationIds(entries) {
+    protected List<String> getStationIds(entries) {
         // Create list to hold nominal values "first", "second", "third"
         def stationValues = new HashSet<String>()
 
@@ -26,7 +28,7 @@ class AbstractStationFeature extends AbstractFeature {
         return stationValues.toList()
     }
 
-    protected getTopStationIds(entries) {
+    protected List<String> getTopStationIds(entries) {
         def stationMap = new HashMap<>()
         entries.each { it ->
             if (stationMap.containsKey(it.stationId)) {
