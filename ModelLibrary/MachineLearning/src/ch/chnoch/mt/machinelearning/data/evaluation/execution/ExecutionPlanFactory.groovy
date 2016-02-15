@@ -3,13 +3,14 @@ package ch.chnoch.mt.machinelearning.data.evaluation.execution
 import ch.chnoch.mt.machinelearning.data.evaluation.feature.CurrentStationFeature
 import ch.chnoch.mt.machinelearning.data.interfaces.IExecutionPlan
 import ch.chnoch.mt.machinelearning.data.interfaces.IFeature
+import ch.chnoch.mt.machinelearning.data.model.Model
 
 /**
  * Created by Chnoch on 12.02.2016.
  */
 public static class ExecutionPlanFactory {
 
-    public static IExecutionPlan createFullFeatureSetExecutionPlan() {
+    public static IExecutionPlan createFullFeatureSetExecutionPlan(Model model) {
         List<IFeature> features = new ArrayList<>()
         features.add(new CurrentStationFeature())
         IExecutionPlan plan = new ExecutionPlan()

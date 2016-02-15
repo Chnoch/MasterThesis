@@ -1,7 +1,7 @@
 package ch.chnoch.mt.machinelearning.data.preparation_deprecated
 
 import ch.chnoch.mt.machinelearning.data.model.model_deprecated.Bag
-import ch.chnoch.mt.machinelearning.data.model.model_deprecated.User
+import ch.chnoch.mt.machinelearning.data.model.User
 
 /**
  * Created by Chnoch on 12.03.2015.

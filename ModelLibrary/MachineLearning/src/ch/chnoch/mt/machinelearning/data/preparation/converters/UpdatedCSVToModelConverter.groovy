@@ -7,7 +7,7 @@ import ch.chnoch.mt.machinelearning.data.model.ModelEntry
  * Created by Chnoch on 27.02.2015.
  * The data set and format of the file has changed slightly in mid-2015, that's why we have different parsers for different files
  */
-class UpdatedCSVToModelConverter extends AbstractConverter {
+public class UpdatedCSVToModelConverter extends AbstractConverter {
 
     protected ModelEntry parseLine(fields) {
         def timestampStartString = fields[0]

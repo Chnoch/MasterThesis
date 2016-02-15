@@ -22,7 +22,7 @@ class ModelEvaluation {
         def correct = 0;
         def incorrect = 0;
         def count = 0;
-        def users = model.getUsers()
+        def users = model.getPreparedUsers()
         users.each { user ->
             def instances = ModelToWekaDataConverter.getInstancesForUser(model, user)
 

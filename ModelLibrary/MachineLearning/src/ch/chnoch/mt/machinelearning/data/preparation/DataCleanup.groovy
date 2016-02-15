@@ -1,39 +1,57 @@
 package ch.chnoch.mt.machinelearning.data.preparation
 
+import ch.chnoch.mt.machinelearning.data.model.Model
 import ch.chnoch.mt.machinelearning.data.model.ModelEntry
-import groovy.time.TimeCategory
-
+import ch.chnoch.mt.machinelearning.data.model.User
 
 /**
- * Created by Chnoch on 16.02.2015.
+ * Provides helper function to clean up the data. Does the following thing:
+ * - Removes Duplicate entries for each user. A duplicate entry is an entry of the same user at the same station
+ * with timestamp within the DUPLICATE_TIMEFRAME limitation
+ * - Assigns previous and next station to each entry.
+ * - Removes Low Profile Users from the model in order to not distort the ML-Algorithms
  */
-class DataCleanup {
+public class DataCleanup {
+    private static final int DUPLICATE_TIMEFRAME = 60
+    private static final int LOW_PROFILE_USER_THRESHOLD = 10
 
-    public static parseModel(model) {
-        def allEntries = model.getAllEntries()
-        def entries, duplicates
-        (entries, duplicates) = removeDuplicates(allEntries)
+    public static Model parseModel(final Model model) {
+        List<User> users = model.getUsers()
+        List<ModelEntry> entries, duplicates
+        users.each { user ->
+            (entries, duplicates) = removeDuplicates(user.getEntries())
 
-        removeLowProfileUsers(entries)
+            assignPreviousStations(entries)
+            assignNextStations(entries)
+            user.setDuplicates(duplicates)
+            user.setPreparedEntries(entries)
+        }
 
-        assignPreviousStations(entries)
-        assignNextStations(entries)
-        model.setEntries(entries)
-
+        removeLowProfileUsers(model)
         return model
     }
 
-    private static removeLowProfileUsers(entries) {
+    private static void removeLowProfileUsers(final Model model) {
+        List<User> users = new ArrayList<>()
+        List<User> lowProfileUsers = new ArrayList<>()
 
+        model.getUsers().each { user ->
+            if (user.getPreparedEntries().size() < LOW_PROFILE_USER_THRESHOLD) {
+                lowProfileUsers.add(user)
+            } else {
+                users.add(user)
+            }
+        }
+        model.setPreparedUsers(users)
+        model.setLowProfileUsers(lowProfileUsers)
     }
 
-    private static assignPreviousStations(modelEntries) {
+    private static void assignPreviousStations(modelEntries) {
 
         // Just to make sure they're still properly sorted
         modelEntries.sort { a, b ->
             a.timestampStart <=> b.timestampStart
             a.stationId <=> b.stationId
-            a.userId <=> b.userId
         }
 
         def previousEntry
@@ -45,18 +63,15 @@ class DataCleanup {
 
             previousEntry = entry
         }
-        println('amountOfNull: ' + amountOfNull)
-
     }
 
 
-    private static assignNextStations(modelEntries) {
+    private static void assignNextStations(List<ModelEntry> modelEntries) {
 
         // Just to make sure they're still properly sorted
         modelEntries.sort { a, b ->
             a.timestampStart <=> b.timestampStart
             a.stationId <=> b.stationId
-            a.userId <=> b.userId
         }
 
         def amountOfNull = 0;
@@ -68,7 +83,7 @@ class DataCleanup {
         }
     }
 
-    private static getStationOrNull(ModelEntry entry, ModelEntry questionableEntry) {
+    private static String getStationOrNull(ModelEntry entry, ModelEntry questionableEntry) {
         Date timestamp = entry.timestampStart
         def nextTimestamp = questionableEntry?.timestampStart
 
@@ -105,7 +120,7 @@ class DataCleanup {
         modelEntries.eachWithIndex() { value, index ->
             if (currentItem?.userId == value.userId &&
                     currentItem?.stationId == value.stationId &&
-                    value.timestampStart - currentItem?.timestampStart < 60
+                    value.timestampStart - currentItem?.timestampStart < DUPLICATE_TIMEFRAME
             ) {
                 duplicate = true
             }
