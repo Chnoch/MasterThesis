@@ -62,4 +62,20 @@ public class User {
     void setDuplicates(List<ModelEntry> duplicates) {
         this.duplicates = duplicates
     }
+
+    public List<String> getAvailableCurrentStations() {
+        Set<String> stations = new HashSet<>()
+        this.preparedEntries.each { entry ->
+            stations.add(entry.getStationId())
+        }
+        return stations.toList()
+    }
+
+    public List<String> getAvailablePreviousStations() {
+        Set<String> stations = new HashSet<>()
+        this.preparedEntries.each { entry ->
+            stations.add(entry.getPreviousStationId())
+        }
+        return stations.toList()
+    }
 }

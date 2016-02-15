@@ -13,7 +13,7 @@ public abstract class AbstractFeature implements IFeature {
     protected Attribute attribute;
     protected String property;
 
-    public AbstractFeature(){};
+    public AbstractFeature() {};
 
     protected AbstractFeature(Attribute attribute, String property) {
         this.attribute = attribute;
