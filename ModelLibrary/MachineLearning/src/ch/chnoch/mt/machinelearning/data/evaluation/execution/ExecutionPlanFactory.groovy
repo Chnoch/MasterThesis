@@ -1,11 +1,14 @@
 package ch.chnoch.mt.machinelearning.data.evaluation.execution
 
 import ch.chnoch.mt.machinelearning.data.evaluation.classifiers.DecisionTreeClassifier
+import ch.chnoch.mt.machinelearning.data.evaluation.classifiers.NaiveBayesClassifier
+import ch.chnoch.mt.machinelearning.data.evaluation.classifiers.RandomForestClassifier
 import ch.chnoch.mt.machinelearning.data.evaluation.evaluations.DefaultEvaluation
 import ch.chnoch.mt.machinelearning.data.evaluation.feature.CurrentStationFeature
 import ch.chnoch.mt.machinelearning.data.evaluation.feature.DayOfWeekFeature
 import ch.chnoch.mt.machinelearning.data.evaluation.feature.HourOfDayFeature
 import ch.chnoch.mt.machinelearning.data.evaluation.feature.MinuteOfHourFeature
+import ch.chnoch.mt.machinelearning.data.evaluation.feature.NextStationFeature
 import ch.chnoch.mt.machinelearning.data.evaluation.feature.PreviousStationFeature
 import ch.chnoch.mt.machinelearning.data.evaluation.feature.WeekdayFeature
 import ch.chnoch.mt.machinelearning.data.interfaces.IClassifier
@@ -22,13 +25,14 @@ public class ExecutionPlanFactory {
         IExecutionPlan plan = new ExecutionPlan(model)
 
         plan.addFeature(new CurrentStationFeature())
-        plan.addFeature(new DayOfWeekFeature())
-        plan.addFeature(new HourOfDayFeature())
-        plan.addFeature(new MinuteOfHourFeature())
+//        plan.addFeature(new DayOfWeekFeature())
+//        plan.addFeature(new HourOfDayFeature())
+//        plan.addFeature(new MinuteOfHourFeature())
         plan.addFeature(new PreviousStationFeature())
-        plan.addFeature(new WeekdayFeature())
+//        plan.addFeature(new WeekdayFeature())
+        plan.addFeature(new NextStationFeature())
 
-        plan.setClassifier(new DecisionTreeClassifier())
+        plan.setClassifier(new RandomForestClassifier())
 
         plan.setEvaluation(new DefaultEvaluation())
 
