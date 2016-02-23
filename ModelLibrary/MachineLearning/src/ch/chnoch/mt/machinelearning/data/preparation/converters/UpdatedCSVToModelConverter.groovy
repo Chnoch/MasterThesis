@@ -9,7 +9,7 @@ import ch.chnoch.mt.machinelearning.data.model.ModelEntry
  */
 public class UpdatedCSVToModelConverter extends AbstractConverter {
 
-    protected ModelEntry parseLine(fields) {
+    protected ModelEntry parseLine(List<String> fields) {
         def timestampStartString = fields[0]
         def url = fields[1]
         def params = url.split('\\?')[1].split('&')

@@ -69,6 +69,7 @@ public class ExecutionPlan implements IExecutionPlan {
 
             instances.add(instance)
         }
+        instances.setClassIndex(attrs.size() - 1)
 
         classifier.instantiate(instances)
     }

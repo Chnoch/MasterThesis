@@ -10,7 +10,7 @@ public class ModelEntry {
     private int hourOfDay
     private int minuteOfHour
     private int dayOfWeek
-    private boolean weekday
+    private Boolean weekday
 
     private String previousStationId
     private String userId
@@ -46,7 +46,7 @@ public class ModelEntry {
             case 'dayOfWeek':
                 return dayOfWeek;
             case 'weekday':
-                return weekday;
+                return weekday.toString();
             case 'previousStationId':
                 return previousStationId;
             case 'nextStationId':

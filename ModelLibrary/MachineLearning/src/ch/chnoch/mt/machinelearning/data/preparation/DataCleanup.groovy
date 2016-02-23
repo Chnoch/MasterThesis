@@ -102,7 +102,7 @@ public class DataCleanup {
                 return questionableEntry.stationId
             }
         }
-        return null
+        return "null"
     }
 
     private static removeDuplicates(modelEntries) {

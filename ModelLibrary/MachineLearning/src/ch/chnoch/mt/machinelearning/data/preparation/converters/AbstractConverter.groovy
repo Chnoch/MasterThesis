@@ -18,7 +18,7 @@ public abstract class AbstractConverter implements IConverter {
     }
 
     private void parseFile(File file, Model model) {
-        file.splitEachLine(',') { fields ->
+        file.splitEachLine('\\t') { fields ->
             ModelEntry entry = this.parseLine(fields)
             if (entry.userId) {
                 model.addEntry(entry)
@@ -26,5 +26,5 @@ public abstract class AbstractConverter implements IConverter {
         }
     }
 
-    protected abstract ModelEntry parseLine(fields);
+    protected abstract ModelEntry parseLine(List<String> fields);
 }

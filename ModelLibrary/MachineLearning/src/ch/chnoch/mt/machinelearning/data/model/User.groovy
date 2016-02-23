@@ -68,6 +68,7 @@ public class User {
         this.preparedEntries.each { entry ->
             stations.add(entry.getStationId())
         }
+        stations.add("null")
         return stations.toList()
     }
 
@@ -76,6 +77,7 @@ public class User {
         this.preparedEntries.each { entry ->
             stations.add(entry.getPreviousStationId())
         }
+        stations.add("null")
         return stations.toList()
     }
 }

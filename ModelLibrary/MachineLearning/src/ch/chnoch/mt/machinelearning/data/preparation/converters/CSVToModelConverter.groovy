@@ -8,7 +8,7 @@ import ch.chnoch.mt.machinelearning.data.model.ModelEntry
  */
 public class CSVToModelConverter extends AbstractConverter {
 
-    protected ModelEntry parseLine(fields) {
+    protected ModelEntry parseLine(List<String> fields) {
         def timestampStartString = fields[0]
         def timestampStopString = fields[1]
         def url = fields[2]
