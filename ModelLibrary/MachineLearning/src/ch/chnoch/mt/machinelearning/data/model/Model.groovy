@@ -1,47 +1,52 @@
 package ch.chnoch.mt.machinelearning.data.model
 
+import com.sun.javafx.sg.prism.NGShape
+
 /**
  * Created by Chnoch on 27.02.2015.
  */
-class Model {
-    private model
+public class Model {
+    private List<User> users
+    private List<User> lowProfileUsers;
+    private List<User> preparedUsers;
+
 
     public Model() {
-        model = new ArrayList()
+        users = new ArrayList<>()
     }
 
-    public addEntry(entry) {
-        model.add(entry)
-    }
-
-    public getAllEntries() {
-        return model;
-    }
-
-    public setEntries(entries) {
-        model = new ArrayList()
-        model.addAll(entries)
-    }
-
-    public getEntriesForUser(userId) {
-        return model.findAll { it ->
-            it.userId == userId
+    public void addEntry(ModelEntry entry) {
+        User user = users.find { it.getUserId() == entry.getUserId() };
+        if (user != null) {
+            user.addEntry(entry)
+        } else {
+            user = new User(entry.getUserId())
+            user.addEntry(entry)
+            users.add(user)
         }
     }
 
-    public getEntriesForStation(stationId) {
-        return model.findAll { it ->
-            it.stationId == stationId
-        }
+    public List<User> getUsers() {
+        return users;
     }
 
-    public getUsers() {
-        def users = []
-        model.each { it ->
-            if (!users.contains(it.userId)) {
-                users.add(it.userId)
-            }
-        }
-        return users
+    void setUsers(List<User> users) {
+        this.users = users
+    }
+
+    List<User> getLowProfileUsers() {
+        return lowProfileUsers
+    }
+
+    void setLowProfileUsers(List<User> lowProfileUsers) {
+        this.lowProfileUsers = lowProfileUsers
+    }
+
+    List<User> getPreparedUsers() {
+        return preparedUsers
+    }
+
+    void setPreparedUsers(List<User> preparedUsers) {
+        this.preparedUsers = preparedUsers
     }
 }

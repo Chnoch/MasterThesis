@@ -14,38 +14,10 @@ import weka.core.converters.ArffSaver
  */
 class ModelToWekaDataConverter {
 
-    public static saveToFile(model, file) {
-        def instances = convertToWeka(model.getAllEntries())
-
-        // save ARFF
-        ArffSaver saver = new ArffSaver();
-        saver.setInstances(instances);
-        saver.setFile(file);
-        saver.writeBatch();// save ARFF
-    }
-
-    public static saveToFileForUsers(model, filepath) {
-        model.getUsers().each { user ->
-            def userEntries = model.getEntriesForUser(user)
-            if (userEntries.size() > 1) {
-                def instances = convertToWeka(userEntries)
-                def file = new File(filepath + user + '.arff')
-
-                ArffSaver saver = new ArffSaver();
-                saver.setInstances(instances);
-                saver.setFile(file);
-                saver.writeBatch();
-            }
-        }
-    }
-
-    public static getInstances(model) {
-        return convertToWeka(model.getAllEntries())
-    }
-
     public static getInstancesForUser(model, user) {
         def userEntries = model.getEntriesForUser(user)
-        return convertToWeka(userEntries)
+        def stations = model.getNextStationsForUser(user)
+        return convertToWeka(userEntries, stations)
     }
 
     private static getStationIds(entries) {
@@ -73,7 +45,7 @@ class ModelToWekaDataConverter {
         return userValues.toList()
     }
 
-    private static convertToWeka(entries) {
+    private static convertToWeka(entries, nextStations) {
         def stationIds = getStationIds(entries)
         def userIds = getUserIds(entries)
         def hoursOfDay = (0..23).collect({ it.toString() })
@@ -94,7 +66,7 @@ class ModelToWekaDataConverter {
         weekdayVector.add("false");
         def weekday = new Attribute('weekday', weekdayVector)
         def previousStationId = new Attribute('previousStationId', stationIds)
-        def nextStationId = new Attribute('nextStationId', stationIds)
+        def nextStationId = new Attribute('nextStationId', nextStations)
 
 
         def attrs = new ArrayList()

@@ -5,7 +5,7 @@ import weka.core.Instances
 /**
  * Created by Chnoch on 21.03.2015.
  */
-class WekaInstances {
+public class WekaInstances {
 
     static loadWekaInstances(userId, filepath) {
         def path = filepath + userId + '.arff'
