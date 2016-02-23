@@ -9,10 +9,6 @@ import weka.classifiers.trees.RandomForest
  */
 class MultilayerPerceptronClassifier extends AbstractClassifier {
 
-    public MultilayerPerceptronClassifier(instances) {
-        super(instances)
-    }
-
     public Classifier classifyModel() {
         MultilayerPerceptron classifier = new MultilayerPerceptron()
         classifier.buildClassifier(instances);

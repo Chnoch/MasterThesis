@@ -9,10 +9,6 @@ import weka.classifiers.functions.MultilayerPerceptron
  */
 class HMMClassifier extends AbstractClassifier {
 
-    public HMMClassifier(instances) {
-        super(instances)
-    }
-
     public Classifier classifyModel() {
         HMM classifier = new HMM()
         classifier.buildClassifier(instances);

@@ -11,10 +11,6 @@ import weka.classifiers.trees.RandomForest
  */
 class RandomForestClassifier extends AbstractClassifier {
 
-    public RandomForestClassifier(instances) {
-        super(instances)
-    }
-
     public Classifier classifyModel() {
         RandomForest classifier = new RandomForest()
         classifier.buildClassifier(instances);

@@ -14,7 +14,7 @@ import weka.core.converters.ArffSaver
  */
 class ModelToWekaDataConverter {
 
-    public static getInstancesForUser(model, user) {
+    public static   getInstancesForUser(model, user) {
         def userEntries = model.getEntriesForUser(user)
         def stations = model.getNextStationsForUser(user)
         return convertToWeka(userEntries, stations)

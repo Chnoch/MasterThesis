@@ -8,10 +8,6 @@ import weka.classifiers.bayes.NaiveBayesMultinomial
  */
 class NaiveBayesClassifier extends AbstractClassifier {
 
-    public NaiveBayesClassifier(instances) {
-        super(instances)
-    }
-
     public Classifier classifyModel() {
         NaiveBayesMultinomial naiveBayes = new NaiveBayesMultinomial();
         naiveBayes.buildClassifier(instances);

@@ -9,8 +9,8 @@ import weka.core.Attribute;
  */
 public class CurrentStationFeature extends AbstractFeature {
 
-    public CurrentStationFeature(User user) {
+    public void instantiate(User user) {
         def attr = new Attribute('stationId', user.getAvailableCurrentStations());
-        super(attr, 'stationId');
+        super.instantiate(attr, 'stationId');
     }
 }

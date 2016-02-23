@@ -7,5 +7,7 @@ import weka.classifiers.Evaluation
  */
 public interface IEvaluation {
 
-    public startEvaluation(Evaluation evaluation);
+    public void evaluate(Evaluation evaluation)
+
+    public void completeEvaluation()
 }

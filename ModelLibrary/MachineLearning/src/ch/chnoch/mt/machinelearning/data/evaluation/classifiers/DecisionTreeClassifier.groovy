@@ -4,15 +4,12 @@ import ch.chnoch.mt.machinelearning.data.interfaces.IClassifier
 import weka.classifiers.Classifier
 import weka.classifiers.Evaluation
 import weka.classifiers.trees.J48
+import weka.core.Instances
 
 /**
  * Created by Chnoch on 21.03.2015.
  */
 class DecisionTreeClassifier extends AbstractClassifier {
-
-    public DecisionTreeClassifier(instances) {
-        super(instances)
-    }
 
     public Classifier classifyModel() {
         String[] options = new String[1];

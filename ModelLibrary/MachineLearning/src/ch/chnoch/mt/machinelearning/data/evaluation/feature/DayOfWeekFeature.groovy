@@ -1,5 +1,6 @@
 package ch.chnoch.mt.machinelearning.data.evaluation.feature
 
+import ch.chnoch.mt.machinelearning.data.model.User
 import weka.core.Attribute
 
 /**
@@ -7,10 +8,10 @@ import weka.core.Attribute
  */
 public class DayOfWeekFeature extends AbstractFeature {
 
-    public DayOfWeekFeature() {
+    public void instantiate(User user) {
         def daysOfWeek = (0..7).collect({ it.toString() })
 
         def attr = new Attribute('dayOfWeek', daysOfWeek);
-        super(attr, 'dayOfWeek');
+        super.instantiate(attr, 'dayOfWeek');
     }
 }

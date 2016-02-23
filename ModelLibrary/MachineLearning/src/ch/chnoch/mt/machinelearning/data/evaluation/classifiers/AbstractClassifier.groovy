@@ -11,7 +11,7 @@ import weka.core.Instances
 public abstract class AbstractClassifier implements IClassifier {
     protected Instances instances
 
-    public AbstractClassifier(instances) {
+    public void instantiate(Instances instances) {
         this.instances = instances
     }
 

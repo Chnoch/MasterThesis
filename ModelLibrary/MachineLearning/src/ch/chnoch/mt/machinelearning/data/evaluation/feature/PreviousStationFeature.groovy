@@ -8,8 +8,9 @@ import weka.core.Attribute
  */
 public class PreviousStationFeature extends AbstractFeature {
 
-    public PreviousStationFeature(User user) {
+    public void instantiate(User user) {
         def attr = new Attribute('previousStationId', user.getAvailablePreviousStations());
-        super(attr, 'previousStationId');
+        super.instantiate(attr, 'previousStationId');
     }
+
 }

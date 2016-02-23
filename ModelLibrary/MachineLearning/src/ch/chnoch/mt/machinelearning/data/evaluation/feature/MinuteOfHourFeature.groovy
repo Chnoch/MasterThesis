@@ -1,5 +1,6 @@
 package ch.chnoch.mt.machinelearning.data.evaluation.feature
 
+import ch.chnoch.mt.machinelearning.data.model.User
 import weka.core.Attribute
 
 /**
@@ -7,10 +8,10 @@ import weka.core.Attribute
  */
 public class MinuteOfHourFeature extends AbstractFeature {
 
-    public MinuteOfHourFeature() {
+    public void instantiate(User user) {
         def minutesOfHour = (0..59).collect({ it.toString() })
 
-        def attr = new Attribute('minuteOfHour', minutesOfHour);
-        super(attr, 'minuteOfHour');
+        def attr = new Attribute('minuteOfHour', minutesOfHour)
+        super.instantiate(attr, 'minuteOfHour')
     }
 }
