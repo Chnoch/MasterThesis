@@ -65,3 +65,5 @@ web-app/assets/
 learning_data.csv
 
 .metadata/
+
+.class

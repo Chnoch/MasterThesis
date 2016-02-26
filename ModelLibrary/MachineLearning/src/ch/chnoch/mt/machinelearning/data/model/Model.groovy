@@ -30,23 +30,28 @@ public class Model {
         return users;
     }
 
-    void setUsers(List<User> users) {
+    public void setUsers(List<User> users) {
         this.users = users
     }
 
-    List<User> getLowProfileUsers() {
+    public List<User> getLowProfileUsers() {
         return lowProfileUsers
     }
 
-    void setLowProfileUsers(List<User> lowProfileUsers) {
+    public void setLowProfileUsers(List<User> lowProfileUsers) {
         this.lowProfileUsers = lowProfileUsers
     }
 
-    List<User> getPreparedUsers() {
+    public List<User> getPreparedUsers() {
         return preparedUsers
     }
 
-    void setPreparedUsers(List<User> preparedUsers) {
+    public void setPreparedUsers(List<User> preparedUsers) {
         this.preparedUsers = preparedUsers
+    }
+
+    public void removeUsers(List<User> users) {
+        this.preparedUsers.removeAll(users)
+        this.lowProfileUsers.addAll(users)
     }
 }

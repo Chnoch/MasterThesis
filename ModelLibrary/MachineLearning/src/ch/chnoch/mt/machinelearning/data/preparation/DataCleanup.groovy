@@ -13,7 +13,7 @@ import ch.chnoch.mt.machinelearning.data.model.User
  */
 public class DataCleanup {
     private static final int DUPLICATE_TIMEFRAME = 60
-    private static final int LOW_PROFILE_USER_THRESHOLD = 10
+    private static final int LOW_PROFILE_USER_THRESHOLD = 20
 
     public static Model parseModel(final Model model) {
         List<User> users = model.getUsers()
@@ -78,8 +78,8 @@ public class DataCleanup {
         for (def i = 0; i < modelEntries.size() - 1; i++) {
             def currentEntry = modelEntries[i]
             def nextEntry = modelEntries[i + 1]
-            currentEntry.nextStationId = nextEntry.stationId
-//            currentEntry.nextStationId = getStationOrNull(currentEntry, nextEntry)
+//            currentEntry.nextStationId = nextEntry.stationId
+            currentEntry.nextStationId = getStationOrNull(currentEntry, nextEntry)
         }
     }
 

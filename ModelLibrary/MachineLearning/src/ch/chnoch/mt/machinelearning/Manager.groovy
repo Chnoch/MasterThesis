@@ -22,10 +22,10 @@ Model model = ModelHelper.getCleanUpdatedModel(folder)
  * EXECUTION & EVALUATION
  */
 ExecutionPlan plan = ExecutionPlanFactory.createFullFeatureSetExecutionPlan(model);
-plan.startExecutionAndEvaluation()
+//plan.startExecutionAndEvaluation()
 
-//ModelToWekaDataConverter.saveToFileForUsers(model, userFolder)
+ExecutionPlan multilayerPlan = ExecutionPlanFactory.createMultilayerPerceptronExecutionPlan(model)
+//multilayerPlan.startExecutionAndEvaluation()
 
-//def modelEvaluation = new ModelEvaluation(model)
-//modelEvaluation.evaluateCompleteModel()
-//modelEvaluation.evaluateModelForUser()
+ExecutionPlan naiveBayesPlan = ExecutionPlanFactory.createNaiveBayesExecutionPlan(model)
+naiveBayesPlan.startExecutionAndEvaluation()

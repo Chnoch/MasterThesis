@@ -14,5 +14,5 @@ public interface IExecutionPlan {
 
     public void startExecutionAndEvaluation();
 
-
+    public void addFeature(IFeature feature)
 }
