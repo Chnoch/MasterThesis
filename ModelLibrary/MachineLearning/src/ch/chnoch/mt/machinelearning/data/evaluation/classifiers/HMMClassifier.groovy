@@ -11,6 +11,7 @@ class HMMClassifier extends AbstractClassifier {
 
     public Classifier classifyModel() {
         HMM classifier = new HMM()
+        classifier.initEstimatorsMultivariateNormal()
         classifier.buildClassifier(instances);
         return classifier
     }
