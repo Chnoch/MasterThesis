@@ -1,18 +1,57 @@
 \section{Experiments and Evaluation}
 \label{sec:experiments}
 
-Here goes the experiments.
+The main goal of our thesis was to compare different state of the art algorithms and to combine machine learning techniques to gain a deeper understanding of what is necessary and what is possible in order to achieve the best results based on an initial data set and certain evaluation targets that one wants to find. In this chapter we explore our procedure from the initial dataset that we work with to the final comparison of the results that we produced.
+
 
 
 \subsection{Introduction / Procedure}
 
+At first we did an initial data analysis and created a naive approach that as a way to gain further insight into our data as a whole as well as to create a proof-of-concept whether the assumptions we had about our data are justifiable. 
+We then continue to use actual machine learning algorithms implemented into the WEKA toolkit that is created and maintained as an open source project by the University of New Zealand. As part of this we discuss our execution plan, the different features that we want to combine, execute and evaluate and the way we will gather the results and compare them.
+
+In order to have data that the algorithms can use directly and to avoid outliers or false cases we combine statistical analysis together with data preparation to convert our raw dataset into a reasonably filtered and correctly formatted set. As discussed in Section~\ref{subsec:proposed_solution} we used a Decision Tree, a Naive Bayes algorithm and a Hidden Markov Model to train and evaluate our dataset. After improving the process and gathering the results we compare the different execution plans and algorithms and analyze the impact of different design decisions of our approach.
+
 \subsection{Data Set / Data Analysis}
 \label{subsec:data_set}
+The first step to getting started with machine learning is to know about the data and the underlying domain associated with it. Machine learning is not an oracle where all the data can be inserted and it spits out everything you ever wondered about. Careful analysis and a knowledge of the domain of the data are inexcusable. 
+
+\subsubsection{Data Set}
+Our data was gathered over months from active user of an Android smartphone app. The app (Farplano) gives the user an overview of the current timetable of train and bus stations close to him. The timetable is based on an open data set from SBB (Swiss Railway company). The app contains features such as automatic geolocation, full route information of bus and train lines, arbitrary connection planning and many more. In addition to that it also allowed the user (with an opt-in feature) to track his position and anonymously store the stations with timestamps that he passes. We worked on this gathered dataset from hundreds of users over many months. The raw data thus contains an entry for every station that the user passes. A single data entry contains the following data points:
+\begin{itemize}
+	\item Anonymized User ID (a 9-character String)
+	\item Station Id (a 7-character String)
+	\item Timestamp
+\end{itemize}
+The information contained in the raw dataset is thus relatively trivial. In order to be able to successfully predict the future location of a user we needed to combine multiple entries to get further information. As a first step we split up the data set to separate sets for each user. We also sorted the entries by timestamp, so that we have a chronological view of all the events as they actually happened.
+
+Remark: We have purposefully left out global state and information about usage patterns, mostly due to the added complexity as well as performance reasons. However this might be something that could be analyzed and included in Future Work. 
+
+\subsubsection{Data Analysis}
+To get a basic understanding of what kind of data that we have and to be able to reason about our data set we created a number of charts, based on the features that we will later use for the machine learning algorithms. 
+
+As a first analysis we looked at how the data is distributed by time and day, as can be seen in the following two charts.
+
+\begin{figure}[!ht]
+	\caption{Distribution by Time of Day}
+	\centering
+	\includegraphics[width=1.0\textwidth]{charts/distribution_time_of_day}
+\end{figure}
+
+\begin{figure}[!ht]
+	\caption{Distribution by Day of Month}
+	\centering
+	\includegraphics[width=1.0\textwidth]{charts/day_of_month_distribution}
+\end{figure}
+
+
+
 
 \subsection{Naive Approach}
 
 
 \subsection{Machine Learning Results}
+\label{subsec:machine_learning_results}
 
 \subsubsection{Execution Plan}
 \subsubsection{Data Preparation / Statistical Analysis}

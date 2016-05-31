@@ -54,6 +54,17 @@ public class ExecutionPlanFactory {
         return plan
     }
 
+    public static IExecutionPlan createHmmExecutionPlan(Model model) {
+        IExecutionPlan plan = new ExecutionPlan(model)
+
+        addDefaultFeatures(plan)
+
+        plan.setClassifier(new HMMClassifier())
+        plan.setEvaluation(new SeparatePercentageEvaluation())
+
+        return plan
+    }
+
     public static IExecutionPlan createNaiveBayesExecutionPlan(Model model) {
         IExecutionPlan plan = new ExecutionPlan(model)
 

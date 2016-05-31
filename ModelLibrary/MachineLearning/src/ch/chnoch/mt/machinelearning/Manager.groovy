@@ -11,7 +11,7 @@ import ch.chnoch.mt.machinelearning.data.evaluation.ModelEvaluation
  */
 
 
-def folder = 'D:\\Personal\\Workspaces\\MasterThesis\\MasterThesis\\ModelLibrary\\assets\\'
+def folder = 'D:\\Workspaces\\MasterThesis\\ModelLibrary\\assets\\'
 
 /*
  * PREPARATION
@@ -27,5 +27,8 @@ ExecutionPlan plan = ExecutionPlanFactory.createFullFeatureSetExecutionPlan(mode
 ExecutionPlan multilayerPlan = ExecutionPlanFactory.createMultilayerPerceptronExecutionPlan(model)
 //multilayerPlan.startExecutionAndEvaluation()
 
+ExecutionPlan hmmPlan = ExecutionPlanFactory.createHmmExecutionPlan(model)
+multilayerPlan.startExecutionAndEvaluation()
+
 ExecutionPlan naiveBayesPlan = ExecutionPlanFactory.createNaiveBayesExecutionPlan(model)
-naiveBayesPlan.startExecutionAndEvaluation()
+//naiveBayesPlan.startExecutionAndEvaluation()

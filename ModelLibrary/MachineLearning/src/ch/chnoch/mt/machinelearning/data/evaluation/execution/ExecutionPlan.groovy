@@ -47,12 +47,18 @@ public class ExecutionPlan implements IExecutionPlan {
     @Override
     public void startExecutionAndEvaluation() {
         model.getPreparedUsers().each { user ->
+            println('prepare')
             prepareWeka(user);
 
+            println('classify')
+
             Classifier wekaClassifier = classifier.classifyModel();
+            println('evaluateModel')
             Evaluation wekaEvaluation = classifier.evaluateModel(wekaClassifier);
+            println('evaluate')
             evaluation.evaluate(wekaEvaluation);
         }
+        println('complete evaluation')
         evaluation.completeEvaluation()
     }
 
