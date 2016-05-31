@@ -1,3 +1,0 @@
-INDEX VERSION 1.126+E:\Eigene Dateien\Workspaces\MasterThesis\.metadata\.plugins\org.eclipse.jdt.core
-2662986263.index
-52108211.index
