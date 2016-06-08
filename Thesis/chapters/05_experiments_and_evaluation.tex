@@ -44,6 +44,37 @@ As a first analysis we looked at how the data is distributed by time and day, as
 	\includegraphics[width=1.0\textwidth]{charts/day_of_month_distribution}
 \end{figure}
 
+As we expected we encountered the highest usage during commuting hours, especially in the afternoon. The distribution gets significantly lower as midnight is approached. During the night we have very few gathered data points. The only somewhat surprising point was that the commute hours in the morning didn't produce as high a peak as the hours in the afternoon. However the fact that the data from the app is gathered voluntarily and the app needs to be open to collect data might explain these small inconsistencies.
+
+The distribution by day of month didn't really produce significant insight. The fact that in the end of the month the number of stops are significantly lower is due to fewer months having 31 days. The data set isn't normalized against this and will therefore include such issues. However what this tells us is that the day of month might not be a good indicator. It would be worth exploring the difference between weekday and weekend-day. Since commuting behavior is generally vastly different on weekends as on weekdays this comparison might lead to deeper and more succinct insights.
+
+\begin{figure}[!ht]
+	\caption{Number of Stations per User}
+	\centering
+	\includegraphics[width=1.0\textwidth]{charts/different_stations_per_user}
+\end{figure}
+
+
+\begin{figure}[!ht]
+	\caption{Number of Stops per User}
+	\centering
+	\includegraphics[width=1.0\textwidth]{charts/stops_per_user}
+\end{figure}
+
+\begin{figure}[!ht]
+	\caption{Number of Users per Station}
+	\centering
+	\includegraphics[width=1.0\textwidth]{charts/persons_per_station}
+\end{figure}
+
+A vastly more interesting and also challenging conclusion could be drawn from comparing the users with the stations they frequent and how often they stop at stations. As we expected there are a few users that have amassed a lot of data and then there is a long tail of less frequent users. The same statistic also applies to the number of stations and the number of stops that have been gathered for a user. What we already realized here is that it will be very difficult if not impossible to get a good prediction for the users tailing the statistics, simply because there is just not enough data available. In some edge cases where a user really only has 2 or 3 stops that he regularly frequents this might work, otherwise it will just be stabbing in the dark to get a reasonably good prediction. One or two outliers from such a user could possibly mix up the complete prediction process. It seems sensible to cut the dataset into high- and low-frequency users and discard the latter. The exact boundary or whether it will be flexible to a certain degree will have to be tested by trial and error, however if we would not cut the low-frequency user out of our comparison tests it might greatly change our conclusions and the effectiveness of our process.
+
+\begin{figure}[!ht]
+	\caption{Number of Users per Station}
+	\centering
+	\includegraphics[width=1.0\textwidth]{charts/persons_per_station}
+\end{figure}
+
 
 
 
