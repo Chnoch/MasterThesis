@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.31)  8 JUN 2016 21:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.31)  11 JUN 2016 11:35
 entering extended mode
 **./main.tex
 (main.tex
@@ -496,34 +496,51 @@ File: charts/persons_per_station.png Graphic file (type png)
 <use charts/persons_per_station.png>
 Package pdftex.def Info: charts/persons_per_station.png used on input line 67.
 (pdftex.def)             Requested size: 345.0pt x 203.78917pt.
+ [5] [6 <./charts/distribution_time_of_day.png> <./charts/day_of_month_distribu
+tion.png>] [7 <./charts/different_stations_per_user.png> <./charts/stops_per_us
+er.png>]
+<charts/distribution_stops_by_station.png, id=40, 664.4825pt x 391.96437pt>
+File: charts/distribution_stops_by_station.png Graphic file (type png)
+
+<use charts/distribution_stops_by_station.png>
+Package pdftex.def Info: charts/distribution_stops_by_station.png used on input
+ line 75.
+(pdftex.def)             Requested size: 345.0pt x 203.51163pt.
+
+<charts/number_stations_average_user.png, id=41, 594.22pt x 339.76938pt>
+File: charts/number_stations_average_user.png Graphic file (type png)
+
+<use charts/number_stations_average_user.png>
+Package pdftex.def Info: charts/number_stations_average_user.png used on input 
+line 81.
+(pdftex.def)             Requested size: 345.0pt x 197.27374pt.
 ) (chapters/06_conclusion.tex)
-(chapters/07_future_work.tex [5]
-Overfull \vbox (129.6112pt too high) has occurred while \output is active []
+(chapters/07_future_work.tex [8 <./charts/persons_per_station.png>]
+Overfull \vbox (106.1324pt too high) has occurred while \output is active []
 
 
-[6 <./charts/distribution_time_of_day.png> <./charts/day_of_month_distribution.
-png>])
+[9 <./charts/distribution_stops_by_station.png> <./charts/number_stations_avera
+ge_user.png>])
 No file main.bbl.
-[7 <./charts/different_stations_per_user.png> <./charts/stops_per_user.png>]
-[8 <./charts/persons_per_station.png>] (main.aux) ) 
+[10] (main.aux) ) 
 Here is how much of TeX's memory you used:
- 1854 strings out of 493335
- 25397 string characters out of 3136677
- 86763 words of memory out of 3000000
- 5348 multiletter control sequences out of 15000+200000
+ 1865 strings out of 493335
+ 25844 string characters out of 3136677
+ 87776 words of memory out of 3000000
+ 5357 multiletter control sequences out of 15000+200000
  7895 words of font info for 28 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,6n,23p,1063b,229s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (8 pages, 737471 bytes).
+ 37i,6n,23p,1323b,229s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
+12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.
+pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b>
+Output written on main.pdf (10 pages, 905319 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
+ 74 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
