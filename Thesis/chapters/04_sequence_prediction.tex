@@ -16,7 +16,22 @@ We used multiple different techniques to solve our task and to use in the final 
 
 
 \subsubsection{Decision Trees / Random Forests}
-Here goes the theoretical description of Decision Trees and Random Forests
+Decision tree learning in the context of data mining is a technique using a decision tree as a predictive model to map observation about input data to come to a conclusion about the data's target value. A tree model that accepts a finite set of values is called a "classification tree", in case continuous values are allowed the decision tree is called "regression tree". A decision tree doesn't explicitly represent a decision, however the resulting classification tree can be used as an input for decision making. 
+
+In a decision tree model, a leaf represents a class label and a branch represents a conjunction of features leading to the class labels. As can be seen in the example in Figure \ref{fig:image-decision-tree} the interior nodes correspond to the input values, the edges are the value domain and the leafs represent the values of the target variable. With such a modeled decision tree we can easily either visually or computationally evaluate new input data and derive the target values.
+
+\begin{figure}[!ht]
+	\centering
+		\includegraphics[width=1.0\textwidth]{images/decision-tree}
+	\caption{An example of a decision tree}
+	\label{fig:image-decision-tree}
+\end{figure}
+
+A tree can be trained or learned by splitting the source data set into subsets based on testing the attribute values. In order to get the full model of the decision tree, this process has to be repeated until a subset at a node has only one value or until splitting no longer adds value to the predictions. This process is called recursive partitioning and it is the most common strategy to train decision trees.
+
+
+---- IS THIS FINALLY LEGAL? ------
+\bibliography{https://en.wikipedia.org/wiki/Decision_tree_learning}
 
 \subsubsection{Naive Bayes}
 Here goes the theoretical description of Naive Bayes
