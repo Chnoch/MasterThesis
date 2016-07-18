@@ -25,10 +25,10 @@ ExecutionPlan plan = ExecutionPlanFactory.createFullFeatureSetExecutionPlan(mode
 //plan.startExecutionAndEvaluation()
 
 ExecutionPlan multilayerPlan = ExecutionPlanFactory.createMultilayerPerceptronExecutionPlan(model)
-//multilayerPlan.startExecutionAndEvaluation()
+multilayerPlan.startExecutionAndEvaluation()
 
 ExecutionPlan hmmPlan = ExecutionPlanFactory.createHmmExecutionPlan(model)
-multilayerPlan.startExecutionAndEvaluation()
+//multilayerPlan.startExecutionAndEvaluation()
 
 ExecutionPlan naiveBayesPlan = ExecutionPlanFactory.createNaiveBayesExecutionPlan(model)
 //naiveBayesPlan.startExecutionAndEvaluation()

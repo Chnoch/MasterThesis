@@ -11,6 +11,8 @@ class MultilayerPerceptronClassifier extends AbstractClassifier {
 
     public Classifier classifyModel() {
         MultilayerPerceptron classifier = new MultilayerPerceptron()
+        classifier.setSeed(20)
+//        classifier.setGUI(true)
         classifier.buildClassifier(instances);
         return classifier
     }

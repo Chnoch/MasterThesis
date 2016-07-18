@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.31)  12 JUL 2016 21:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.31)  18 JUL 2016 21:48
 entering extended mode
 **./main.tex
 (main.tex
@@ -454,21 +454,22 @@ k.tex)
 File: images/decision-tree.png Graphic file (type png)
 
 <use images/decision-tree.png>
-Package pdftex.def Info: images/decision-tree.png used on input line 25.
+Package pdftex.def Info: images/decision-tree.png used on input line 26.
 (pdftex.def)             Requested size: 345.0pt x 217.12714pt.
  (main.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
 )) (chapters/05_experiments_and_evaluation.tex [4 <./images/decision-tree.png>]
+[5]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 22.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 22.
- [5]
-<charts/distribution_time_of_day.png, id=26, 663.47874pt x 400.49625pt>
+
+<charts/distribution_time_of_day.png, id=25, 663.47874pt x 400.49625pt>
 File: charts/distribution_time_of_day.png Graphic file (type png)
 
 <use charts/distribution_time_of_day.png>
@@ -476,15 +477,15 @@ Package pdftex.def Info: charts/distribution_time_of_day.png used on input line
  38.
 (pdftex.def)             Requested size: 345.0pt x 208.25313pt.
 
-<charts/day_of_month_distribution.png, id=27, 730.22812pt x 457.20813pt>
+<charts/day_of_month_distribution.png, id=26, 730.22812pt x 457.20813pt>
 File: charts/day_of_month_distribution.png Graphic file (type png)
 
 <use charts/day_of_month_distribution.png>
 Package pdftex.def Info: charts/day_of_month_distribution.png used on input lin
 e 44.
 (pdftex.def)             Requested size: 345.0pt x 216.01105pt.
- [6 <./charts/distribution_time_of_day.png>]
-<charts/different_stations_per_user.png, id=32, 845.1575pt x 477.28313pt>
+
+<charts/different_stations_per_user.png, id=27, 845.1575pt x 477.28313pt>
 File: charts/different_stations_per_user.png Graphic file (type png)
 
 <use charts/different_stations_per_user.png>
@@ -492,21 +493,23 @@ Package pdftex.def Info: charts/different_stations_per_user.png used on input l
 ine 54.
 (pdftex.def)             Requested size: 345.0pt x 194.83527pt.
 
-<charts/stops_per_user.png, id=33, 866.23625pt x 520.94624pt>
+<charts/stops_per_user.png, id=28, 866.23625pt x 520.94624pt>
 File: charts/stops_per_user.png Graphic file (type png)
 
 <use charts/stops_per_user.png>
 Package pdftex.def Info: charts/stops_per_user.png used on input line 61.
 (pdftex.def)             Requested size: 345.0pt x 207.47656pt.
 
-<charts/persons_per_station.png, id=34, 788.44562pt x 465.74pt>
+<charts/persons_per_station.png, id=29, 788.44562pt x 465.74pt>
 File: charts/persons_per_station.png Graphic file (type png)
 
 <use charts/persons_per_station.png>
 Package pdftex.def Info: charts/persons_per_station.png used on input line 67.
 (pdftex.def)             Requested size: 345.0pt x 203.78917pt.
- [7 <./charts/day_of_month_distribution.png>] <charts/distribution_stops_by_sta
-tion.png, id=40, 664.4825pt x 391.96437pt>
+ [6] [7 <./charts/distribution_time_of_day.png> <./charts/day_of_month_distribu
+tion.png>] [8 <./charts/different_stations_per_user.png> <./charts/stops_per_us
+er.png>]
+<charts/distribution_stops_by_station.png, id=45, 664.4825pt x 391.96437pt>
 File: charts/distribution_stops_by_station.png Graphic file (type png)
 
 <use charts/distribution_stops_by_station.png>
@@ -514,40 +517,44 @@ Package pdftex.def Info: charts/distribution_stops_by_station.png used on input
  line 75.
 (pdftex.def)             Requested size: 345.0pt x 203.51163pt.
 
-<charts/number_stations_average_user.png, id=41, 594.22pt x 339.76938pt>
+<charts/number_stations_average_user.png, id=46, 594.22pt x 339.76938pt>
 File: charts/number_stations_average_user.png Graphic file (type png)
 
 <use charts/number_stations_average_user.png>
 Package pdftex.def Info: charts/number_stations_average_user.png used on input 
 line 81.
 (pdftex.def)             Requested size: 345.0pt x 197.27374pt.
- [8 <./charts/different_stations_per_user.png> <./charts/stops_per_user.png>] [
-9 <./charts/persons_per_station.png> <./charts/distribution_stops_by_station.pn
-g>] [10 <./charts/number_stations_average_user.png>]) (chapters/06_conclusion.t
-ex) (chapters/07_future_work.tex
-[11]) (main.bbl
+ [9 <./charts/persons_per_station.png>] [10 <./charts/distribution_stops_by_sta
+tion.png> <./charts/number_stations_average_user.png>]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 106.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 106.
+ [11]) (chapters/06_conclusion.tex)
+(chapters/07_future_work.tex [12] [13]) (main.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [12] [13] (main.aux) ) 
+) [14] (main.aux) ) 
 Here is how much of TeX's memory you used:
- 1876 strings out of 493335
- 26040 string characters out of 3136677
- 85786 words of memory out of 3000000
- 5362 multiletter control sequences out of 15000+200000
+ 1879 strings out of 493335
+ 26086 string characters out of 3136677
+ 87795 words of memory out of 3000000
+ 5365 multiletter control sequences out of 15000+200000
  7895 words of font info for 28 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,6n,23p,1323b,229s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmr17.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-sy10.pfb>
-Output written on main.pdf (13 pages, 1131075 bytes).
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
+12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.
+pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on main.pdf (14 pages, 1152246 bytes).
 PDF statistics:
- 86 PDF objects out of 1000 (max. 8388607)
+ 97 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -6,6 +6,7 @@ import ch.chnoch.mt.machinelearning.data.evaluation.classifiers.MultilayerPercep
 import ch.chnoch.mt.machinelearning.data.evaluation.classifiers.NaiveBayesClassifier
 import ch.chnoch.mt.machinelearning.data.evaluation.classifiers.RandomForestClassifier
 import ch.chnoch.mt.machinelearning.data.evaluation.evaluations.DefaultEvaluation
+import ch.chnoch.mt.machinelearning.data.evaluation.evaluations.F1Evaluation
 import ch.chnoch.mt.machinelearning.data.evaluation.evaluations.SeparatePercentageEvaluation
 import ch.chnoch.mt.machinelearning.data.evaluation.feature.CurrentStationFeature
 import ch.chnoch.mt.machinelearning.data.evaluation.feature.DayOfWeekFeature
@@ -49,7 +50,7 @@ public class ExecutionPlanFactory {
 
         plan.setClassifier(new MultilayerPerceptronClassifier())
 
-        plan.setEvaluation(new SeparatePercentageEvaluation())
+        plan.setEvaluation(new F1Evaluation(plan.getFeatureCount()))
 
         return plan
     }

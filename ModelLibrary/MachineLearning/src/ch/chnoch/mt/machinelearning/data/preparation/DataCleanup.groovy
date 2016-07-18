@@ -85,20 +85,20 @@ public class DataCleanup {
 
     private static String getStationOrNull(ModelEntry entry, ModelEntry questionableEntry) {
         Date timestamp = entry.timestampStart
-        def nextTimestamp = questionableEntry?.timestampStart
+        def questionableTimestamp = questionableEntry?.timestampStart
 
         def hourOfDay = Integer.parseInt(timestamp.format("HH"));
         def calendar = timestamp.toCalendar()
         def day = calendar.get(Calendar.DAY_OF_WEEK)
 
-        def nextHourOfDay = nextTimestamp?.format("HH")?.toInteger();
-        def nextCalendar = nextTimestamp?.toCalendar()
-        def nextDay = nextCalendar?.get(Calendar.DAY_OF_WEEK)
+        def questionableHourOfDay = questionableTimestamp?.format("HH")?.toInteger();
+        def questionableCalendar = questionableTimestamp?.toCalendar()
+        def questionableDay = questionableCalendar?.get(Calendar.DAY_OF_WEEK)
 
         if (entry?.userId == questionableEntry?.userId) {
-            if (day == nextDay && !(hourOfDay > 4 && nextHourOfDay < 4)) {
+            if (day == questionableDay && !(hourOfDay > 4 && questionableHourOfDay < 4)) {
                 return questionableEntry.stationId
-            } else if (nextDay == (day - 1) % 7 && hourOfDay < 4) {
+            } else if (questionableDay == (day - 1) % 7 && hourOfDay < 4) {
                 return questionableEntry.stationId
             }
         }

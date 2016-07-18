@@ -14,8 +14,9 @@ We model our problem as a sequence prediction problem due to the fact that we ha
 \label{subsec:proposed_solution}
 We used multiple different techniques to solve our task and to use in the final evaluation. Decision Trees and Random Forests, a Naive Bayes algorithm as well as Hidden Markov Models (which fall under the Neural Networks category). The theoretical foundation of these algorithms are described here in further detail. The practical way in which we used them are described in Section~\ref{subsec:machine_learning_results}
 
+\subsubsection{WEKA}
 
-\subsubsection{Decision Trees / Random Forests}
+\subsubsection{Decision Trees}
 Decision tree learning in the context of data mining is a technique using a decision tree as a predictive model to map observation about input data to come to a conclusion about the data's target value. A tree model that accepts a finite set of values is called a "classification tree", in case continuous values are allowed the decision tree is called "regression tree". A decision tree doesn't explicitly represent a decision, however the resulting classification tree can be used as an input for decision making. 
 
 In a decision tree model, a leaf represents a class label and a branch represents a conjunction of features leading to the class labels. As can be seen in the example in Figure \ref{fig:image-decision-tree} the interior nodes correspond to the input values, the edges are the value domain and the leafs represent the values of the target variable. With such a modeled decision tree we can easily either visually or computationally evaluate new input data and derive the target values.
@@ -36,5 +37,5 @@ A tree can be trained or learned by splitting the source data set into subsets b
 \subsubsection{Naive Bayes}
 Here goes the theoretical description of Naive Bayes
 
-\subsubsection{HMM / Neural Networks}
+\subsubsection{HMM / Neural Networks / Multilayer Perceptron}
 Here goes the theoretical description of Hidden Markov Models and Neural Networks

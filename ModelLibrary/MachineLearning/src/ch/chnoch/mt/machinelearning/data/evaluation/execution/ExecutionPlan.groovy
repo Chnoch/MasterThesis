@@ -35,6 +35,11 @@ public class ExecutionPlan implements IExecutionPlan {
     }
 
     @Override
+    int getFeatureCount() {
+        return features.size();
+    }
+
+    @Override
     public void setClassifier(IClassifier classifier) {
         this.classifier = classifier;
     }

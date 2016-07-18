@@ -98,13 +98,44 @@ This naive approach with all its known limitations and issues gave us a correct 
 As outlined before applying machine learning techniques to our problem was the main goal of our thesis. After having gathered insights into our dataset by statistical means and by looking at the dataset with a naive approach we started working on machine learning. We laid out our execution plan, defining what and how we want to test the different algorithms on our dataset, what kind of algorithms we'd use and how we evaluate and compare the results. The following sections are the result of carrying out these plans.
 
 \subsubsection{Execution Plan}
+The reason to have a proper execution plan is to have a reproducible way of evaluating the features with different classifiers and reason about the gathered results. 
+
+The classifiers that we use are already described in a theoretical manner in section \ref{subsec:proposed_solution}. We have used a Decision Tree (J48, unpruned ------ WEKA Link --------) and a Naive Bayes classifier both provided from WEKA. As a classifier with back propagation we have used a Multilayer Perceptron classifier also provided by WEKA.
+
+To test the accuracy of each of the classifiers trained with different features we are using the F1 score. The F1 score considers both the precision and the recall. In information retrieval the precision is defined as "How many selected items are relevant?" whereas the recall is defined as "How many relevant items are selected?". The combination of both precision and recall gives quite a good approximation of the accuracy of a classifier and allows us to easily compare the different results with each other. Mathematically the F1 score is defined as 
+\begin{equation}\label{equation:F1Score}
+F_{1} = 2 \cdot \frac{precision \cdot recall}{precision + recall}
+\end{equation}
+
+The F1 score is also called traditional F-measure or balanced F-score, because it's the harmonic mean of precision and recall and thus weighs both measurements equally.
+
+We are using the precision, recall and F1 score directly to compare the different executions and to analyze their results. However we also split up the result set to compare the precision/recall/F1 for the number of most frequent stations used as well as for different types of users (frequent/non-frequent). With that analysis we should be able to see how the prediction for different usage patterns and types of users are influenced by our classifiers.
+
+The features that we have been able to identify from our data set and that we have worked with are the following:
+\begin{itemize}
+	\item Current Station
+	\item Day of Week
+	\item Hour of Day
+	\item Minute of Hour
+	\item Weekday or Weekendday
+	\item Previous Station
+	\item \textbf{Next station} (to be predicted)
+\end{itemize}
+
+The current station can directly be deduced from the gathered data. The same can be done thanks to the timestamp for the day of week, hour of day, minute of hour and the weekday/weekendday flag. For the previous station we had to do some calculation as well as some assumptions about the data. The way we have prepared the previous station is described in more detail in section \ref{subsubsec:data_preparation}. The next station is the feature that we will be predicting with our algorithms. However in order to have a reasonable training set and to have an established ground truth for comparing the predictions we algorithmically assign the value of the next station already to a data entry. We know that the value we use as ground truth might not always perfectly reflect the reality, but since we are limited by the data that we have gathered we had no other option if we wanted to generate somewhat meaningful results.
+
+In our execution plans we have used different combinations of the feature set above to train and then test the data set. We have always tried to predict the next station feature.
+
 
 \subsubsection{Data Preparation / Statistical Analysis}
 \label{subsubsec:data_preparation}
 
+!TODO For the previous stations:
+As a general rule we assigned the station id of the previous data entry of the user as the previous station. However we are doing a split at night at 04.00. At this time a new day in our dataset begins and if the previous data entry was still in the old day we simply set the previous station to "null". This limitation is done
 
-\subsubsection{Decision Trees (Random Forest is included)}
+
+\subsubsection{Decision Trees}
 \subsubsection{Naive Bayes}
-\subsubsection{HMM / Neural Networks}
+\subsubsection{Multilayer Perceptron}
 
 \subsection{Comparison of Results}
