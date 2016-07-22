@@ -43,6 +43,16 @@ public class ExecutionPlanFactory {
         return plan;
     }
 
+    public static IExecutionPlan createDecisionTreeExecutionPlan(Model model) {
+        IExecutionPlan plan = new ExecutionPlan(model)
+
+        addDefaultFeatures(plan)
+
+        plan.setClassifier(new DecisionTreeClassifier())
+        plan.setEvaluation(new F1Evaluation(plan.getFeatureCount()))
+        return plan
+    }
+
     public static IExecutionPlan createMultilayerPerceptronExecutionPlan(Model model) {
         IExecutionPlan plan = new ExecutionPlan(model)
 

@@ -1,3 +1,11 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{WEKAJavaDocAttribute}
+University of~Waikato.
+\newblock Java documentation of weka, 2016.
+
+\bibitem{WikipediaDecisionTrees}
+Wikipedia.
+\newblock Decision tree learning, 2016.
 
 \end{thebibliography}

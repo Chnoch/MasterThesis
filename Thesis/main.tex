@@ -1,4 +1,5 @@
 \documentclass{article}
+
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{listings}
@@ -26,6 +27,8 @@
 	tabsize=3
 }
 
+\newcommand{\paragraphtitle}[1]{\paragraph{#1}\mbox{}\\}
+
 \title{Master Thesis\\
 	\large Predicting User’s Interest Profile for Public Transportation}
 
@@ -45,6 +48,7 @@
 \input{"chapters/06_conclusion.tex"}
 \input{"chapters/07_future_work.tex"}
 
+\newpage
 \bibliographystyle{plain}
 \bibliography{references}
 \end{document}

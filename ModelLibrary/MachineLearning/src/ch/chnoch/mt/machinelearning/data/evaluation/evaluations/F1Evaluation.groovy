@@ -1,6 +1,7 @@
 package ch.chnoch.mt.machinelearning.data.evaluation.evaluations
 
 import ch.chnoch.mt.machinelearning.data.interfaces.IEvaluation
+import com.sun.java.util.jar.pack.ConstantPool.Index
 import weka.classifiers.Evaluation
 
 /**
@@ -16,14 +17,19 @@ class F1Evaluation implements IEvaluation {
 
     @Override
     public void evaluate(Evaluation evaluation) {
-        double precision = evaluation.precision(classIndex);
-        double recall = evaluation.recall(classIndex);
-        double fMeasure = evaluation.fMeasure(classIndex);
+        try {
 
-        System.println('Precision: ' + precision);
-        System.println('Recall: ' + recall)
-        System.println('F1 Measure: ' + fMeasure)
-        System.println('--------------------------------------')
+            double precision = evaluation.precision(classIndex);
+            double recall = evaluation.recall(classIndex);
+            double fMeasure = evaluation.fMeasure(classIndex);
+
+            System.println('Precision: ' + precision);
+            System.println('Recall: ' + recall)
+            System.println('F1 Measure: ' + fMeasure)
+            System.println('--------------------------------------')
+        } catch (IndexOutOfBoundsException e) {
+            println("ArrayIndexOutOfBoundsException")
+        }
     }
 
     @Override

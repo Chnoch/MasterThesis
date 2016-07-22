@@ -1,14 +1,13 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
-I couldn't open database file https://en.wikipedia.org/wiki/Decision_tree_learning.bib
----line 11 of file main.aux
- : \bibdata{https://en.wikipedia.org/wiki/Decision_tree_learning
- :                                                              }
-I'm skipping whatever remains of this command
 The style file: plain.bst
-Illegal, another \bibdata command---line 44 of file main.aux
- : \bibdata
- :         {references}
-I'm skipping whatever remains of this command
-I found no \citation commands---while reading file main.aux
-I found no database files---while reading file main.aux
-(There were 4 error messages)
+Database file #1: references.bib
+Warning--entry type for "WikipediaDecisionTrees" isn't style-file defined
+--line 10 of file references.bib
+I was expecting a `,' or a `}'---line 14 of file references.bib
+ :  
+ :  url = {https://en.wikipedia.org/wiki/Decision_tree_learning},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--entry type for "WEKAJavaDocAttribute" isn't style-file defined
+--line 18 of file references.bib
+(There was 1 error message)

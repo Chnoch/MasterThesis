@@ -24,8 +24,11 @@ Model model = ModelHelper.getCleanUpdatedModel(folder)
 ExecutionPlan plan = ExecutionPlanFactory.createFullFeatureSetExecutionPlan(model);
 //plan.startExecutionAndEvaluation()
 
+ExecutionPlan dtPlan = ExecutionPlanFactory.createDecisionTreeExecutionPlan(model)
+dtPlan.startExecutionAndEvaluation()
+
 ExecutionPlan multilayerPlan = ExecutionPlanFactory.createMultilayerPerceptronExecutionPlan(model)
-multilayerPlan.startExecutionAndEvaluation()
+//multilayerPlan.startExecutionAndEvaluation()
 
 ExecutionPlan hmmPlan = ExecutionPlanFactory.createHmmExecutionPlan(model)
 //multilayerPlan.startExecutionAndEvaluation()
