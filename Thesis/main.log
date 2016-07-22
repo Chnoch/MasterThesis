@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.31)  22 JUL 2016 11:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.31)  22 JUL 2016 17:29
 entering extended mode
 **./main.tex
 (main.tex
@@ -566,12 +566,12 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 106.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 106.
- [11] [12]) (chapters/06_conclusion.tex)
-(chapters/07_future_work.tex [13] [14]) (main.bbl
+ [11] [12] [13] [14]) (chapters/06_conclusion.tex)
+(chapters/07_future_work.tex [15] [16]) (main.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [15] (main.aux) ) 
+) [17] (main.aux) ) 
 Here is how much of TeX's memory you used:
  3645 strings out of 493335
  49334 string characters out of 3136677
@@ -579,7 +579,7 @@ Here is how much of TeX's memory you used:
  7109 multiletter control sequences out of 15000+200000
  8361 words of font info for 30 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,6n,40p,1323b,1111s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,6n,40p,1544b,1111s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
@@ -589,9 +589,9 @@ cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
 pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on main.pdf (15 pages, 1170703 bytes).
+Output written on main.pdf (17 pages, 1176433 bytes).
 PDF statistics:
- 104 PDF objects out of 1000 (max. 8388607)
+ 110 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
