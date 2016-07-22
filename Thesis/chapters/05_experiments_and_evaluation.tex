@@ -129,6 +129,38 @@ In our execution plans we have used different combinations of the feature set ab
 
 \subsubsection{Data Preparation / Statistical Analysis}
 \label{subsubsec:data_preparation}
+As part of the process to convert the raw data we have gathered into a WEKA-compatible format we also implemented the findings we gathered from our data analysis, from the naive approach and from the subsequent execution of our plans and the gathering of the results. We constantly improved the results of our predictions by taking the data with the preparation we had done so far, using the machine learning algorithms on the data and then analyzing the results. This process has not been a straightforward path where we knew what and how we needed to implement restrictions and enhancements on our data, but much more a continuous path, leading to small or significant improvements or decreases in precision. Based on the analysis of each step we took we were able to get a good precision, albeit at the cost described in this section. We outline all the transformations, restrictions and enhancements that we made on our data set here.
+
+The first step in the process was to parse our data set. The data is available as a single large .csv files, each entry consisting of a line such as this:
+\begin{lstlisting}
+2015-11-26T23:25:46	path=/v1/training?stop_id=8592010	hashacc=595604002
+\end{lstlisting}
+Each line starts with the timestamp of the entry, followed by the api path that was made, the id of the station as well as a hash of the user. The relevant data for us is obviously the timestamp, the user hash (which is subsequently directly used as user id) and the station id. The api path is the same for every entry and is irrelevant for our use case. Directly during the import of the data into our model we separated each entry by user and discarded the entries that had an empty user id attached. There is always a timestamp and a station id available. We have also during the import already added the time-based additional fields to our model. These fields include the hour of day, minute of hour, the day of week and whether it's a weekday or weekend day. We also directly set the station id. The previous and next station are added in a later step. A model entry is internally represented by the following fields:
+\begin{lstlisting}
+public class ModelEntry {
+	private String userId
+	
+	private Date timestampStart
+	
+	private int hourOfDay
+	private int minuteOfHour
+	private int dayOfWeek
+	private Boolean weekday
+	
+	private String stationId
+	private String previousStationId
+	
+	// This is the main thing to predict
+	private String nextStationId
+}
+\end{lstlisting}
+Now that we have completed the import of the raw data into our model we have a representation of every user with every entry that was gathered from said user. 
+
+The next step is to remove duplicate entries that are present in a user's entry list. Because the Android app responsible for gathering the data and sending it to the server periodically pulls the current location. If a user has to wait at a station for a few minutes it's possible that the app created not only one but multiple entries for this station. In our prediction later we don't want to predict how many times the app would gather data from the same station, but want to predict the actually target destination of the user. That's the reasoning behind removing the duplicate entries. Recognition and removal of duplicates works as follows: 
+We sort all the entries of a user by its timestamp and then look at two consecutive entries. If the time difference of the two entries lies within a certain threshold, we discard the second entry and only keep the first. After some tests we have come to the conclusion that 60 seconds is a reasonable threshold for discarding duplicate entries. Since the app does periodically update its location data we can be relatively sure that within 60 seconds we catch all the cases that are actually just duplicate entries. In case a user has two consecutive entries with e.g. 2 hours time difference, it's more likely that the user is actually starting a new journey at the second entry. Therefore it wouldn't make sense to discard the second entry, especially since each entry is also tied to the specific time and day it was recorded and that information is then also used in our prediction algorithms.
+
+
+
 
 !TODO For the previous stations:
 As a general rule we assigned the station id of the previous data entry of the user as the previous station. However we are doing a split at night at 04.00. At this time a new day in our dataset begins and if the previous data entry was still in the old day we simply set the previous station to "null". This limitation is done

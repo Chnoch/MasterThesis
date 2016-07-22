@@ -5,6 +5,8 @@ package ch.chnoch.mt.machinelearning.data.model
  */
 public class ModelEntry {
 
+    private String userId
+
     private Date timestampStart
 
     private int hourOfDay
@@ -12,11 +14,10 @@ public class ModelEntry {
     private int dayOfWeek
     private Boolean weekday
 
-    private String previousStationId
-    private String userId
     private String stationId
+    private String previousStationId
 
-    // This is the main thing to figure out
+    // This is the main thing to predict
     private String nextStationId
 
     private ModelEntry() {}
