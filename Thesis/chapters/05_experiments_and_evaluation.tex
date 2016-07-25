@@ -200,9 +200,53 @@ Once the model is created we use an Evaluation to evaluate the model. There are 
 
 Once the classifiers has been trained and tested, WEKA provides an abundance of information about its predictions. We used this information to put together charts and statistical results for each of our classifier given each of the different feature sets we prepared for it.
 
+\subsection{Experiments}
+We have conducted three different experiments on our data set, each with different algorithms and with multiple feature sets. The algorithms are always Decision Tree, Naive Bayes and Multilayer Perceptron. On the last experiment we have omitted the Multilayer Perceptron algorithm due to severe performance issues.
 
-\subsubsection{Decision Trees}
-\subsubsection{Naive Bayes}
-\subsubsection{Multilayer Perceptron}
+For each experiment and each algorithm we have used three different feature sets to train and test the algorithm:
+
+\mbox{}\\
+\begin{tabular}{l | c | r}
+	\hline
+	\textbf{Stations} & \textbf{Current Station \& Timestamp} & \textbf{All Features} \\
+	\hline
+	 Current Station  & Current Station & Current Station \\
+	 Previous Station & Hour of Day & Hour of Day \\
+	  & Minute of Hour & Minute of Hour \\
+	  & Day of Week & Day of Week \\
+	  & Weekday & Weekday \\
+	  & & Previous Station \\
+	  \hline
+\end{tabular}
+
+
+
+
+\subsubsection{Comparison of all Users}
+\paragraphtitle{Decision Trees}
+\begin{figure}[!htb]
+	\caption{Stations-Feature for Decision Tree}
+	\centering
+	\includegraphics[width=1.0\textwidth]{files/all_users_combined/decision_tree_stas_line}
+\end{figure}
+\begin{figure}[!htb]
+	\caption{Stations-Feature for Decision Tree}
+	\centering
+	\includegraphics[width=1.0\textwidth]{files/all_users_combined/decision_tree_stas_boxplot}
+\end{figure}
+\paragraphtitle{Naive Bayes}
+\paragraphtitle{Multilayer Perceptron}
+
+\subsubsection{Comparison of frequent versus non-frequent Users}
+\paragraphtitle{Decision Trees}
+\paragraphtitle{Naive Bayes}
+\paragraphtitle{Multilayer Perceptron}
+
+\subsubsection{Comparison of all Users with higher number of Stations}
+\paragraphtitle{Decision Trees}
+\paragraphtitle{Naive Bayes}
+
+
+
 
 \subsection{Comparison of Results}
