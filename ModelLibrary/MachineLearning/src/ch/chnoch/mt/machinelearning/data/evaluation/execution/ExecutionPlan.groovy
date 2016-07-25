@@ -25,8 +25,11 @@ public class ExecutionPlan implements IExecutionPlan {
 
     private Model model;
 
-    public ExecutionPlan(Model model) {
+    private String title;
+
+    public ExecutionPlan(Model model, String title) {
         this.model = model;
+        this.title = title;
     }
 
     @Override
@@ -51,19 +54,15 @@ public class ExecutionPlan implements IExecutionPlan {
 
     @Override
     public void startExecutionAndEvaluation() {
+        println(this.title)
+        println('Precision\tRecall\tF-Measure')
         model.getPreparedUsers().each { user ->
-            println('prepare')
             prepareWeka(user);
-
-            println('classify')
-
             Classifier wekaClassifier = classifier.classifyModel();
-            println('evaluateModel')
             Evaluation wekaEvaluation = classifier.evaluateModel(wekaClassifier);
-            println('evaluate')
             evaluation.evaluate(wekaEvaluation);
+            evaluation.evaluateUser(wekaEvaluation, user);
         }
-        println('complete evaluation')
         evaluation.completeEvaluation()
     }
 

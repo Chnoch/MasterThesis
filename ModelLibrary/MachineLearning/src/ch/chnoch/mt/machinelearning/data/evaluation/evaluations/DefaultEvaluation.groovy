@@ -6,7 +6,7 @@ import weka.classifiers.Evaluation
 /**
  * Created by Chnoch on 12.02.2016.
  */
-public class DefaultEvaluation implements IEvaluation {
+public class DefaultEvaluation extends AbstractEvaluation {
 
     private long amount = 0L
     private long count = 0L

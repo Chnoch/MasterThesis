@@ -26,7 +26,6 @@ class DecisionTreeClassifier extends AbstractClassifier {
         def folds = instances.size() > 10 ? 10 : instances.size()
         if (folds < 2) folds = 2
 
-//        def folds = 2
         eval.crossValidateModel(classifier, instances, folds, new Random(1));
 
         return eval

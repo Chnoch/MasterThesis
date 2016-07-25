@@ -2,38 +2,38 @@ package ch.chnoch.mt.machinelearning.data.evaluation.evaluations
 
 import ch.chnoch.mt.machinelearning.data.interfaces.IEvaluation
 import com.sun.java.util.jar.pack.ConstantPool.Index
+import sun.security.x509.EDIPartyName
 import weka.classifiers.Evaluation
+
+import java.text.DecimalFormat
 
 /**
  * Created by Chnoch on 18.07.2016.
  */
-class F1Evaluation implements IEvaluation {
+public class F1Evaluation extends AbstractEvaluation {
 
-    private int classIndex;
-
-    public F1Evaluation(int featureCount) {
-        classIndex = featureCount - 1;
-    }
+    private List<F1EvaluationData> dataList = new ArrayList<>()
 
     @Override
     public void evaluate(Evaluation evaluation) {
-        try {
+        F1EvaluationData data = new F1EvaluationData()
+        data.precision = evaluation.weightedPrecision()
+        data.recall = evaluation.weightedRecall()
+        data.fMeasure = evaluation.weightedFMeasure()
 
-            double precision = evaluation.precision(classIndex);
-            double recall = evaluation.recall(classIndex);
-            double fMeasure = evaluation.fMeasure(classIndex);
-
-            System.println('Precision: ' + precision);
-            System.println('Recall: ' + recall)
-            System.println('F1 Measure: ' + fMeasure)
-            System.println('--------------------------------------')
-        } catch (IndexOutOfBoundsException e) {
-            println("ArrayIndexOutOfBoundsException")
-        }
+        dataList.push(data)
     }
 
     @Override
     public void completeEvaluation() {
+        dataList = dataList.sort { -it.fMeasure }
+        DecimalFormat df = new DecimalFormat("0.000")
 
+        for (F1EvaluationData data : dataList) {
+            print(df.format(data.precision) + '\t')
+            print(df.format(data.recall) + '\t')
+            print(df.format(data.fMeasure) + '\n')
+        }
+        println()
     }
 }

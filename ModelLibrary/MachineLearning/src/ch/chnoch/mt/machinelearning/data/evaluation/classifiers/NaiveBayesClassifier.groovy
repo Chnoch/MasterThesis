@@ -38,6 +38,5 @@ class NaiveBayesClassifier extends AbstractClassifier {
 
         instances = newData
     }
-
 }
 

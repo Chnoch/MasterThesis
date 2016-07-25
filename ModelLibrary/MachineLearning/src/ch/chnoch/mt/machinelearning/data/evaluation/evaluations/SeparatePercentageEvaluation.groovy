@@ -6,7 +6,7 @@ import weka.classifiers.Evaluation
 /**
  * Created by Chnoch on 12.02.2016.
  */
-public class SeparatePercentageEvaluation implements IEvaluation {
+public class SeparatePercentageEvaluation extends AbstractEvaluation {
 
     private long amount = 0L
     private double correct = 0L

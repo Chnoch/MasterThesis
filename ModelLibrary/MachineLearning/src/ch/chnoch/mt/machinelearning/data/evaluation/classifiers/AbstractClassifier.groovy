@@ -22,11 +22,11 @@ public abstract class AbstractClassifier implements IClassifier {
 
     @Override
     public Evaluation evaluateModel(Classifier classifier) {
-        System.println(instances.size())
-
         Evaluation eval = new Evaluation(instances);
-        def folds = instances.size() > AMOUNT_OF_FOLDS ? AMOUNT_OF_FOLDS : instances.size()
-        if (folds < 2) folds = 2
+        int folds = instances.size() > AMOUNT_OF_FOLDS ? AMOUNT_OF_FOLDS : instances.size()
+        if (folds < 2) {
+            folds = 2
+        }
 
         eval.crossValidateModel(classifier, instances, folds, new Random(10));
 
