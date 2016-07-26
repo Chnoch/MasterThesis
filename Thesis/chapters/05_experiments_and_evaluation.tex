@@ -208,7 +208,7 @@ For each experiment and each algorithm we have used three different feature sets
 \mbox{}\\
 \begin{tabular}{l | c | r}
 	\hline
-	\textbf{Stations} & \textbf{Current Station \& Timestamp} & \textbf{All Features} \\
+	\textbf{Stations} & \textbf{Current Station \& Time-Based} & \textbf{All Features} \\
 	\hline
 	 Current Station  & Current Station & Current Station \\
 	 Previous Station & Hour of Day & Hour of Day \\
@@ -221,30 +221,349 @@ For each experiment and each algorithm we have used three different feature sets
 
 
 
-
+\newpage
 \subsubsection{Comparison of all Users}
-\paragraphtitle{Decision Trees}
-\begin{figure}[!htb]
-	\caption{Stations-Feature for Decision Tree}
-	\centering
-	\includegraphics[width=1.0\textwidth]{files/all_users_combined/decision_tree_stas_line}
-\end{figure}
-\begin{figure}[!htb]
-	\caption{Stations-Feature for Decision Tree}
-	\centering
-	\includegraphics[width=1.0\textwidth]{files/all_users_combined/decision_tree_stas_boxplot}
-\end{figure}
-\paragraphtitle{Naive Bayes}
-\paragraphtitle{Multilayer Perceptron}
+For our first experiment we take our fully prepared data set, run each algorithm with each feature set once per user and collect the results of the evaluation. We then sort the results of the users by their F-Values for the line chart in order to get a good representation of how precision and recall correlates and the F-Measure deteriorates in our data set. The Boxplot graph gives a good statistical overview of the distribution and the highs and lows in our result set. As it is generally helpful to have multiple representations of data we have in most cases included both the line chart and boxplot graph.
 
+\paragraphtitle{Decision Trees}
+% Decision Tree - Stations
+\begin{figure}[H]
+	\makebox[\textwidth]{
+		\begin{minipage}[t]{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{files/all_users_combined/decision_tree_stas_line}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[t]{0.69\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{files/all_users_combined/decision_tree_stas_boxplot}
+		\end{minipage}
+		\hfill
+	}
+	\caption{Stations Features for Decision Tree}
+\end{figure}
+
+% Decision Tree - Current Station & Timestamp
+\begin{figure}[H]
+	\makebox[\textwidth]{
+		\begin{minipage}[t]{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{files/all_users_combined/decision_tree_csta_ts_line}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[t]{0.69\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{files/all_users_combined/decision_tree_csta_ts_boxplot}
+		\end{minipage}
+		\hfill
+	}
+	\caption{Current Station and Time-Based Features for Decision Tree}
+\end{figure}
+
+% Decision Tree - All Features
+\begin{figure}[H]
+	\makebox[\textwidth]{
+		\begin{minipage}[t]{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{files/all_users_combined/decision_tree_all_line}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[t]{0.69\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{files/all_users_combined/decision_tree_all_boxplot}
+		\end{minipage}
+		\hfill
+	}
+	\caption{All Features for Decision Tree}
+\end{figure}
+
+
+\paragraphtitle{Naive Bayes}
+% Naive Bayes - Stations
+\begin{figure}[H]
+	\makebox[\textwidth]{
+		\begin{minipage}[t]{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{files/all_users_combined/naive_bayes_stas_line}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[t]{0.69\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{files/all_users_combined/naive_bayes_stas_boxplot}
+		\end{minipage}
+		\hfill
+	}
+	\caption{Stations Features for Naive Bayes}
+\end{figure}
+
+% Naive Bayes  - Current Station & Timestamp
+\begin{figure}[H]
+	\makebox[\textwidth]{
+		\begin{minipage}[t]{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{files/all_users_combined/naive_bayes_csta_ts_line}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[t]{0.69\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{files/all_users_combined/naive_bayes_csta_ts_boxplot}
+		\end{minipage}
+		\hfill
+	}
+	\caption{Current Station and Time-Based Features for Naive Bayes}
+\end{figure}
+
+% Naive Bayes  - All Features
+\begin{figure}[H]
+	\makebox[\textwidth]{
+		\begin{minipage}[t]{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{files/all_users_combined/naive_bayes_all_line}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[t]{0.69\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{files/all_users_combined/naive_bayes_all_boxplot}
+		\end{minipage}
+		\hfill
+	}
+	\caption{All Features for Naive Bayes}
+\end{figure}
+
+
+\paragraphtitle{Multilayer Perceptron}
+% Multilayer Perceptron - Stations
+\begin{figure}[H]
+	\makebox[\textwidth]{
+		\begin{minipage}[t]{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{files/all_users_combined/mp_stas_line}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[t]{0.69\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{files/all_users_combined/mp_stas_boxplot}
+		\end{minipage}
+		\hfill
+	}
+	\caption{Stations Features for Multilayer Perceptron}
+\end{figure}
+
+% Multilayer Perceptron - Current Station & Timestamp
+\begin{figure}[H]
+	\makebox[\textwidth]{
+		\begin{minipage}[t]{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{files/all_users_combined/mp_csta_ts_line}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[t]{0.69\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{files/all_users_combined/mp_csta_ts_boxplot}
+		\end{minipage}
+		\hfill
+	}
+	\caption{Current Station and Time-Based Features for Multilayer Perceptron}
+\end{figure}
+
+% Multilayer Perceptron - All Features
+\begin{figure}[H]
+	\makebox[\textwidth]{
+		\begin{minipage}[t]{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{files/all_users_combined/mp_all_line}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[t]{0.69\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{files/all_users_combined/mp_all_boxplot}
+		\end{minipage}
+		\hfill
+	}
+	\caption{All Features for Multilayer Perceptron}
+\end{figure}
+
+
+\newpage
 \subsubsection{Comparison of frequent versus non-frequent Users}
-\paragraphtitle{Decision Trees}
-\paragraphtitle{Naive Bayes}
-\paragraphtitle{Multilayer Perceptron}
+In this experiment we have let the algorithm run through our data set as before, however before creating the graph for our evaluation we have split the result set into high- and low-frequency users. The split is done by 50\% of our data set. We simply count the number of data entries a user has to see whether that user belongs into the high- or low-frequency belt. In the graphs below the left-hand side of the graph represent the high-frequency users and the right-hand side the low-frequency users. Each half is then ordered by their respective F-Values just as before.
 
+\paragraphtitle{Decision Trees}
+% Decision Tree - Stations
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{files/high_vs_low_frequency/decision_tree_stas}
+	\caption{Stations Features for Decision Tree}
+\end{figure}
+
+% Decision Tree - Current Station & Timestamp
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{files/high_vs_low_frequency/decision_tree_csta_ts}
+	\caption{Current Station and Time-Based Features for Decision Tree}
+\end{figure}
+
+% Decision Tree - All Features
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{files/high_vs_low_frequency/decision_tree_all}
+	\caption{All Features for Decision Tree}
+\end{figure}
+
+
+\paragraphtitle{Naive Bayes}
+% Naive Bayes - Stations
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{files/high_vs_low_frequency/naive_bayes_stas}
+	\caption{Stations Features for Naive Bayes}
+\end{figure}
+
+% Naive Bayes - Current Station & Timestamp
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{files/high_vs_low_frequency/naive_bayes_csta_ts}
+	\caption{Current Station and Time-Based Features for Naive Bayes}
+\end{figure}
+
+% Naive Bayes - All Features
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{files/high_vs_low_frequency/naive_bayes_all}
+	\caption{All Features for Naive Bayes}
+\end{figure}
+
+
+\paragraphtitle{Multilayer Perceptron}
+% Multilayer Perceptron - Stations
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{files/high_vs_low_frequency/mp_stas}
+	\caption{Stations Features for Multilayer Perceptron}
+\end{figure}
+
+% Multilayer Perceptron - Current Station & Timestamp
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{files/high_vs_low_frequency/mp_csta_ts}
+	\caption{Current Station and Time-Based Features for Multilayer Perceptron}
+\end{figure}
+
+% Multilayer Perceptron - All Features
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{files/high_vs_low_frequency/mp_all}
+	\caption{All Features for Multilayer Perceptron}
+\end{figure}
+
+
+\newpage
 \subsubsection{Comparison of all Users with higher number of Stations}
 \paragraphtitle{Decision Trees}
+% Decision Tree - Stations
+\begin{figure}[H]
+	\makebox[\textwidth]{
+		\begin{minipage}[t]{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{files/all_users_combined_more_station/decision_tree_stas_line}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[t]{0.69\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{files/all_users_combined_more_station/decision_tree_stas_boxplot}
+		\end{minipage}
+		\hfill
+	}
+	\caption{Stations Features for Decision Tree}
+\end{figure}
+
+% Decision Tree - Current Station & Timestamp
+\begin{figure}[H]
+	\makebox[\textwidth]{
+		\begin{minipage}[t]{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{files/all_users_combined_more_station/decision_tree_csta_ts_line}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[t]{0.69\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{files/all_users_combined_more_station/decision_tree_csta_ts_boxplot}
+		\end{minipage}
+		\hfill
+	}
+	\caption{Current Station and Time-Based Features for Decision Tree}
+\end{figure}
+
+% Decision Tree - All Features
+\begin{figure}[H]
+	\makebox[\textwidth]{
+		\begin{minipage}[t]{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{files/all_users_combined_more_station/decision_tree_all_line}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[t]{0.69\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{files/all_users_combined_more_station/decision_tree_all_boxplot}
+		\end{minipage}
+		\hfill
+	}
+	\caption{All Features for Decision Tree}
+\end{figure}
+
+
 \paragraphtitle{Naive Bayes}
+% Naive Bayes - Stations
+\begin{figure}[H]
+	\makebox[\textwidth]{
+		\begin{minipage}[t]{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{files/all_users_combined_more_station/naive_bayes_stas_line}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[t]{0.69\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{files/all_users_combined_more_station/naive_bayes_stas_boxplot}
+		\end{minipage}
+		\hfill
+	}
+	\caption{Stations Features for Naive Bayes}
+\end{figure}
+
+% Naive Bayes  - Current Station & Timestamp
+\begin{figure}[H]
+	\makebox[\textwidth]{
+		\begin{minipage}[t]{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{files/all_users_combined_more_station/naive_bayes_csta_ts_line}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[t]{0.69\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{files/all_users_combined_more_station/naive_bayes_csta_ts_boxplot}
+		\end{minipage}
+		\hfill
+	}
+	\caption{Current Station and Time-Based Features for Naive Bayes}
+\end{figure}
+
+% Naive Bayes  - All Features
+\begin{figure}[H]
+	\makebox[\textwidth]{
+		\begin{minipage}[t]{0.7\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{files/all_users_combined_more_station/naive_bayes_all_line}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[t]{0.69\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{files/all_users_combined_more_station/naive_bayes_all_boxplot}
+		\end{minipage}
+		\hfill
+	}
+	\caption{All Features for Naive Bayes}
+\end{figure}
+
 
 
 

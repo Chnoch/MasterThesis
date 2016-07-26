@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.31)  25 JUL 2016 22:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.2)  26 JUL 2016 11:08
 entering extended mode
 **./main.tex
 (main.tex
-LaTeX2e <2016/03/31>
-Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
+LaTeX2e <2015/10/01> patch level 2
+Babel <3.9n> and hyphenation patterns for 69 languages loaded.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size10.clo"
@@ -27,14 +27,14 @@ Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@posthook=\toks15
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
-File: utf8.def 2016/02/28 v1.1s UTF-8 support for inputenc
+File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
-File: t1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
+File: t1enc.dfu 2015/09/07 v1.1p UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -104,94 +104,50 @@ File: t1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
    defining Unicode char U+00FD (decimal 253)
    defining Unicode char U+00FE (decimal 254)
    defining Unicode char U+00FF (decimal 255)
-   defining Unicode char U+0100 (decimal 256)
-   defining Unicode char U+0101 (decimal 257)
    defining Unicode char U+0102 (decimal 258)
    defining Unicode char U+0103 (decimal 259)
    defining Unicode char U+0104 (decimal 260)
    defining Unicode char U+0105 (decimal 261)
    defining Unicode char U+0106 (decimal 262)
    defining Unicode char U+0107 (decimal 263)
-   defining Unicode char U+0108 (decimal 264)
-   defining Unicode char U+0109 (decimal 265)
-   defining Unicode char U+010A (decimal 266)
-   defining Unicode char U+010B (decimal 267)
    defining Unicode char U+010C (decimal 268)
    defining Unicode char U+010D (decimal 269)
    defining Unicode char U+010E (decimal 270)
    defining Unicode char U+010F (decimal 271)
    defining Unicode char U+0110 (decimal 272)
    defining Unicode char U+0111 (decimal 273)
-   defining Unicode char U+0112 (decimal 274)
-   defining Unicode char U+0113 (decimal 275)
-   defining Unicode char U+0114 (decimal 276)
-   defining Unicode char U+0115 (decimal 277)
-   defining Unicode char U+0116 (decimal 278)
-   defining Unicode char U+0117 (decimal 279)
    defining Unicode char U+0118 (decimal 280)
    defining Unicode char U+0119 (decimal 281)
    defining Unicode char U+011A (decimal 282)
    defining Unicode char U+011B (decimal 283)
-   defining Unicode char U+011C (decimal 284)
-   defining Unicode char U+011D (decimal 285)
    defining Unicode char U+011E (decimal 286)
    defining Unicode char U+011F (decimal 287)
-   defining Unicode char U+0120 (decimal 288)
-   defining Unicode char U+0121 (decimal 289)
-   defining Unicode char U+0122 (decimal 290)
-   defining Unicode char U+0123 (decimal 291)
-   defining Unicode char U+0124 (decimal 292)
-   defining Unicode char U+0125 (decimal 293)
-   defining Unicode char U+0128 (decimal 296)
-   defining Unicode char U+0129 (decimal 297)
-   defining Unicode char U+012A (decimal 298)
-   defining Unicode char U+012B (decimal 299)
-   defining Unicode char U+012C (decimal 300)
-   defining Unicode char U+012D (decimal 301)
-   defining Unicode char U+012E (decimal 302)
-   defining Unicode char U+012F (decimal 303)
    defining Unicode char U+0130 (decimal 304)
    defining Unicode char U+0131 (decimal 305)
    defining Unicode char U+0132 (decimal 306)
    defining Unicode char U+0133 (decimal 307)
-   defining Unicode char U+0134 (decimal 308)
-   defining Unicode char U+0135 (decimal 309)
-   defining Unicode char U+0136 (decimal 310)
-   defining Unicode char U+0137 (decimal 311)
    defining Unicode char U+0139 (decimal 313)
    defining Unicode char U+013A (decimal 314)
-   defining Unicode char U+013B (decimal 315)
-   defining Unicode char U+013C (decimal 316)
    defining Unicode char U+013D (decimal 317)
    defining Unicode char U+013E (decimal 318)
    defining Unicode char U+0141 (decimal 321)
    defining Unicode char U+0142 (decimal 322)
    defining Unicode char U+0143 (decimal 323)
    defining Unicode char U+0144 (decimal 324)
-   defining Unicode char U+0145 (decimal 325)
-   defining Unicode char U+0146 (decimal 326)
    defining Unicode char U+0147 (decimal 327)
    defining Unicode char U+0148 (decimal 328)
    defining Unicode char U+014A (decimal 330)
    defining Unicode char U+014B (decimal 331)
-   defining Unicode char U+014C (decimal 332)
-   defining Unicode char U+014D (decimal 333)
-   defining Unicode char U+014E (decimal 334)
-   defining Unicode char U+014F (decimal 335)
    defining Unicode char U+0150 (decimal 336)
    defining Unicode char U+0151 (decimal 337)
    defining Unicode char U+0152 (decimal 338)
    defining Unicode char U+0153 (decimal 339)
    defining Unicode char U+0154 (decimal 340)
    defining Unicode char U+0155 (decimal 341)
-   defining Unicode char U+0156 (decimal 342)
-   defining Unicode char U+0157 (decimal 343)
    defining Unicode char U+0158 (decimal 344)
    defining Unicode char U+0159 (decimal 345)
    defining Unicode char U+015A (decimal 346)
    defining Unicode char U+015B (decimal 347)
-   defining Unicode char U+015C (decimal 348)
-   defining Unicode char U+015D (decimal 349)
    defining Unicode char U+015E (decimal 350)
    defining Unicode char U+015F (decimal 351)
    defining Unicode char U+0160 (decimal 352)
@@ -200,18 +156,10 @@ File: t1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
    defining Unicode char U+0163 (decimal 355)
    defining Unicode char U+0164 (decimal 356)
    defining Unicode char U+0165 (decimal 357)
-   defining Unicode char U+0168 (decimal 360)
-   defining Unicode char U+0169 (decimal 361)
-   defining Unicode char U+016A (decimal 362)
-   defining Unicode char U+016B (decimal 363)
-   defining Unicode char U+016C (decimal 364)
-   defining Unicode char U+016D (decimal 365)
    defining Unicode char U+016E (decimal 366)
    defining Unicode char U+016F (decimal 367)
    defining Unicode char U+0170 (decimal 368)
    defining Unicode char U+0171 (decimal 369)
-   defining Unicode char U+0172 (decimal 370)
-   defining Unicode char U+0173 (decimal 371)
    defining Unicode char U+0174 (decimal 372)
    defining Unicode char U+0175 (decimal 373)
    defining Unicode char U+0176 (decimal 374)
@@ -223,38 +171,13 @@ File: t1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
    defining Unicode char U+017C (decimal 380)
    defining Unicode char U+017D (decimal 381)
    defining Unicode char U+017E (decimal 382)
-   defining Unicode char U+01CD (decimal 461)
-   defining Unicode char U+01CE (decimal 462)
-   defining Unicode char U+01CF (decimal 463)
-   defining Unicode char U+01D0 (decimal 464)
-   defining Unicode char U+01D1 (decimal 465)
-   defining Unicode char U+01D2 (decimal 466)
-   defining Unicode char U+01D3 (decimal 467)
-   defining Unicode char U+01D4 (decimal 468)
-   defining Unicode char U+01E2 (decimal 482)
-   defining Unicode char U+01E3 (decimal 483)
-   defining Unicode char U+01E6 (decimal 486)
-   defining Unicode char U+01E7 (decimal 487)
-   defining Unicode char U+01E8 (decimal 488)
-   defining Unicode char U+01E9 (decimal 489)
-   defining Unicode char U+01EA (decimal 490)
-   defining Unicode char U+01EB (decimal 491)
-   defining Unicode char U+01F0 (decimal 496)
-   defining Unicode char U+01F4 (decimal 500)
-   defining Unicode char U+01F5 (decimal 501)
    defining Unicode char U+0218 (decimal 536)
    defining Unicode char U+0219 (decimal 537)
    defining Unicode char U+021A (decimal 538)
    defining Unicode char U+021B (decimal 539)
-   defining Unicode char U+1E02 (decimal 7682)
-   defining Unicode char U+1E03 (decimal 7683)
    defining Unicode char U+200C (decimal 8204)
-   defining Unicode char U+2010 (decimal 8208)
-   defining Unicode char U+2011 (decimal 8209)
-   defining Unicode char U+2012 (decimal 8210)
    defining Unicode char U+2013 (decimal 8211)
    defining Unicode char U+2014 (decimal 8212)
-   defining Unicode char U+2015 (decimal 8213)
    defining Unicode char U+2018 (decimal 8216)
    defining Unicode char U+2019 (decimal 8217)
    defining Unicode char U+201A (decimal 8218)
@@ -271,7 +194,7 @@ Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
-File: ot1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
+File: ot1enc.dfu 2015/09/07 v1.1p UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -312,7 +235,7 @@ Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
-File: omsenc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
+File: omsenc.dfu 2015/09/07 v1.1p UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
    defining Unicode char U+00B7 (decimal 183)
@@ -343,31 +266,31 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
-Package: graphics 2016/05/09 v1.0r Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
-File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
-Package graphics Info: Driver file: pdftex.def on input line 96.
+Package graphics Info: Driver file: pdftex.def on input line 94.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count87
 ))
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
+(C:\Users\bas\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
 \lst@mode=\count88
 \lst@gtempboxa=\box26
 \lst@token=\toks17
@@ -381,112 +304,105 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 \lst@lineno=\count93
 \lst@maxwidth=\dimen108
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+(C:\Users\bas\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 \c@lstnumber=\count94
 \lst@skipnumbers=\count95
 \lst@framebox=\box27
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+(C:\Users\bas\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\color.sty"
-Package: color 2016/05/09 v1.1c Standard LaTeX Color (DPC)
+Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
-File: color.cfg 2016/01/02 v1.6 sample color configuration
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: pdftex.def on input line 144.
+Package color Info: Driver file: pdftex.def on input line 142.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count96
+\float@exts=\toks18
+\float@box=\box28
+\@float@everytoks=\toks19
+\@floatcapt=\box29
+)
+(C:\Users\bas\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\subcaption.sty
+Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+
+(C:\Users\bas\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(C:\Users\bas\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen109
+\captionmargin@=\dimen110
+\captionwidth=\dimen111
+\caption@tempdima=\dimen112
+\caption@indent=\dimen113
+\caption@parindent=\dimen114
+\caption@hangindent=\dimen115
+)
+\c@ContinuedFloat=\count97
+Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
+)
+\c@subfigure=\count98
+\c@subtable=\count99
+)
+(C:\Users\bas\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
-) (main.aux)
+)
+(main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+
+(C:\Users\bas\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count96
-\scratchdimen=\dimen109
-\scratchbox=\box28
-\nofMPsegments=\count97
-\nofMParguments=\count98
-\everyMPshowfont=\toks18
-\MPscratchCnt=\count99
-\MPscratchDim=\dimen110
-\MPnumerator=\count100
-\makeMPintoPDFobject=\count101
-\everyMPtoPDFconversion=\toks19
-) ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
-Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO
+\scratchcounter=\count100
+\scratchdimen=\dimen116
+\scratchbox=\box30
+\nofMPsegments=\count101
+\nofMParguments=\count102
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count103
+\MPscratchDim=\dimen117
+\MPnumerator=\count104
+\makeMPintoPDFobject=\count105
+\everyMPtoPDFconversion=\toks21
 )
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
-Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
-)
-\c@lstlisting=\count102
+\c@lstlisting=\count106
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 41.
+(Font)              <12> on input line 43.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 41.
+(Font)              <8> on input line 43.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 41.
+(Font)              <6> on input line 43.
+ (chapters/01_abstract.tex [1
 
-(chapters/01_abstract.tex [1
-
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]) (chapters/02_introductio
-n.tex [2]) (chapters/03_related_work.tex [3])
-(chapters/04_sequence_prediction.tex [4] [5]
-<images/decision-tree.png, id=21, 649.92813pt x 409.02812pt>
+{C:/Users/bas/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]) (chapters/02
+_introduction.tex [2])
+(chapters/03_related_work.tex [3]) (chapters/04_sequence_prediction.tex
+[4] [5] <images/decision-tree.png, id=21, 649.92813pt x 409.02812pt>
 File: images/decision-tree.png Graphic file (type png)
 
 <use images/decision-tree.png>
@@ -563,83 +479,457 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 109.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 109.
- [14] [15] [16] [17] [18] [19]
-<files/all_users_combined/decision_tree_stas_line.png, id=88, 334.24875pt x 232
+ [14] [15] [16] [17] [18] [19] [20]
+<files/all_users_combined/decision_tree_stas_line.png, id=91, 334.24875pt x 232
 .36812pt>
 File: files/all_users_combined/decision_tree_stas_line.png Graphic file (type p
 ng)
  <use files/all_users_combined/decision_tree_stas_line.png>
 Package pdftex.def Info: files/all_users_combined/decision_tree_stas_line.png u
-sed on input line 230.
-(pdftex.def)             Requested size: 345.0pt x 239.86302pt.
+sed on input line 242.
+(pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
 
-<files/all_users_combined/decision_tree_stas_boxplot.png, id=89, 406.51875pt x 
+<files/all_users_combined/decision_tree_stas_boxplot.png, id=92, 406.51875pt x 
 232.87pt>
 File: files/all_users_combined/decision_tree_stas_boxplot.png Graphic file (typ
 e png)
  <use files/all_users_combined/decision_tree_stas_boxplot.png>
 Package pdftex.def Info: files/all_users_combined/decision_tree_stas_boxplot.pn
-g used on input line 235.
-(pdftex.def)             Requested size: 345.0pt x 197.63483pt.
+g used on input line 242.
+(pdftex.def)             Requested size: 238.05084pt x 136.36519pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--238
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 238--239
+Underfull \hbox (badness 10000) in paragraph at lines 228--244
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--242
+<files/all_users_combined/decision_tree_csta_ts_line.png, id=93, 334.24875pt x 
+232.36812pt>
+File: files/all_users_combined/decision_tree_csta_ts_line.png Graphic file (typ
+e png)
+ <use files/all_users_combined/decision_tree_csta_ts_line.png>
+Package pdftex.def Info: files/all_users_combined/decision_tree_csta_ts_line.pn
+g used on input line 259.
+(pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 242--243
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 243--244
-
- []
-
-[20]
-Underfull \hbox (badness 10000) in paragraph at lines 246--247
-
- []
+<files/all_users_combined/decision_tree_csta_ts_boxplot.png, id=94, 406.51875pt
+ x 232.87pt>
+File: files/all_users_combined/decision_tree_csta_ts_boxplot.png Graphic file (
+type png)
+ <use files/all_users_combined/decision_tree_csta_ts_boxplot.png>
+Package pdftex.def Info: files/all_users_combined/decision_tree_csta_ts_boxplot
+.png used on input line 259.
+(pdftex.def)             Requested size: 238.05084pt x 136.36519pt.
 
 [21 <./files/all_users_combined/decision_tree_stas_line.png> <./files/all_users
 _combined/decision_tree_stas_boxplot.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 247--248
+<files/all_users_combined/decision_tree_all_line.png, id=100, 334.24875pt x 232
+.36812pt>
+File: files/all_users_combined/decision_tree_all_line.png Graphic file (type pn
+g)
+ <use files/all_users_combined/decision_tree_all_line.png>
+Package pdftex.def Info: files/all_users_combined/decision_tree_all_line.png us
+ed on input line 276.
+(pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
+
+<files/all_users_combined/decision_tree_all_boxplot.png, id=101, 406.51875pt x 
+232.87pt>
+File: files/all_users_combined/decision_tree_all_boxplot.png Graphic file (type
+ png)
+ <use files/all_users_combined/decision_tree_all_boxplot.png>
+Package pdftex.def Info: files/all_users_combined/decision_tree_all_boxplot.png
+ used on input line 276.
+(pdftex.def)             Requested size: 238.05084pt x 136.36519pt.
+
+<files/all_users_combined/naive_bayes_stas_line.png, id=102, 334.24875pt x 232.
+36812pt>
+File: files/all_users_combined/naive_bayes_stas_line.png Graphic file (type png
+)
+ <use files/all_users_combined/naive_bayes_stas_line.png>
+Package pdftex.def Info: files/all_users_combined/naive_bayes_stas_line.png use
+d on input line 295.
+(pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
+
+<files/all_users_combined/naive_bayes_stas_boxplot.png, id=103, 406.51875pt x 2
+32.87pt>
+File: files/all_users_combined/naive_bayes_stas_boxplot.png Graphic file (type 
+png)
+ <use files/all_users_combined/naive_bayes_stas_boxplot.png>
+Package pdftex.def Info: files/all_users_combined/naive_bayes_stas_boxplot.png 
+used on input line 295.
+(pdftex.def)             Requested size: 238.05084pt x 136.36519pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--297
 
  []
 
-) (chapters/06_conclusion.tex [22]) (chapters/07_future_work.tex [23] [24])
-[25] (main.bbl) [26] (main.aux) ) 
+[22 <./files/all_users_combined/decision_tree_csta_ts_line.png> <./files/all_us
+ers_combined/decision_tree_csta_ts_boxplot.png> <./files/all_users_combined/dec
+ision_tree_all_line.png> <./files/all_users_combined/decision_tree_all_boxplot.
+png>]
+<files/all_users_combined/naive_bayes_csta_ts_line.png, id=111, 334.24875pt x 2
+32.36812pt>
+File: files/all_users_combined/naive_bayes_csta_ts_line.png Graphic file (type 
+png)
+ <use files/all_users_combined/naive_bayes_csta_ts_line.png>
+Package pdftex.def Info: files/all_users_combined/naive_bayes_csta_ts_line.png 
+used on input line 312.
+(pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
+
+<files/all_users_combined/naive_bayes_csta_ts_boxplot.png, id=112, 406.51875pt 
+x 232.87pt>
+File: files/all_users_combined/naive_bayes_csta_ts_boxplot.png Graphic file (ty
+pe png)
+ <use files/all_users_combined/naive_bayes_csta_ts_boxplot.png>
+Package pdftex.def Info: files/all_users_combined/naive_bayes_csta_ts_boxplot.p
+ng used on input line 312.
+(pdftex.def)             Requested size: 238.05084pt x 136.36519pt.
+
+<files/all_users_combined/naive_bayes_all_line.png, id=113, 334.24875pt x 232.3
+6812pt>
+File: files/all_users_combined/naive_bayes_all_line.png Graphic file (type png)
+
+ <use files/all_users_combined/naive_bayes_all_line.png>
+Package pdftex.def Info: files/all_users_combined/naive_bayes_all_line.png used
+ on input line 329.
+(pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
+
+<files/all_users_combined/naive_bayes_all_boxplot.png, id=114, 406.51875pt x 23
+2.87pt>
+File: files/all_users_combined/naive_bayes_all_boxplot.png Graphic file (type p
+ng)
+ <use files/all_users_combined/naive_bayes_all_boxplot.png>
+Package pdftex.def Info: files/all_users_combined/naive_bayes_all_boxplot.png u
+sed on input line 329.
+(pdftex.def)             Requested size: 238.05084pt x 136.36519pt.
+ [23 <./files/all_users_combined/naive_bayes_stas_line.png> <./files/all_users_
+combined/naive_bayes_stas_boxplot.png> <./files/all_users_combined/naive_bayes_
+csta_ts_line.png> <./files/all_users_combined/naive_bayes_csta_ts_boxplot.png>]
+
+<files/all_users_combined/mp_stas_line.png, id=122, 334.24875pt x 232.36812pt>
+File: files/all_users_combined/mp_stas_line.png Graphic file (type png)
+
+<use files/all_users_combined/mp_stas_line.png>
+Package pdftex.def Info: files/all_users_combined/mp_stas_line.png used on inpu
+t line 348.
+(pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
+
+<files/all_users_combined/mp_stas_boxplot.png, id=123, 406.51875pt x 232.87pt>
+File: files/all_users_combined/mp_stas_boxplot.png Graphic file (type png)
+
+<use files/all_users_combined/mp_stas_boxplot.png>
+Package pdftex.def Info: files/all_users_combined/mp_stas_boxplot.png used on i
+nput line 348.
+(pdftex.def)             Requested size: 238.05084pt x 136.36519pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 334--350
+
+ []
+
+
+<files/all_users_combined/mp_csta_ts_line.png, id=124, 334.24875pt x 232.36812p
+t>
+File: files/all_users_combined/mp_csta_ts_line.png Graphic file (type png)
+ <use files/all_users_combined/mp_csta_ts_line.png>
+Package pdftex.def Info: files/all_users_combined/mp_csta_ts_line.png used on i
+nput line 365.
+(pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
+
+<files/all_users_combined/mp_csta_ts_boxplot.png, id=125, 406.51875pt x 232.87p
+t>
+File: files/all_users_combined/mp_csta_ts_boxplot.png Graphic file (type png)
+ <use files/all_users_combined/mp_csta_ts_boxplot.png>
+Package pdftex.def Info: files/all_users_combined/mp_csta_ts_boxplot.png used o
+n input line 365.
+(pdftex.def)             Requested size: 238.05084pt x 136.36519pt.
+ [24 <./files/all_users_combined/naive_bayes_all_line.png> <./files/all_users_c
+ombined/naive_bayes_all_boxplot.png> <./files/all_users_combined/mp_stas_line.p
+ng> <./files/all_users_combined/mp_stas_boxplot.png>]
+<files/all_users_combined/mp_all_line.png, id=133, 334.24875pt x 232.36812pt>
+File: files/all_users_combined/mp_all_line.png Graphic file (type png)
+
+<use files/all_users_combined/mp_all_line.png>
+Package pdftex.def Info: files/all_users_combined/mp_all_line.png used on input
+ line 382.
+(pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
+
+<files/all_users_combined/mp_all_boxplot.png, id=134, 406.51875pt x 232.87pt>
+File: files/all_users_combined/mp_all_boxplot.png Graphic file (type png)
+
+<use files/all_users_combined/mp_all_boxplot.png>
+Package pdftex.def Info: files/all_users_combined/mp_all_boxplot.png used on in
+put line 382.
+(pdftex.def)             Requested size: 238.05084pt x 136.36519pt.
+ [25 <./files/all_users_combined/mp_csta_ts_line.png> <./files/all_users_combin
+ed/mp_csta_ts_boxplot.png> <./files/all_users_combined/mp_all_line.png> <./file
+s/all_users_combined/mp_all_boxplot.png>]
+<files/high_vs_low_frequency/decision_tree_stas.png, id=143, 334.24875pt x 232.
+36812pt>
+File: files/high_vs_low_frequency/decision_tree_stas.png Graphic file (type png
+)
+ <use files/high_vs_low_frequency/decision_tree_stas.png>
+Package pdftex.def Info: files/high_vs_low_frequency/decision_tree_stas.png use
+d on input line 395.
+(pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 391--397
+
+ []
+
+
+<files/high_vs_low_frequency/decision_tree_csta_ts.png, id=144, 334.24875pt x 2
+32.36812pt>
+File: files/high_vs_low_frequency/decision_tree_csta_ts.png Graphic file (type 
+png)
+ <use files/high_vs_low_frequency/decision_tree_csta_ts.png>
+Package pdftex.def Info: files/high_vs_low_frequency/decision_tree_csta_ts.png 
+used on input line 402.
+(pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
+
+[26 <./files/high_vs_low_frequency/decision_tree_stas.png>]
+<files/high_vs_low_frequency/decision_tree_all.png, id=149, 334.24875pt x 232.3
+6812pt>
+File: files/high_vs_low_frequency/decision_tree_all.png Graphic file (type png)
+
+ <use files/high_vs_low_frequency/decision_tree_all.png>
+Package pdftex.def Info: files/high_vs_low_frequency/decision_tree_all.png used
+ on input line 409.
+(pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
+
+<files/high_vs_low_frequency/naive_bayes_stas.png, id=150, 334.24875pt x 232.36
+812pt>
+File: files/high_vs_low_frequency/naive_bayes_stas.png Graphic file (type png)
+ <use files/high_vs_low_frequency/naive_bayes_stas.png>
+Package pdftex.def Info: files/high_vs_low_frequency/naive_bayes_stas.png used 
+on input line 418.
+(pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 414--420
+
+ []
+
+[27 <./files/high_vs_low_frequency/decision_tree_csta_ts.png> <./files/high_vs_
+low_frequency/decision_tree_all.png>]
+<files/high_vs_low_frequency/naive_bayes_csta_ts.png, id=156, 334.24875pt x 232
+.36812pt>
+File: files/high_vs_low_frequency/naive_bayes_csta_ts.png Graphic file (type pn
+g)
+ <use files/high_vs_low_frequency/naive_bayes_csta_ts.png>
+Package pdftex.def Info: files/high_vs_low_frequency/naive_bayes_csta_ts.png us
+ed on input line 425.
+(pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
+
+<files/high_vs_low_frequency/naive_bayes_all.png, id=157, 334.24875pt x 232.368
+12pt>
+File: files/high_vs_low_frequency/naive_bayes_all.png Graphic file (type png)
+ <use files/high_vs_low_frequency/naive_bayes_all.png>
+Package pdftex.def Info: files/high_vs_low_frequency/naive_bayes_all.png used o
+n input line 432.
+(pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
+ [28 <./files/high_vs_low_frequency/naive_bayes_stas.png> <./files/high_vs_low_
+frequency/naive_bayes_csta_ts.png>]
+<files/high_vs_low_frequency/mp_stas.png, id=163, 334.24875pt x 232.36812pt>
+File: files/high_vs_low_frequency/mp_stas.png Graphic file (type png)
+
+<use files/high_vs_low_frequency/mp_stas.png>
+Package pdftex.def Info: files/high_vs_low_frequency/mp_stas.png used on input 
+line 441.
+(pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 437--443
+
+ []
+
+
+! LaTeX Error: File `files/high_vs_low_frequency/mp_csta_ts' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.448 ...]{files/high_vs_low_frequency/mp_csta_ts}
+                                                  
+I could not locate the file with any of these extensions:
+.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<files/high_vs_low_frequency/mp_all.png, id=164, 334.24875pt x 232.36812pt>
+File: files/high_vs_low_frequency/mp_all.png Graphic file (type png)
+
+<use files/high_vs_low_frequency/mp_all.png>
+Package pdftex.def Info: files/high_vs_low_frequency/mp_all.png used on input l
+ine 455.
+(pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
+ [29 <./files/high_vs_low_frequency/naive_bayes_all.png> <./files/high_vs_low_f
+requency/mp_stas.png>] [30 <./files/high_vs_low_frequency/mp_all.png>]
+<files/all_users_combined_more_station/decision_tree_stas_line.png, id=174, 334
+.24875pt x 232.36812pt>
+File: files/all_users_combined_more_station/decision_tree_stas_line.png Graphic
+ file (type png)
+
+<use files/all_users_combined_more_station/decision_tree_stas_line.png>
+Package pdftex.def Info: files/all_users_combined_more_station/decision_tree_st
+as_line.png used on input line 476.
+(pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
+
+<files/all_users_combined_more_station/decision_tree_stas_boxplot.png, id=175, 
+406.51875pt x 232.87pt>
+File: files/all_users_combined_more_station/decision_tree_stas_boxplot.png Grap
+hic file (type png)
+
+<use files/all_users_combined_more_station/decision_tree_stas_boxplot.png>
+Package pdftex.def Info: files/all_users_combined_more_station/decision_tree_st
+as_boxplot.png used on input line 476.
+(pdftex.def)             Requested size: 238.05084pt x 136.36519pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 462--478
+
+ []
+
+
+<files/all_users_combined_more_station/decision_tree_csta_ts_line.png, id=176, 
+334.24875pt x 232.36812pt>
+File: files/all_users_combined_more_station/decision_tree_csta_ts_line.png Grap
+hic file (type png)
+
+<use files/all_users_combined_more_station/decision_tree_csta_ts_line.png>
+Package pdftex.def Info: files/all_users_combined_more_station/decision_tree_cs
+ta_ts_line.png used on input line 493.
+(pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
+
+<files/all_users_combined_more_station/decision_tree_csta_ts_boxplot.png, id=17
+7, 406.51875pt x 232.87pt>
+File: files/all_users_combined_more_station/decision_tree_csta_ts_boxplot.png G
+raphic file (type png)
+
+<use files/all_users_combined_more_station/decision_tree_csta_ts_boxplot.png>
+Package pdftex.def Info: files/all_users_combined_more_station/decision_tree_cs
+ta_ts_boxplot.png used on input line 493.
+(pdftex.def)             Requested size: 238.05084pt x 136.36519pt.
+
+<files/all_users_combined_more_station/decision_tree_all_line.png, id=178, 334.
+24875pt x 232.36812pt>
+File: files/all_users_combined_more_station/decision_tree_all_line.png Graphic 
+file (type png)
+
+<use files/all_users_combined_more_station/decision_tree_all_line.png>
+Package pdftex.def Info: files/all_users_combined_more_station/decision_tree_al
+l_line.png used on input line 510.
+(pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
+
+<files/all_users_combined_more_station/decision_tree_all_boxplot.png, id=179, 4
+06.51875pt x 232.87pt>
+File: files/all_users_combined_more_station/decision_tree_all_boxplot.png Graph
+ic file (type png)
+
+<use files/all_users_combined_more_station/decision_tree_all_boxplot.png>
+Package pdftex.def Info: files/all_users_combined_more_station/decision_tree_al
+l_boxplot.png used on input line 510.
+(pdftex.def)             Requested size: 238.05084pt x 136.36519pt.
+
+[31 <./files/all_users_combined_more_station/decision_tree_stas_line.png> <./fi
+les/all_users_combined_more_station/decision_tree_stas_boxplot.png> <./files/al
+l_users_combined_more_station/decision_tree_csta_ts_line.png> <./files/all_user
+s_combined_more_station/decision_tree_csta_ts_boxplot.png>]
+<files/all_users_combined_more_station/naive_bayes_stas_line.png, id=188, 334.2
+4875pt x 232.36812pt>
+File: files/all_users_combined_more_station/naive_bayes_stas_line.png Graphic f
+ile (type png)
+
+<use files/all_users_combined_more_station/naive_bayes_stas_line.png>
+Package pdftex.def Info: files/all_users_combined_more_station/naive_bayes_stas
+_line.png used on input line 529.
+(pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
+
+<files/all_users_combined_more_station/naive_bayes_stas_boxplot.png, id=189, 40
+6.51875pt x 232.87pt>
+File: files/all_users_combined_more_station/naive_bayes_stas_boxplot.png Graphi
+c file (type png)
+
+<use files/all_users_combined_more_station/naive_bayes_stas_boxplot.png>
+Package pdftex.def Info: files/all_users_combined_more_station/naive_bayes_stas
+_boxplot.png used on input line 529.
+(pdftex.def)             Requested size: 238.05084pt x 136.36519pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 515--531
+
+ []
+
+
+<files/all_users_combined_more_station/naive_bayes_csta_ts_line.png, id=190, 33
+4.24875pt x 232.36812pt>
+File: files/all_users_combined_more_station/naive_bayes_csta_ts_line.png Graphi
+c file (type png)
+
+<use files/all_users_combined_more_station/naive_bayes_csta_ts_line.png>
+Package pdftex.def Info: files/all_users_combined_more_station/naive_bayes_csta
+_ts_line.png used on input line 546.
+(pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
+
+<files/all_users_combined_more_station/naive_bayes_csta_ts_boxplot.png, id=191,
+ 406.51875pt x 232.87pt>
+File: files/all_users_combined_more_station/naive_bayes_csta_ts_boxplot.png Gra
+phic file (type png)
+
+<use files/all_users_combined_more_station/naive_bayes_csta_ts_boxplot.png>
+Package pdftex.def Info: files/all_users_combined_more_station/naive_bayes_csta
+_ts_boxplot.png used on input line 546.
+(pdftex.def)             Requested size: 238.05084pt x 136.36519pt.
+
+[32 <./files/all_users_combined_more_station/decision_tree_all_line.png> <./fil
+es/all_users_combined_more_station/decision_tree_all_boxplot.png> <./files/all_
+users_combined_more_station/naive_bayes_stas_line.png> <./files/all_users_combi
+ned_more_station/naive_bayes_stas_boxplot.png>]
+<files/all_users_combined_more_station/naive_bayes_all_line.png, id=199, 334.24
+875pt x 232.36812pt>
+File: files/all_users_combined_more_station/naive_bayes_all_line.png Graphic fi
+le (type png)
+
+<use files/all_users_combined_more_station/naive_bayes_all_line.png>
+Package pdftex.def Info: files/all_users_combined_more_station/naive_bayes_all_
+line.png used on input line 563.
+(pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
+
+<files/all_users_combined_more_station/naive_bayes_all_boxplot.png, id=200, 406
+.51875pt x 232.87pt>
+File: files/all_users_combined_more_station/naive_bayes_all_boxplot.png Graphic
+ file (type png)
+
+<use files/all_users_combined_more_station/naive_bayes_all_boxplot.png>
+Package pdftex.def Info: files/all_users_combined_more_station/naive_bayes_all_
+boxplot.png used on input line 563.
+(pdftex.def)             Requested size: 238.05084pt x 136.36519pt.
+)
+(chapters/06_conclusion.tex [33 <./files/all_users_combined_more_station/naive_
+bayes_csta_ts_line.png> <./files/all_users_combined_more_station/naive_bayes_cs
+ta_ts_boxplot.png> <./files/all_users_combined_more_station/naive_bayes_all_lin
+e.png> <./files/all_users_combined_more_station/naive_bayes_all_boxplot.png>])
+(chapters/07_future_work.tex [34] [35]) [36] (main.bbl) [37] (main.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3657 strings out of 493335
- 49926 string characters out of 3136677
- 133477 words of memory out of 3000000
- 7120 multiletter control sequences out of 15000+200000
+ 4569 strings out of 493634
+ 73239 string characters out of 3141321
+ 154566 words of memory out of 3000000
+ 7867 multiletter control sequences out of 15000+200000
  8361 words of font info for 30 fonts, out of 3000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 38i,7n,40p,1613b,1627s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmr17.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mtt9.pfb>
-Output written on main.pdf (26 pages, 1212175 bytes).
+ 1025 hyphenation exceptions out of 8191
+ 42i,10n,40p,1613b,1627s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (
+x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on main.pdf (37 pages, 1641110 bytes).
 PDF statistics:
- 143 PDF objects out of 1000 (max. 8388607)
+ 252 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 231 words of extra memory for PDF output out of 10000 (max. 10000000)
 
