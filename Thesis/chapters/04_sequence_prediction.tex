@@ -13,9 +13,10 @@ We model our problem as a sequence prediction problem due to the fact that we ha
 
 \subsection{Proposed Solutions}
 \label{subsec:proposed_solution}
-We used multiple different techniques to solve our task and to use in the final evaluation. Decision Trees and Random Forests, a Naive Bayes algorithm as well as Hidden Markov Models (which fall under the Neural Networks category). The theoretical foundation of these algorithms are described here in further detail. The practical way in which we used them are described in Section~\ref{subsec:machine_learning_results}
+We used multiple different techniques to solve our task and to use in the final evaluation. Decision Trees, a naive Bayes algorithm as well as multilayer perceptrons (which fall under the Neural Networks category). The theoretical foundation of these algorithms are described here in further detail. The practical way in which we used them are described in Section~\ref{subsec:machine_learning_results}. As a machine learning toolkit we have used WEKA.
 
 \subsubsection{WEKA}
+In order to not need to reinvent the wheel when it comes to implementing the actual algorithms we have built our solution on top of WEKA, the machine learning toolkit provided by the University of Waikato, New Zealand. WEKA is a collection of machine learning algorithms as well as tools for data processing, clustering, classification, visualization and more. It can also be used to develop new machine learning schemes. WEKA is written in Java and can be used by any JVM based programming language. Its algorithms can also be directly used for a dataset. We only use a subset of the features provided by WEKA. We don't use any of the visualization tools. Since we also do all the preprocessing and analysis ourselves we don't need any of the features WEKA provides in that part. What we're interested is in the implementation of the classifiers as well as the actual training, testing and evaluation of the classifiers. As is described later in this thesis we use the provided implementations of the classifiers we propose. 
 
 \subsubsection{Decision Trees}
 Decision tree learning in the context of data mining is a technique using a decision tree as a predictive model to map observation about input data to come to a conclusion about the data's target value. A tree model that accepts a finite set of values is called a "classification tree", in case continuous values are allowed the decision tree is called "regression tree". A decision tree doesn't explicitly represent a decision, however the resulting classification tree can be used as an input for decision making. 
@@ -25,16 +26,33 @@ In a decision tree model, a leaf represents a class label and a branch represent
 \begin{figure}[!ht]
 	\centering
 		\includegraphics[width=1.0\textwidth]{images/decision-tree}
-	\caption{An example of a decision tree}
+	\caption{An example of a decision tree \cite{WikipediaDecisionTrees}}
 	\label{fig:image-decision-tree}
 \end{figure}
-\cite{WikipediaDecisionTrees}
 
 A tree can be trained or learned by splitting the source data set into subsets based on testing the attribute values. In order to get the full model of the decision tree, this process has to be repeated until a subset at a node has only one value or until splitting no longer adds value to the predictions. This process is called recursive partitioning and it is the most common strategy to train decision trees.
 
+There are many variants to a simple decision trees that use a combination of multiple decision trees. Examples algorithms are Random Forests, Rotation Forests or Bagging Decision Trees. In addition there are different algorithms that implement decision trees. They usually focus on a different metric that they want to optimize. 
+
+Decision Trees have many advantages. They are quite simple to understand and reason about. They also require relatively little data preparation. An additional advantage is that the computing resources can be kept quite low, even when using large datasets.
+
 
 \subsubsection{Naive Bayes}
-Here goes the theoretical description of Naive Bayes
+Naive Bayes classifiers are simple probabilistic classifiers that are based on Bayes theorem, assuming independence of features. On an abstract level, given a vector representing some features, the naive Bayes will assign a probability to all possible outcomes (also called classes) given this vector. It is a condition probability model. Based on Bayes' theorem, a reliable and computable model can be constructed for all the possibilities that need to be generated. From the naive Bayes probability model we can then construct a classifier. The naive Bayes classifier usually combines the probability model with a decision rule. This rule will define, which hypothesis is to be picked. A common rule is to simply pick the one with the highest probability, which is also called "maximum a posteriori" (MAP) decision rule.
 
-\subsubsection{HMM / Neural Networks / Multilayer Perceptron}
-Here goes the theoretical description of Hidden Markov Models and Neural Networks
+Advantages of naive Bayes classifiers are also their simplicity. In addition if the conditional independence assumptions of the feature are fully given, it will also converge faster than other models. One of the disadvantages that come with condition independence is that it won't be able to model relations between features properly.
+
+
+\subsubsection{Multilayer Perceptron / Neural Network}
+A multilayer perceptron is a special case of an artificial neural network. Artificial neural networks work on a simplified model of how the human brains work. They generate layers of nodes, each having certain input and output values. The nodes (also called neurons) are triggered by an activation function. This function can can take many shapes and be triggered by a combination or a series of inputs of a neuron. Once the activation function has triggered, the neuron will send its output signal throughout the outgoing channels. This might then trigger the next row of activation functions in the next layer of the network, until the output of the network is reached. An example graph of a multilayer perceptron (as a neural network) is shown in figure \ref{fig:multilayer-perceptron}.
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=1.0\textwidth]{images/multilayer-perceptron}
+	\caption{An example of a multilayer perceptron \cite{MultilayerPerceptron}}
+	\label{fig:multilayer-perceptron}
+\end{figure}
+
+A multilayer perceptron consists of multiple layers in a forward directed graph, each layer connected only to the next one. Each neuron in the layer has a non-linear activating function, to properly model the way neurons in the biological brain are activated. A multilayer perceptron has at least three layers, an input, output and one or more hidden layers. Since it always includes at least one hidden layer it is considered a deep neural network.
+
+A multilayer perceptron is trained by using backpropagation. In the beginning of the training stage all weights of all neurons are set to a default value. Based on the errors in the output of each of the training data entry the weights of the neurons are adapted. Once the network is in a stable state and the weights don't change anymore the training can be considered to be completed.

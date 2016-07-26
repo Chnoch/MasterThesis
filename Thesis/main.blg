@@ -8,6 +8,13 @@ I was expecting a `,' or a `}'---line 14 of file references.bib
  :  url = {https://en.wikipedia.org/wiki/Decision_tree_learning},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Warning--entry type for "MultilayerPerceptron" isn't style-file defined
+--line 19 of file references.bib
+I was expecting a `,' or a `}'---line 23 of file references.bib
+ :  
+ :  url = {https://elogeel.wordpress.com/2010/05/05/multilayer-perceptron/},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Warning--entry type for "WEKAJavaDocAttribute" isn't style-file defined
---line 18 of file references.bib
-(There was 1 error message)
+--line 29 of file references.bib
+(There were 2 error messages)
