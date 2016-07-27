@@ -1,4 +1,10 @@
 \newpage
 \section{Conclusion}
 
-Here goes the conclusion.
+One of the most important goals we wanted to achieve was to find a way to reliable predict the public transport behavior of our users. Given the limitations we placed upon the data necessary for the task we have achieved a respectable result. We have been able to run our machine learning algorithms for 150 - 250 users, depending on the use case, and feel comfortable of using the predicted results of at least 100 - 150 users. While this is a good start, the amount of users that could benefit of our system is still quite small. We have run our predictions for 5-10\% of our user base. This is mostly influenced by the missing amount of data. Over 75\% of our users have less than ten distinct data points gathered. This is in no way enough data to successfully make a prediction and be convinced about it enough to present it to our user. For the vast majority of users the data gathering would need to be optimized before we can think about including them into our machine learning system.
+
+However for the users that have enough good quality data and that can be evaluated we have seen a good overall prediction. For most algorithm and feature set combination we have a median F-Measure of over 0.9. If we'd cut off the lowest 10\% of our predicted users for which the reliability of the predictions is too low, we'd get an even hight median, close to 0.95. This is a very good starting point and with direct feedback from the user as to whether our predictions match the ground truth it could be improved even faster.
+
+We have seen that while the Multilayer Perceptron was by far the slowest of all algorithms, it also performed best. It had a slightly better overall prediction and was also more stable than the decision tree algorithm and the naive Bayes. Precision and recall in general was very similar, but if computing costs are no issue then the multilayer perceptron outperforms the other algorithms.
+
+We have successfully been able to achieve the goal we set out to, creating a useful and implementable way of predicting user behavior based on historical data of public transport usage of these users.

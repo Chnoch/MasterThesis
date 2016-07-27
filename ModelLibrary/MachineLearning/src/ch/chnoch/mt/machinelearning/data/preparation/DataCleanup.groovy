@@ -17,6 +17,7 @@ public class DataCleanup {
 
     public static Model parseModel(final Model model) {
         List<User> users = model.getUsers()
+        println('Users: ' + users.size())
         List<ModelEntry> entries, duplicates
         users.each { user ->
             (entries, duplicates) = removeDuplicates(user.getEntries())
@@ -44,6 +45,9 @@ public class DataCleanup {
         }
         model.setPreparedUsers(users)
         model.setLowProfileUsers(lowProfileUsers)
+
+        println('prepared users: ' + model.getPreparedUsers().size())
+        println('low profile users: ' + model.getLowProfileUsers().size())
     }
 
     private static void assignPreviousStations(modelEntries) {

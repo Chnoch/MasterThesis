@@ -7,9 +7,9 @@ import ch.chnoch.mt.machinelearning.data.model.User
  * Prepares every user in a way that only the top 5 stations are taken into account
  */
 public class StatisticsPreparation {
-    private static final int MAX_AMOUNT_OF_STATIONS = 15
+    private static final int MAX_AMOUNT_OF_STATIONS = 10
 
-    private static final int AMOUNT_OF_OCCURENCE = 5
+    private static final int AMOUNT_OF_OCCURENCE = 10
 
     public static prepareStations(Model model) {
         List<User> usersToRemove = new ArrayList<>()
