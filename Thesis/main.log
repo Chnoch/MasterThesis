@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.31)  3 AUG 2016 20:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.31)  3 AUG 2016 21:55
 entering extended mode
 **./main.tex
 (main.tex
@@ -432,33 +432,37 @@ Package caption Info: listings package is loaded.
 \c@subfigure=\count98
 \c@subtable=\count99
 )
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\titlesec\titletoc.sty"
+Package: titletoc 2011/12/15 v1.6 TOC entries
+\ttl@leftsep=\dimen116
+)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 ) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count100
-\scratchdimen=\dimen116
+\scratchdimen=\dimen117
 \scratchbox=\box30
 \nofMPsegments=\count101
 \nofMParguments=\count102
 \everyMPshowfont=\toks20
 \MPscratchCnt=\count103
-\MPscratchDim=\dimen117
+\MPscratchDim=\dimen118
 \MPnumerator=\count104
 \makeMPintoPDFobject=\count105
 \everyMPtoPDFconversion=\toks21
@@ -509,16 +513,26 @@ G,.JBIG2,.JB2,.eps]
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 43.
+(Font)              <12> on input line 44.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 43.
+(Font)              <8> on input line 44.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 43.
+(Font)              <6> on input line 44.
 
-(chapters/01_abstract.tex [1
+[1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]) (chapters/02_introductio
-n.tex [2]) (chapters/03_related_work.tex [3]
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] (main.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 4.
+)
+\tf@toc=\write3
+\openout3 = `main.toc'.
+
+
+(chapters/01_abstract.tex [2]) (chapters/02_introduction.tex [3])
+(chapters/03_related_work.tex [4]
 Underfull \hbox (badness 10000) in paragraph at lines 5--9
 
  []
@@ -534,23 +548,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--21
 
  []
 
-[4]) (chapters/04_sequence_prediction.tex [5] [6] [7]
+[5]) (chapters/04_sequence_prediction.tex [6] [7]
 <images/decision-tree.png, id=29, 649.92813pt x 409.02812pt>
 File: images/decision-tree.png Graphic file (type png)
 
 <use images/decision-tree.png>
 Package pdftex.def Info: images/decision-tree.png used on input line 28.
 (pdftex.def)             Requested size: 345.0pt x 217.12714pt.
- [8 <./images/decision-tree.png>]
-<images/multilayer-perceptron.png, id=35, 525.46312pt x 247.92625pt>
+ [8] [9 <./images/decision-tree.png>]
+<images/multilayer-perceptron.png, id=38, 525.46312pt x 247.92625pt>
 File: images/multilayer-perceptron.png Graphic file (type png)
 
 <use images/multilayer-perceptron.png>
 Package pdftex.def Info: images/multilayer-perceptron.png used on input line 51
 .
 (pdftex.def)             Requested size: 345.0pt x 162.78442pt.
- [9 <./images/multilayer-perceptron.png>]) (chapters/05_experiments_and_evaluat
-ion.tex [10] [11]
+ [10 <./images/multilayer-perceptron.png>]) (chapters/05_experiments_and_evalua
+tion.tex [11] [12]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 23.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
@@ -559,7 +573,7 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 23.
 
-<charts/distribution_time_of_day.png, id=46, 663.47874pt x 400.49625pt>
+<charts/distribution_time_of_day.png, id=49, 663.47874pt x 400.49625pt>
 File: charts/distribution_time_of_day.png Graphic file (type png)
 
 <use charts/distribution_time_of_day.png>
@@ -567,7 +581,7 @@ Package pdftex.def Info: charts/distribution_time_of_day.png used on input line
  39.
 (pdftex.def)             Requested size: 345.0pt x 208.25313pt.
 
-<charts/day_of_month_distribution.png, id=47, 730.22812pt x 457.20813pt>
+<charts/day_of_month_distribution.png, id=50, 730.22812pt x 457.20813pt>
 File: charts/day_of_month_distribution.png Graphic file (type png)
 
 <use charts/day_of_month_distribution.png>
@@ -575,7 +589,7 @@ Package pdftex.def Info: charts/day_of_month_distribution.png used on input lin
 e 45.
 (pdftex.def)             Requested size: 345.0pt x 216.01105pt.
 
-<charts/different_stations_per_user.png, id=48, 845.1575pt x 477.28313pt>
+<charts/different_stations_per_user.png, id=51, 845.1575pt x 477.28313pt>
 File: charts/different_stations_per_user.png Graphic file (type png)
 
 <use charts/different_stations_per_user.png>
@@ -583,23 +597,23 @@ Package pdftex.def Info: charts/different_stations_per_user.png used on input l
 ine 55.
 (pdftex.def)             Requested size: 345.0pt x 194.83527pt.
 
-<charts/stops_per_user.png, id=49, 866.23625pt x 520.94624pt>
+<charts/stops_per_user.png, id=52, 866.23625pt x 520.94624pt>
 File: charts/stops_per_user.png Graphic file (type png)
 
 <use charts/stops_per_user.png>
 Package pdftex.def Info: charts/stops_per_user.png used on input line 62.
 (pdftex.def)             Requested size: 345.0pt x 207.47656pt.
 
-<charts/persons_per_station.png, id=50, 788.44562pt x 465.74pt>
+<charts/persons_per_station.png, id=53, 788.44562pt x 465.74pt>
 File: charts/persons_per_station.png Graphic file (type png)
 
 <use charts/persons_per_station.png>
 Package pdftex.def Info: charts/persons_per_station.png used on input line 68.
 (pdftex.def)             Requested size: 345.0pt x 203.78917pt.
- [12] [13 <./charts/distribution_time_of_day.png> <./charts/day_of_month_distri
-bution.png>] [14 <./charts/different_stations_per_user.png> <./charts/stops_per
+ [13] [14 <./charts/distribution_time_of_day.png> <./charts/day_of_month_distri
+bution.png>] [15 <./charts/different_stations_per_user.png> <./charts/stops_per
 _user.png>]
-<charts/distribution_stops_by_station.png, id=66, 664.4825pt x 391.96437pt>
+<charts/distribution_stops_by_station.png, id=69, 664.4825pt x 391.96437pt>
 File: charts/distribution_stops_by_station.png Graphic file (type png)
 
 <use charts/distribution_stops_by_station.png>
@@ -607,29 +621,24 @@ Package pdftex.def Info: charts/distribution_stops_by_station.png used on input
  line 76.
 (pdftex.def)             Requested size: 345.0pt x 203.51163pt.
 
-<charts/number_stations_average_user.png, id=67, 594.22pt x 339.76938pt>
+<charts/number_stations_average_user.png, id=70, 594.22pt x 339.76938pt>
 File: charts/number_stations_average_user.png Graphic file (type png)
 
 <use charts/number_stations_average_user.png>
 Package pdftex.def Info: charts/number_stations_average_user.png used on input 
 line 82.
 (pdftex.def)             Requested size: 345.0pt x 197.27374pt.
- [15 <./charts/persons_per_station.png>] [16 <./charts/distribution_stops_by_st
-ation.png> <./charts/number_stations_average_user.png>] <images/web-gui.png, id
-=77, 755.32187pt x 578.66188pt>
+ [16 <./charts/persons_per_station.png> <./charts/distribution_stops_by_station
+.png>] [17 <./charts/number_stations_average_user.png>] <images/web-gui.png, id
+=80, 755.32187pt x 578.66188pt>
 File: images/web-gui.png Graphic file (type png)
 
 <use images/web-gui.png>
 Package pdftex.def Info: images/web-gui.png used on input line 103.
 (pdftex.def)             Requested size: 345.0pt x 264.30698pt.
- [17]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 118.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 118.
- [18 <./images/web-gui.png>] [19] [20] [21]
-[22] [23] [24]
-<files/all_users_combined/decision_tree_stas_line.png, id=107, 334.24875pt x 23
+ [18] [19 <./images/web-gui.png>] [20] [21] [22]
+[23] [24] [25]
+<files/all_users_combined/decision_tree_stas_line.png, id=111, 334.24875pt x 23
 2.36812pt>
 File: files/all_users_combined/decision_tree_stas_line.png Graphic file (type p
 ng)
@@ -638,7 +647,7 @@ Package pdftex.def Info: files/all_users_combined/decision_tree_stas_line.png u
 sed on input line 252.
 (pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
 
-<files/all_users_combined/decision_tree_stas_boxplot.png, id=108, 406.51875pt x
+<files/all_users_combined/decision_tree_stas_boxplot.png, id=112, 406.51875pt x
  232.87pt>
 File: files/all_users_combined/decision_tree_stas_boxplot.png Graphic file (typ
 e png)
@@ -652,7 +661,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 238--254
  []
 
 
-<files/all_users_combined/decision_tree_csta_ts_line.png, id=109, 334.24875pt x
+<files/all_users_combined/decision_tree_csta_ts_line.png, id=113, 334.24875pt x
  232.36812pt>
 File: files/all_users_combined/decision_tree_csta_ts_line.png Graphic file (typ
 e png)
@@ -661,7 +670,7 @@ Package pdftex.def Info: files/all_users_combined/decision_tree_csta_ts_line.pn
 g used on input line 269.
 (pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
 
-<files/all_users_combined/decision_tree_csta_ts_boxplot.png, id=110, 406.51875p
+<files/all_users_combined/decision_tree_csta_ts_boxplot.png, id=114, 406.51875p
 t x 232.87pt>
 File: files/all_users_combined/decision_tree_csta_ts_boxplot.png Graphic file (
 type png)
@@ -670,9 +679,9 @@ Package pdftex.def Info: files/all_users_combined/decision_tree_csta_ts_boxplot
 .png used on input line 269.
 (pdftex.def)             Requested size: 238.05084pt x 136.36519pt.
 
-[25 <./files/all_users_combined/decision_tree_stas_line.png> <./files/all_users
+[26 <./files/all_users_combined/decision_tree_stas_line.png> <./files/all_users
 _combined/decision_tree_stas_boxplot.png>]
-<files/all_users_combined/decision_tree_all_line.png, id=117, 334.24875pt x 232
+<files/all_users_combined/decision_tree_all_line.png, id=120, 334.24875pt x 232
 .36812pt>
 File: files/all_users_combined/decision_tree_all_line.png Graphic file (type pn
 g)
@@ -681,7 +690,7 @@ Package pdftex.def Info: files/all_users_combined/decision_tree_all_line.png us
 ed on input line 286.
 (pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
 
-<files/all_users_combined/decision_tree_all_boxplot.png, id=118, 406.51875pt x 
+<files/all_users_combined/decision_tree_all_boxplot.png, id=121, 406.51875pt x 
 232.87pt>
 File: files/all_users_combined/decision_tree_all_boxplot.png Graphic file (type
  png)
@@ -690,7 +699,7 @@ Package pdftex.def Info: files/all_users_combined/decision_tree_all_boxplot.png
  used on input line 286.
 (pdftex.def)             Requested size: 238.05084pt x 136.36519pt.
 
-<files/all_users_combined/naive_bayes_stas_line.png, id=119, 334.24875pt x 232.
+<files/all_users_combined/naive_bayes_stas_line.png, id=122, 334.24875pt x 232.
 36812pt>
 File: files/all_users_combined/naive_bayes_stas_line.png Graphic file (type png
 )
@@ -699,7 +708,7 @@ Package pdftex.def Info: files/all_users_combined/naive_bayes_stas_line.png use
 d on input line 305.
 (pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
 
-<files/all_users_combined/naive_bayes_stas_boxplot.png, id=120, 406.51875pt x 2
+<files/all_users_combined/naive_bayes_stas_boxplot.png, id=123, 406.51875pt x 2
 32.87pt>
 File: files/all_users_combined/naive_bayes_stas_boxplot.png Graphic file (type 
 png)
@@ -712,11 +721,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 291--307
 
  []
 
-[26 <./files/all_users_combined/decision_tree_csta_ts_line.png> <./files/all_us
+[27 <./files/all_users_combined/decision_tree_csta_ts_line.png> <./files/all_us
 ers_combined/decision_tree_csta_ts_boxplot.png> <./files/all_users_combined/dec
 ision_tree_all_line.png> <./files/all_users_combined/decision_tree_all_boxplot.
 png>]
-<files/all_users_combined/naive_bayes_csta_ts_line.png, id=128, 334.24875pt x 2
+<files/all_users_combined/naive_bayes_csta_ts_line.png, id=131, 334.24875pt x 2
 32.36812pt>
 File: files/all_users_combined/naive_bayes_csta_ts_line.png Graphic file (type 
 png)
@@ -725,7 +734,7 @@ Package pdftex.def Info: files/all_users_combined/naive_bayes_csta_ts_line.png
 used on input line 322.
 (pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
 
-<files/all_users_combined/naive_bayes_csta_ts_boxplot.png, id=129, 406.51875pt 
+<files/all_users_combined/naive_bayes_csta_ts_boxplot.png, id=132, 406.51875pt 
 x 232.87pt>
 File: files/all_users_combined/naive_bayes_csta_ts_boxplot.png Graphic file (ty
 pe png)
@@ -734,7 +743,7 @@ Package pdftex.def Info: files/all_users_combined/naive_bayes_csta_ts_boxplot.p
 ng used on input line 322.
 (pdftex.def)             Requested size: 238.05084pt x 136.36519pt.
 
-<files/all_users_combined/naive_bayes_all_line.png, id=130, 334.24875pt x 232.3
+<files/all_users_combined/naive_bayes_all_line.png, id=133, 334.24875pt x 232.3
 6812pt>
 File: files/all_users_combined/naive_bayes_all_line.png Graphic file (type png)
 
@@ -743,7 +752,7 @@ Package pdftex.def Info: files/all_users_combined/naive_bayes_all_line.png used
  on input line 339.
 (pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
 
-<files/all_users_combined/naive_bayes_all_boxplot.png, id=131, 406.51875pt x 23
+<files/all_users_combined/naive_bayes_all_boxplot.png, id=134, 406.51875pt x 23
 2.87pt>
 File: files/all_users_combined/naive_bayes_all_boxplot.png Graphic file (type p
 ng)
@@ -751,11 +760,11 @@ ng)
 Package pdftex.def Info: files/all_users_combined/naive_bayes_all_boxplot.png u
 sed on input line 339.
 (pdftex.def)             Requested size: 238.05084pt x 136.36519pt.
- [27 <./files/all_users_combined/naive_bayes_stas_line.png> <./files/all_users_
+ [28 <./files/all_users_combined/naive_bayes_stas_line.png> <./files/all_users_
 combined/naive_bayes_stas_boxplot.png> <./files/all_users_combined/naive_bayes_
 csta_ts_line.png> <./files/all_users_combined/naive_bayes_csta_ts_boxplot.png>]
 
-<files/all_users_combined/mp_stas_line.png, id=139, 334.24875pt x 232.36812pt>
+<files/all_users_combined/mp_stas_line.png, id=142, 334.24875pt x 232.36812pt>
 File: files/all_users_combined/mp_stas_line.png Graphic file (type png)
 
 <use files/all_users_combined/mp_stas_line.png>
@@ -763,7 +772,7 @@ Package pdftex.def Info: files/all_users_combined/mp_stas_line.png used on inpu
 t line 358.
 (pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
 
-<files/all_users_combined/mp_stas_boxplot.png, id=140, 406.51875pt x 232.87pt>
+<files/all_users_combined/mp_stas_boxplot.png, id=143, 406.51875pt x 232.87pt>
 File: files/all_users_combined/mp_stas_boxplot.png Graphic file (type png)
 
 <use files/all_users_combined/mp_stas_boxplot.png>
@@ -776,7 +785,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 344--360
  []
 
 
-<files/all_users_combined/mp_csta_ts_line.png, id=141, 334.24875pt x 232.36812p
+<files/all_users_combined/mp_csta_ts_line.png, id=144, 334.24875pt x 232.36812p
 t>
 File: files/all_users_combined/mp_csta_ts_line.png Graphic file (type png)
  <use files/all_users_combined/mp_csta_ts_line.png>
@@ -784,17 +793,17 @@ Package pdftex.def Info: files/all_users_combined/mp_csta_ts_line.png used on i
 nput line 375.
 (pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
 
-<files/all_users_combined/mp_csta_ts_boxplot.png, id=142, 406.51875pt x 232.87p
+<files/all_users_combined/mp_csta_ts_boxplot.png, id=145, 406.51875pt x 232.87p
 t>
 File: files/all_users_combined/mp_csta_ts_boxplot.png Graphic file (type png)
  <use files/all_users_combined/mp_csta_ts_boxplot.png>
 Package pdftex.def Info: files/all_users_combined/mp_csta_ts_boxplot.png used o
 n input line 375.
 (pdftex.def)             Requested size: 238.05084pt x 136.36519pt.
- [28 <./files/all_users_combined/naive_bayes_all_line.png> <./files/all_users_c
+ [29 <./files/all_users_combined/naive_bayes_all_line.png> <./files/all_users_c
 ombined/naive_bayes_all_boxplot.png> <./files/all_users_combined/mp_stas_line.p
 ng> <./files/all_users_combined/mp_stas_boxplot.png>]
-<files/all_users_combined/mp_all_line.png, id=150, 334.24875pt x 232.36812pt>
+<files/all_users_combined/mp_all_line.png, id=153, 334.24875pt x 232.36812pt>
 File: files/all_users_combined/mp_all_line.png Graphic file (type png)
 
 <use files/all_users_combined/mp_all_line.png>
@@ -802,17 +811,17 @@ Package pdftex.def Info: files/all_users_combined/mp_all_line.png used on input
  line 392.
 (pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
 
-<files/all_users_combined/mp_all_boxplot.png, id=151, 406.51875pt x 232.87pt>
+<files/all_users_combined/mp_all_boxplot.png, id=154, 406.51875pt x 232.87pt>
 File: files/all_users_combined/mp_all_boxplot.png Graphic file (type png)
 
 <use files/all_users_combined/mp_all_boxplot.png>
 Package pdftex.def Info: files/all_users_combined/mp_all_boxplot.png used on in
 put line 392.
 (pdftex.def)             Requested size: 238.05084pt x 136.36519pt.
- [29 <./files/all_users_combined/mp_csta_ts_line.png> <./files/all_users_combin
+ [30 <./files/all_users_combined/mp_csta_ts_line.png> <./files/all_users_combin
 ed/mp_csta_ts_boxplot.png> <./files/all_users_combined/mp_all_line.png> <./file
 s/all_users_combined/mp_all_boxplot.png>]
-<files/high_vs_low_frequency/decision_tree_stas.png, id=159, 334.24875pt x 232.
+<files/high_vs_low_frequency/decision_tree_stas.png, id=162, 334.24875pt x 232.
 36812pt>
 File: files/high_vs_low_frequency/decision_tree_stas.png Graphic file (type png
 )
@@ -826,7 +835,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 401--407
  []
 
 
-<files/high_vs_low_frequency/decision_tree_csta_ts.png, id=160, 334.24875pt x 2
+<files/high_vs_low_frequency/decision_tree_csta_ts.png, id=163, 334.24875pt x 2
 32.36812pt>
 File: files/high_vs_low_frequency/decision_tree_csta_ts.png Graphic file (type 
 png)
@@ -835,8 +844,8 @@ Package pdftex.def Info: files/high_vs_low_frequency/decision_tree_csta_ts.png
 used on input line 412.
 (pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
 
-[30 <./files/high_vs_low_frequency/decision_tree_stas.png>]
-<files/high_vs_low_frequency/decision_tree_all.png, id=165, 334.24875pt x 232.3
+[31 <./files/high_vs_low_frequency/decision_tree_stas.png>]
+<files/high_vs_low_frequency/decision_tree_all.png, id=169, 334.24875pt x 232.3
 6812pt>
 File: files/high_vs_low_frequency/decision_tree_all.png Graphic file (type png)
 
@@ -845,7 +854,7 @@ Package pdftex.def Info: files/high_vs_low_frequency/decision_tree_all.png used
  on input line 419.
 (pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
 
-<files/high_vs_low_frequency/naive_bayes_stas.png, id=166, 334.24875pt x 232.36
+<files/high_vs_low_frequency/naive_bayes_stas.png, id=170, 334.24875pt x 232.36
 812pt>
 File: files/high_vs_low_frequency/naive_bayes_stas.png Graphic file (type png)
  <use files/high_vs_low_frequency/naive_bayes_stas.png>
@@ -857,9 +866,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 424--430
 
  []
 
-[31 <./files/high_vs_low_frequency/decision_tree_csta_ts.png> <./files/high_vs_
+[32 <./files/high_vs_low_frequency/decision_tree_csta_ts.png> <./files/high_vs_
 low_frequency/decision_tree_all.png>]
-<files/high_vs_low_frequency/naive_bayes_csta_ts.png, id=173, 334.24875pt x 232
+<files/high_vs_low_frequency/naive_bayes_csta_ts.png, id=176, 334.24875pt x 232
 .36812pt>
 File: files/high_vs_low_frequency/naive_bayes_csta_ts.png Graphic file (type pn
 g)
@@ -868,16 +877,16 @@ Package pdftex.def Info: files/high_vs_low_frequency/naive_bayes_csta_ts.png us
 ed on input line 435.
 (pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
 
-<files/high_vs_low_frequency/naive_bayes_all.png, id=174, 334.24875pt x 232.368
+<files/high_vs_low_frequency/naive_bayes_all.png, id=177, 334.24875pt x 232.368
 12pt>
 File: files/high_vs_low_frequency/naive_bayes_all.png Graphic file (type png)
  <use files/high_vs_low_frequency/naive_bayes_all.png>
 Package pdftex.def Info: files/high_vs_low_frequency/naive_bayes_all.png used o
 n input line 442.
 (pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
- [32 <./files/high_vs_low_frequency/naive_bayes_stas.png> <./files/high_vs_low_
+ [33 <./files/high_vs_low_frequency/naive_bayes_stas.png> <./files/high_vs_low_
 frequency/naive_bayes_csta_ts.png>]
-<files/high_vs_low_frequency/mp_stas.png, id=180, 334.24875pt x 232.36812pt>
+<files/high_vs_low_frequency/mp_stas.png, id=183, 334.24875pt x 232.36812pt>
 File: files/high_vs_low_frequency/mp_stas.png Graphic file (type png)
 
 <use files/high_vs_low_frequency/mp_stas.png>
@@ -890,24 +899,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 447--453
  []
 
 
-<files/high_vs_low_frequency/mp_csta_ts.png, id=181, 334.24875pt x 232.36812pt>
+<files/high_vs_low_frequency/mp_csta_ts.png, id=184, 334.24875pt x 232.36812pt>
 File: files/high_vs_low_frequency/mp_csta_ts.png Graphic file (type png)
 <use files/high_vs_low_frequency/mp_csta_ts.png>
 Package pdftex.def Info: files/high_vs_low_frequency/mp_csta_ts.png used on inp
 ut line 458.
 (pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
- [33 <./files/high_vs_low_frequency/naive_bayes_all.png> <./files/high_vs_low_f
+ [34 <./files/high_vs_low_frequency/naive_bayes_all.png> <./files/high_vs_low_f
 requency/mp_stas.png>]
-<files/high_vs_low_frequency/mp_all.png, id=187, 334.24875pt x 232.36812pt>
+<files/high_vs_low_frequency/mp_all.png, id=190, 334.24875pt x 232.36812pt>
 File: files/high_vs_low_frequency/mp_all.png Graphic file (type png)
 
 <use files/high_vs_low_frequency/mp_all.png>
 Package pdftex.def Info: files/high_vs_low_frequency/mp_all.png used on input l
 ine 465.
 (pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
- [34 <./files/high_vs_low_frequency/mp_csta_ts.png> <./files/high_vs_low_freque
+ [35 <./files/high_vs_low_frequency/mp_csta_ts.png> <./files/high_vs_low_freque
 ncy/mp_all.png>]
-<files/all_users_combined_more_station/decision_tree_stas_line.png, id=193, 334
+<files/all_users_combined_more_station/decision_tree_stas_line.png, id=196, 334
 .24875pt x 232.36812pt>
 File: files/all_users_combined_more_station/decision_tree_stas_line.png Graphic
  file (type png)
@@ -917,7 +926,7 @@ Package pdftex.def Info: files/all_users_combined_more_station/decision_tree_st
 as_line.png used on input line 488.
 (pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
 
-<files/all_users_combined_more_station/decision_tree_stas_boxplot.png, id=194, 
+<files/all_users_combined_more_station/decision_tree_stas_boxplot.png, id=197, 
 406.51875pt x 232.87pt>
 File: files/all_users_combined_more_station/decision_tree_stas_boxplot.png Grap
 hic file (type png)
@@ -932,7 +941,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 474--490
  []
 
 
-<files/all_users_combined_more_station/decision_tree_csta_ts_line.png, id=195, 
+<files/all_users_combined_more_station/decision_tree_csta_ts_line.png, id=198, 
 334.24875pt x 232.36812pt>
 File: files/all_users_combined_more_station/decision_tree_csta_ts_line.png Grap
 hic file (type png)
@@ -943,7 +952,7 @@ ta_ts_line.png used on input line 505.
 (pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
 
 <files/all_users_combined_more_station/decision_tree_csta_ts_boxplot.png, id=19
-6, 406.51875pt x 232.87pt>
+9, 406.51875pt x 232.87pt>
 File: files/all_users_combined_more_station/decision_tree_csta_ts_boxplot.png G
 raphic file (type png)
 
@@ -952,9 +961,9 @@ Package pdftex.def Info: files/all_users_combined_more_station/decision_tree_cs
 ta_ts_boxplot.png used on input line 505.
 (pdftex.def)             Requested size: 238.05084pt x 136.36519pt.
 
-[35 <./files/all_users_combined_more_station/decision_tree_stas_line.png> <./fi
+[36 <./files/all_users_combined_more_station/decision_tree_stas_line.png> <./fi
 les/all_users_combined_more_station/decision_tree_stas_boxplot.png>]
-<files/all_users_combined_more_station/decision_tree_all_line.png, id=202, 334.
+<files/all_users_combined_more_station/decision_tree_all_line.png, id=205, 334.
 24875pt x 232.36812pt>
 File: files/all_users_combined_more_station/decision_tree_all_line.png Graphic 
 file (type png)
@@ -964,7 +973,7 @@ Package pdftex.def Info: files/all_users_combined_more_station/decision_tree_al
 l_line.png used on input line 522.
 (pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
 
-<files/all_users_combined_more_station/decision_tree_all_boxplot.png, id=203, 4
+<files/all_users_combined_more_station/decision_tree_all_boxplot.png, id=206, 4
 06.51875pt x 232.87pt>
 File: files/all_users_combined_more_station/decision_tree_all_boxplot.png Graph
 ic file (type png)
@@ -974,7 +983,7 @@ Package pdftex.def Info: files/all_users_combined_more_station/decision_tree_al
 l_boxplot.png used on input line 522.
 (pdftex.def)             Requested size: 238.05084pt x 136.36519pt.
 
-<files/all_users_combined_more_station/naive_bayes_stas_line.png, id=204, 334.2
+<files/all_users_combined_more_station/naive_bayes_stas_line.png, id=207, 334.2
 4875pt x 232.36812pt>
 File: files/all_users_combined_more_station/naive_bayes_stas_line.png Graphic f
 ile (type png)
@@ -984,7 +993,7 @@ Package pdftex.def Info: files/all_users_combined_more_station/naive_bayes_stas
 _line.png used on input line 541.
 (pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
 
-<files/all_users_combined_more_station/naive_bayes_stas_boxplot.png, id=205, 40
+<files/all_users_combined_more_station/naive_bayes_stas_boxplot.png, id=208, 40
 6.51875pt x 232.87pt>
 File: files/all_users_combined_more_station/naive_bayes_stas_boxplot.png Graphi
 c file (type png)
@@ -998,11 +1007,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 527--543
 
  []
 
-[36 <./files/all_users_combined_more_station/decision_tree_csta_ts_line.png> <.
+[37 <./files/all_users_combined_more_station/decision_tree_csta_ts_line.png> <.
 /files/all_users_combined_more_station/decision_tree_csta_ts_boxplot.png> <./fi
 les/all_users_combined_more_station/decision_tree_all_line.png> <./files/all_us
 ers_combined_more_station/decision_tree_all_boxplot.png>]
-<files/all_users_combined_more_station/naive_bayes_csta_ts_line.png, id=213, 33
+<files/all_users_combined_more_station/naive_bayes_csta_ts_line.png, id=217, 33
 4.24875pt x 232.36812pt>
 File: files/all_users_combined_more_station/naive_bayes_csta_ts_line.png Graphi
 c file (type png)
@@ -1012,7 +1021,7 @@ Package pdftex.def Info: files/all_users_combined_more_station/naive_bayes_csta
 _ts_line.png used on input line 558.
 (pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
 
-<files/all_users_combined_more_station/naive_bayes_csta_ts_boxplot.png, id=214,
+<files/all_users_combined_more_station/naive_bayes_csta_ts_boxplot.png, id=218,
  406.51875pt x 232.87pt>
 File: files/all_users_combined_more_station/naive_bayes_csta_ts_boxplot.png Gra
 phic file (type png)
@@ -1022,7 +1031,7 @@ Package pdftex.def Info: files/all_users_combined_more_station/naive_bayes_csta
 _ts_boxplot.png used on input line 558.
 (pdftex.def)             Requested size: 238.05084pt x 136.36519pt.
 
-<files/all_users_combined_more_station/naive_bayes_all_line.png, id=215, 334.24
+<files/all_users_combined_more_station/naive_bayes_all_line.png, id=219, 334.24
 875pt x 232.36812pt>
 File: files/all_users_combined_more_station/naive_bayes_all_line.png Graphic fi
 le (type png)
@@ -1032,7 +1041,7 @@ Package pdftex.def Info: files/all_users_combined_more_station/naive_bayes_all_
 line.png used on input line 575.
 (pdftex.def)             Requested size: 241.49895pt x 167.89348pt.
 
-<files/all_users_combined_more_station/naive_bayes_all_boxplot.png, id=216, 406
+<files/all_users_combined_more_station/naive_bayes_all_boxplot.png, id=220, 406
 .51875pt x 232.87pt>
 File: files/all_users_combined_more_station/naive_bayes_all_boxplot.png Graphic
  file (type png)
@@ -1042,18 +1051,18 @@ Package pdftex.def Info: files/all_users_combined_more_station/naive_bayes_all_
 boxplot.png used on input line 575.
 (pdftex.def)             Requested size: 238.05084pt x 136.36519pt.
 
-[37 <./files/all_users_combined_more_station/naive_bayes_stas_line.png> <./file
+[38 <./files/all_users_combined_more_station/naive_bayes_stas_line.png> <./file
 s/all_users_combined_more_station/naive_bayes_stas_boxplot.png> <./files/all_us
 ers_combined_more_station/naive_bayes_csta_ts_line.png> <./files/all_users_comb
-ined_more_station/naive_bayes_csta_ts_boxplot.png>] [38 <./files/all_users_comb
+ined_more_station/naive_bayes_csta_ts_boxplot.png>] [39 <./files/all_users_comb
 ined_more_station/naive_bayes_all_line.png> <./files/all_users_combined_more_st
-ation/naive_bayes_all_boxplot.png>] [39]) (chapters/06_conclusion.tex [40])
-(chapters/07_future_work.tex [41] [42]) [43] (main.bbl) [44] (main.aux) ) 
+ation/naive_bayes_all_boxplot.png>] [40]) (chapters/06_conclusion.tex [41])
+(chapters/07_future_work.tex [42] [43]) [44] (main.bbl) [45] (main.aux) ) 
 Here is how much of TeX's memory you used:
- 5011 strings out of 493335
- 80479 string characters out of 3136677
- 158673 words of memory out of 3000000
- 8432 multiletter control sequences out of 15000+200000
+ 5143 strings out of 493335
+ 82263 string characters out of 3136677
+ 163555 words of memory out of 3000000
+ 8557 multiletter control sequences out of 15000+200000
  8361 words of font info for 30 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,10n,40p,1613b,1113s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1067,9 +1076,9 @@ es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files
 6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on main.pdf (44 pages, 2164210 bytes).
+Output written on main.pdf (45 pages, 2166336 bytes).
 PDF statistics:
- 280 PDF objects out of 1000 (max. 8388607)
+ 283 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  246 words of extra memory for PDF output out of 10000 (max. 10000000)
 

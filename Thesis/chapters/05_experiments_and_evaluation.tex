@@ -6,30 +6,30 @@ The main goal of our thesis was to compare different state of the art algorithms
 
 \subsection{Introduction / Procedure}
 
-At first we did an initial data analysis and created a naive approach that as a way to gain further insight into our data as a whole as well as to create a proof-of-concept whether the assumptions we had about our data are justifiable. 
-We then continue to use actual machine learning algorithms implemented into the WEKA toolkit that is created and maintained as an open source project by the University of New Zealand. As part of this we discuss our execution plan, the different features that we want to combine, execute and evaluate and the way we will gather the results and compare them.
+At first we did an initial data analysis and created a naive approach that allowed us to gain further insight into our data as a whole and to create a proof-of-concept whether the assumptions we had about our data are justifiable. 
+We then continued to use actual machine learning algorithms implemented into the WEKA toolkit. As part of this we discuss our execution plan, the different features we combined, executed and evaluated and the way we gathered and compared the results.
 
-In order to have data that the algorithms can use directly and to avoid outliers or false cases we combine statistical analysis together with data preparation to convert our raw dataset into a reasonably filtered and correctly formatted set. As discussed in Section~\ref{subsec:proposed_solution} we used a Decision Tree, a Naive Bayes algorithm and a Hidden Markov Model to train and evaluate our dataset. After improving the process and gathering the results we compare the different execution plans and algorithms and analyze the impact of different design decisions of our approach.
+In order to have data that the algorithms can use directly and to avoid outliers or false cases we combined statistical analysis together with data preparation to convert our raw dataset into a reasonably filtered and correctly formatted set. As discussed in Section~\ref{subsec:proposed_solution} we used a decision tree algorithm, a Naive Bayes algorithm and a multilayer perceptron to train and evaluate our dataset. After improving the process and gathering the results we compared the different execution plans and algorithms and analyzed the impact of different design decisions of our approach.
 
-We have used Groovy to implement all the data analysis, preprocessing and evaluation tasks that we have implemented ourselves. Due to the JVM-based nature of Groovy we can easily and directly interact with WEKA, but we also get the advantages of rapid prototyping, dynamic types, easy scripting and all the other advantages that Groovy provides on top of Java. 
+We have used Groovy to implement all the data analysis, preprocessing and evaluation tasks that we have implemented ourselves. Due to the JVM-based nature of Groovy we could easily and directly interact with WEKA, but we also had all the advantages of rapid prototyping, dynamic types, easy scripting and all the other advantages that Groovy provides on top of Java. 
 
 \subsection{Data Set / Data Analysis}
 \label{subsec:data_set}
-The first step to getting started with machine learning is to know about the data and the underlying domain associated with it. Machine learning is not an oracle where all the data can be inserted and it spits out everything you ever wondered about. Careful analysis and a knowledge of the domain of the data are inexcusable. 
+The first step to getting started with machine learning is to know about the data and the underlying domain associated with it. Machine learning is not an oracle where data can be inserted and the computer spits out everything you ever wondered about. Careful analysis and domain knowledge are crucial. 
 
 \subsubsection{Data Set}
-Our data was gathered over months from active user of an Android smartphone app. The app (Farplano) gives the user an overview of the current timetable of train and bus stations close to him. The timetable is based on an open data set from SBB (Swiss Railway company). The app contains features such as automatic geolocation, full route information of bus and train lines, arbitrary connection planning and many more. In addition to that it also allowed the user (with an opt-in feature) to track his position and anonymously store the stations with timestamps that he passes. We worked on this gathered dataset from hundreds of users over many months. The raw data thus contains an entry for every station that the user passes. A single data entry contains the following data points:
+Our data was gathered over months from active user of an Android smartphone app. The app (Farplano) gives the user an overview of the current timetable of train and bus stations close to him. The timetable is based on an open data set from SBB (Swiss Railway company). The app contains features such as automatic geolocation, full route information of bus and train lines, arbitrary connection planning and many more. In addition to that it also allowed the user (with an opt-in feature) to track his position and anonymously store the stations with timestamps that he passes. We worked on this gathered dataset from hundreds of users over many months. The raw data contains an entry for every station the user passes. A single data entry contains the following data points:
 \begin{itemize}
 	\item Anonymized User ID (a 9-character String)
-	\item Station Id (a 7-character String)
+	\item Station ID (a 7-character String)
 	\item Timestamp
 \end{itemize}
-The information contained in the raw dataset is thus relatively trivial. In order to be able to successfully predict the future location of a user we needed to combine multiple entries to get further information. As a first step we split up the data set to separate sets for each user. We also sorted the entries by timestamp, so that we have a chronological view of all the events as they actually happened.
+The information contained in the raw dataset is relatively trivial. In order to be able to successfully predict the future location of a user we combined multiple entries to get further information. As a first step we split up the data set into separate subsets for each user. We also sorted the entries by timestamp to have a chronological view of all the events as they actually happened.
 
-Remark: We have purposefully left out global state and information about usage patterns, mostly due to the added complexity as well as performance reasons. However this might be something that could be analyzed and included in Future Work. 
+Remark: We have purposefully left out global state and information about usage patterns, mostly due to the added complexity as well as performance reasons. However this might be something that could be analyzed and included in future work. 
 
 \subsubsection{Data Analysis}
-To get a basic understanding of what kind of data that we have and to be able to reason about our data set we created a number of charts, based on the features that we will later use for the machine learning algorithms. 
+To get a basic understanding of what kind of data we have and to be able to reason about our data set we created a number of charts, based on the features we will later use for the machine learning algorithms. 
 
 As a first analysis we looked at how the data is distributed by time and day, as can be seen in the following two charts.
 
@@ -68,7 +68,7 @@ The distribution by day of month didn't really produce significant insight. The 
 	\includegraphics[width=1.0\textwidth]{charts/persons_per_station}
 \end{figure}
 
-A vastly more interesting and also challenging conclusion could be drawn from comparing the users with the stations they frequent and how often they stop at stations. As we expected there are a few users that have amassed a lot of data and then there is a long tail of less frequent users. The same statistic also applies to the number of stations and the number of stops that have been gathered for a user. What we already realized here is that it will be very difficult if not impossible to get a good prediction for the users tailing the statistics, simply because there is just not enough data available. In some edge cases where a user really only has 2 or 3 stops that he regularly frequents this might work, otherwise it will just be stabbing in the dark to get a reasonably good prediction. One or two outliers from such a user could possibly mix up the complete prediction process. It seems sensible to cut the dataset into high- and low-frequency users and discard the latter. The exact boundary or whether it will be flexible to a certain degree will have to be tested by trial and error, however if we would not cut the low-frequency user out of our comparison tests it might greatly change our conclusions and the effectiveness of our process.
+A vastly more interesting and also challenging conclusion can be drawn from comparing the users with the stations they frequent and how often they stop at stations. As we expected there are a few users that have amassed a lot of data and then there is a long tail of less frequent users. The same statistic also applies to the number of stations and the number of stops that have been gathered for a user. What we already realized here is that it will be very difficult if not impossible to get a good prediction for the users tailing the statistics, simply because there is just not enough data available. In some edge cases where a user really only has 2 or 3 stops that he regularly frequents this might work, otherwise it will just be stabbing in the dark to get a reasonably good prediction. One or two outliers from such a user could possibly mix up the complete prediction process. It seems sensible to cut the dataset into high- and low-frequency users and discard the latter. The exact boundary or whether it will be flexible to a certain degree will have to be tested by trial and error, however if we would not cut the low-frequency user out of our comparison tests it might greatly change our conclusions and the effectiveness of our process.
 
 \begin{figure}[!ht]
 	\caption{Distribution of Stops per Station}
@@ -112,14 +112,14 @@ As outlined before applying machine learning techniques to our problem was the m
 \subsubsection{Execution Plan}
 The reason to have a proper execution plan is to have a reproducible way of evaluating the features with different classifiers and reason about the gathered results. 
 
-The classifiers that we use are already described in a theoretical manner in section \ref{subsec:proposed_solution}. We have used a Decision Tree (J48, unpruned ------ WEKA Link --------) and a Naive Bayes classifier both provided from WEKA. As a classifier with back propagation we have used a Multilayer Perceptron classifier also provided by WEKA.
+The classifiers that we use are already described in a theoretical manner in section \ref{subsec:proposed_solution}. We have used a decision tree classifier and a naive Bayes classifier both provided from WEKA. As a classifier with back propagation we have used a multilayer perceptron also provided by WEKA.
 
 To test the accuracy of each of the classifiers trained with different features we are using the F1 score. The F1 score considers both the precision and the recall. In information retrieval the precision is defined as "How many selected items are relevant?" whereas the recall is defined as "How many relevant items are selected?". The combination of both precision and recall gives quite a good approximation of the accuracy of a classifier and allows us to easily compare the different results with each other. Mathematically the F1 score is defined as 
 \begin{equation}\label{equation:F1Score}
 F_{1} = 2 \cdot \frac{precision \cdot recall}{precision + recall}
 \end{equation}
 
-The F1 score is also called traditional F-measure or balanced F-score, because it's the harmonic mean of precision and recall and thus weighs both measurements equally.
+The F1 score is also called traditional F-measure or balanced F-score, as it's the harmonic mean of precision and recall and thus weighs both measurements equally.
 
 We are using the precision, recall and F1 score directly to compare the different executions and to analyze their results. However we also split up the result set to compare the precision/recall/F1 for the number of most frequent stations used as well as for different types of users (frequent/non-frequent). With that analysis we should be able to see how the prediction for different usage patterns and types of users are influenced by our classifiers.
 
@@ -134,7 +134,7 @@ The features that we have been able to identify from our data set and that we ha
 	\item \textbf{Next station} (to be predicted)
 \end{itemize}
 
-The current station can directly be deduced from the gathered data. The same can be done thanks to the timestamp for the day of week, hour of day, minute of hour and the weekday/weekendday flag. For the previous station we had to do some calculation as well as some assumptions about the data. The way we have prepared the previous station is described in more detail in section \ref{subsubsec:data_preparation}.  
+The current station can directly be deduced from the gathered data. The same can be done thanks to the timestamp for the day of week, hour of day, minute of hour and the weekday/weekend flag. For the previous station we had to do some calculation as well as some assumptions about the data. The way we have prepared the previous station is described in more detail in section \ref{subsubsec:data_preparation}.  
 
 The next station is the feature that we will be predicting with our algorithms. It is also called our ground truth. We know that our ground truth does not necessarily correspond to the actual reality, but it is the closest assumption we can make with the data and the resources we have at hand. Improving the ground truth would require either the actual implementation of the prediction into the Android app and letting the user give feedback on the prediction or sifting through the data manually and analyzing whether our ground truth makes sense given the user's behavior. Unfortunately both options are out of scope for this thesis, leading us to rely on our somewhat unreliable ground truth. The issue that could arise from that is that we optimize for a scenario that does not properly reflect reality and that would leave our results useless or require a lot of improvements for an actual real world use case.
 
