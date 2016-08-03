@@ -1,11 +1,30 @@
 \newpage
 \section{Related Work}
+\subsection{Challenges in Spatial-Temporal Data Analysis Targeting Public Transport}
+\textbf{Mohammad Sajjad Ghaemi, Bruno Agard, Vahid Partovi Nia, Martin Trépanier\\
+Polytechnique Montrèal, 2015}
+\\
+\\
+The first paper we analyzed is from the Polytechnique of Montrèal, published in 2015 and looks at challenges in spatial-temporal data analysis targeting public transport. They have investigated problems and challenges that might arise doing large scale data analysis and sequence prediction on top of publicly available usage data of public transport. They have reviewed these scenarios and suggested solutions to take the different problems into account. However they have not directly worked with large-scale user data to try and validate their scenarios, leaving that as open problems for future research.
+
+Most scenarios that have been analyzed are targeting spatial behavior, the way users use public transport and the trips they take meanwhile. The reasoning behind their analysis is to figure out similar patterns that users have. The assumptions that users with similar usage patterns will also in the future behave similarly can lead to a significant increase in prediction precision. Most usages between users might however not be the exact same sequence of of stations, but a path that bears certain similarities. Scenarios they have listed includes users with the same starting point and ending point, users taking the same buses in opposite directions, users with same directional patterns or same symmetric direction patterns, however not on the exact same stations. Other more complex use cases are the same pattern except for one or two outliers, a shared subsequence of stations or the same resulting distance of travel. They even went further and analyzed similarities of patterns based on a circular grid representation of bus stops or of a pairwise bus stop similarity coefficient. For all the scenarios they have analyzed the possible benefits of using the scenario and possible solutions to incorporate them.
+
+As for temporal data they have presented a distance calculation technique based on the k-means clustering method. In this method the temporal data of a user is encoded as a 0-1 vector. When comparing these n-dimensional vectors between users their similarity can be computed quite easily. This yields a fast and simple way of analyzing similar temporal usage patterns between users.
 
 
-Mining temporal patterns of transport behaviour for predicting future transport usage\\
-Stefan Foell, Gerd Kortuem; Reza Rawassizadeh; Santi Phithakkithukoon; Marco Veloso and Carlos Bento\\
-Third International Workshop on Pervasive Urban Applications, 8 Sep 2013, Zurich, Switzerland
+\subsection{Mining temporal patterns of transport behaviour for predicting future transport usage}
+\textbf{Stefan Foell, Gerd Kortuem; Reza Rawassizadeh; Santi Phithakkithukoon; Marco Veloso and Carlos Bento\\
+Third International Workshop on Pervasive Urban Applications, 8 Sep 2013, Zurich, Switzerland}
+\\
+\\
+The second paper we looked at was published in 2013 and tries to predict the future transport usage of users based on temporal patterns. They have done similar predictions as we have in our thesis, however on a coarser level. The goal was to predict whether a user would use public transport on a given day in the future, based on his previous usage patterns.
 
-Challenges in Spatial-Temporal Data Analysis Targeting Public Transport\\
-Mohammad Sajjad Ghaemi, Bruno Agard, Vahid Partovi Nia, Martin Trépanier\\
-Polytechnique Montrèal, 2015
+They have used anonymized data from automated fare collection systems from bus rides in Lisbon to train and test their approach. The highest prediction accuracy they have achieved in their tests is 77\%. As a comparison they have included two simple baseline approaches and they have achieved a far higher accuracy using machine learning techniques.
+
+Their data set consists of almost 25 million bus rides taken by over 800'000 travelers over a period of six weeks. At first they have analyzed usage profiles to get an overview over their data set. For that they have plotted the weekly travel profiles, the transport usage periodicities as well as the weekday / weekend travel behavior.
+
+For the actual prediction they have created four different temporal features of their data set. The first is the part of the week, being encoded as either weekday or weekend. The second feature is the day of the week. In addition they have used the travel periodicity of a user, specifying the typical time periods that underlie the user's access to the buses. They also include the travel stationarity, specifying how long a user has been continuously using public transport before the to be predicted day. Using these features they have trained a naive Bayes algorithm with a 80\% - 20\% split of their data set. They have used a superset of their features for the prediction, leading to lots of combinations in feature sets. The accuracy fluctuates between 0.655 and 0.774. 
+
+As a baseline approach they have also compared their predictions to a single ALWAYS and NEVER approach. In the ALWAYS approach they would assume that the user takes the bus on every day and on the NEVER approach that he would never tak a bus. The ALWAYS approach had an accuracy of 52\% whereas the NEVER had an average accuracy of 48\%. Both baseline approaches are clearly outperformed by the naive Bayes algorithm, no matter the feature set.
+
+As a future work they have presented ways to include more information about the users in the machine learning system, such as the accessed stops of the users as well as the routes and services that are provided. This will allow them to unveil more complex patterns and to give more fine-grained predictions about the usage patterns of the users.
