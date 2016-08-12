@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.31)  12 AUG 2016 12:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.31)  12 AUG 2016 19:26
 entering extended mode
 **./main.tex
 (main.tex
@@ -559,31 +559,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--21
 
  []
 
-[6]) (chapters/04_sequence_prediction.tex [7] [8]
-<images/decision-tree.png, id=32, 649.92813pt x 409.02812pt>
+[6]) (chapters/04_sequence_prediction.tex [7] [8] [9]
+<images/decision-tree.png, id=35, 649.92813pt x 409.02812pt>
 File: images/decision-tree.png Graphic file (type png)
 
 <use images/decision-tree.png>
-Package pdftex.def Info: images/decision-tree.png used on input line 29.
+Package pdftex.def Info: images/decision-tree.png used on input line 32.
 (pdftex.def)             Requested size: 345.0pt x 217.12714pt.
- [9] [10 <./images/decision-tree.png>]
+ [10 <./images/decision-tree.png>]
 <images/multilayer-perceptron.png, id=41, 525.46312pt x 247.92625pt>
 File: images/multilayer-perceptron.png Graphic file (type png)
 
 <use images/multilayer-perceptron.png>
-Package pdftex.def Info: images/multilayer-perceptron.png used on input line 52
+Package pdftex.def Info: images/multilayer-perceptron.png used on input line 55
 .
 (pdftex.def)             Requested size: 345.0pt x 162.78442pt.
- [11 <./images/multilayer-perceptron.png>]) (chapters/05_experiments_and_evalua
-tion.tex [12] [13]
+)
+(chapters/05_experiments_and_evaluation.tex [11] [12 <./images/multilayer-perce
+ptron.png>] [13]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 23.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 23.
-
 <charts/distribution_time_of_day.png, id=53, 663.47874pt x 400.49625pt>
 File: charts/distribution_time_of_day.png Graphic file (type png)
 
@@ -1068,26 +1067,29 @@ ers_combined_more_station/naive_bayes_csta_ts_line.png> <./files/all_users_comb
 ined_more_station/naive_bayes_csta_ts_boxplot.png>] [40 <./files/all_users_comb
 ined_more_station/naive_bayes_all_line.png> <./files/all_users_combined_more_st
 ation/naive_bayes_all_boxplot.png>] [41]) (chapters/06_conclusion.tex [42])
-(chapters/07_future_work.tex [43] [44]) [45] (main.bbl) [46] (main.aux) ) 
+(chapters/07_future_work.tex [43] [44]) [45] (main.bbl) [46] (main.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 5144 strings out of 493335
- 82280 string characters out of 3136677
+ 5145 strings out of 493335
+ 82293 string characters out of 3136677
  163555 words of memory out of 3000000
- 8558 multiletter control sequences out of 15000+200000
+ 8559 multiletter control sequences out of 15000+200000
  8361 words of font info for 30 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,10n,40p,1613b,1113s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program 
-Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fil
-es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files 
-(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x8
-6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on main.pdf (46 pages, 2168106 bytes).
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (
+x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on main.pdf (46 pages, 2169554 bytes).
 PDF statistics:
  286 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

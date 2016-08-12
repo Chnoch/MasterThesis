@@ -187,7 +187,7 @@ What we also do is limit the number of stations that we want to predict. It is g
 
 After all those operations we have successfully prepared our raw data into a reasonable set that we can be comfortable handing off to WEKA to build the models from our data, evaluate, cross-validate and display the results. This process as well as the results are discussed in the following section.
 
-\subsection{Machine Learning Results}
+\subsection{Machine Learning with WEKA}
 Before we present the results we want to outline the way we pass data to WEKA and the computation steps that WEKA internally does.
 
 The data that we can pass to WEKA need to be represented by Attributes. Each feature that we defined is matched by its representative attribute. The instances of the data that are passed to WEKA should all contain allowed values for the attributes. An attribute can have one of the following types (from \cite{WEKAJavaDocAttribute}):
