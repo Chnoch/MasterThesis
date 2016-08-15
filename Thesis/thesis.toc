@@ -1,0 +1,45 @@
+\contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}
+\contentsline {chapter}{\numberline {2}Related Work}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Challenges in Spatial-Temporal Data Analysis Targeting Public Transport}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Mining temporal patterns of transport behaviour for predicting future transport usage}{6}{section.2.2}
+\contentsline {chapter}{\numberline {3}Problem description}{7}{chapter.3}
+\contentsline {section}{\numberline {3.1}Sequence Prediction}{7}{section.3.1}
+\contentsline {section}{\numberline {3.2}Proposed Solutions}{8}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}WEKA}{8}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Decision Trees}{8}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Naive Bayes}{9}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Multilayer Perceptron (Neural Network)}{10}{subsection.3.2.4}
+\contentsline {chapter}{\numberline {4}Experiments and Evaluation}{11}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction / Procedure}{11}{section.4.1}
+\contentsline {section}{\numberline {4.2}Data Set / Data Analysis}{11}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Data Set}{12}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Data Analysis}{12}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Naive Approach}{15}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Web GUI, Visual Representation}{17}{subsection.4.3.1}
+\contentsline {section}{\numberline {4.4}Machine Learning Preparation}{17}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Execution Plan}{17}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Data Preparation / Statistical Analysis}{19}{subsection.4.4.2}
+\contentsline {paragraph}{Data Parsing}{19}{section*.3}
+\contentsline {paragraph}{Remove Duplicates}{20}{section*.4}
+\contentsline {paragraph}{Assign Previous / Next Stations}{20}{section*.5}
+\contentsline {paragraph}{Remove Low Profile Users}{20}{section*.6}
+\contentsline {paragraph}{Analyze Station Usage}{21}{section*.7}
+\contentsline {section}{\numberline {4.5}Machine Learning with WEKA}{21}{section.4.5}
+\contentsline {section}{\numberline {4.6}Experiments}{22}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Comparison of all Users}{23}{subsection.4.6.1}
+\contentsline {paragraph}{Decision Trees}{23}{section*.8}
+\contentsline {paragraph}{Naive Bayes}{24}{section*.9}
+\contentsline {paragraph}{Multilayer Perceptron}{26}{section*.10}
+\contentsline {subsection}{\numberline {4.6.2}Comparison of frequent versus non-frequent Users}{28}{subsection.4.6.2}
+\contentsline {paragraph}{Decision Trees}{28}{section*.11}
+\contentsline {paragraph}{Naive Bayes}{29}{section*.12}
+\contentsline {paragraph}{Multilayer Perceptron}{31}{section*.13}
+\contentsline {subsection}{\numberline {4.6.3}Comparison of all Users with higher number of Stations}{33}{subsection.4.6.3}
+\contentsline {paragraph}{Decision Trees}{33}{section*.14}
+\contentsline {paragraph}{Naive Bayes}{34}{section*.15}
+\contentsline {section}{\numberline {4.7}Comparison of Results}{36}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Comparison of different algorithms}{36}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}Comparison of different feature sets}{36}{subsection.4.7.2}
+\contentsline {subsection}{\numberline {4.7.3}Comparison of different experiments}{37}{subsection.4.7.3}
+\contentsline {chapter}{\numberline {5}Conclusion}{38}{chapter.5}
+\contentsline {chapter}{\numberline {6}Future Work}{39}{chapter.6}
