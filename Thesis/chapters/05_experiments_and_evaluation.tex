@@ -1,23 +1,23 @@
 \newpage
-\section{Experiments and Evaluation}
-\label{sec:experiments}
+\chapter{Experiments and Evaluation}
+\label{cha:experiments}
 
 The main goal of our thesis was to compare different state of the art algorithms and to combine machine learning techniques to gain a deeper understanding of what is necessary and what is possible in order to achieve the best results based on an initial data set and certain evaluation targets that one wants to find. In this chapter we explore our procedure from the initial dataset that we work with to the final comparison of the results that we produced.
 
-\subsection{Introduction / Procedure}
+\section{Introduction / Procedure}
 
 At first we did an initial data analysis and created a naive approach that allowed us to gain further insight into our data as a whole and to create a proof-of-concept whether the assumptions we had about our data are justifiable. 
 We then continued to use actual machine learning algorithms implemented into the WEKA toolkit. As part of this we discuss our execution plan, the different features we combined, executed and evaluated and the way we gathered and compared the results.
 
-In order to have data that the algorithms can use directly and to avoid outliers or false cases we combined statistical analysis together with data preparation to convert our raw dataset into a reasonably filtered and correctly formatted set. As discussed in Section~\ref{subsec:proposed_solution} we used a decision tree algorithm, a Naive Bayes algorithm and a multilayer perceptron to train and evaluate our dataset. After improving the process and gathering the results we compared the different execution plans and algorithms and analyzed the impact of different design decisions of our approach.
+In order to have data that the algorithms can use directly and to avoid outliers or false cases we combined statistical analysis together with data preparation to convert our raw dataset into a reasonably filtered and correctly formatted set. As discussed in Section~\ref{sec:proposed_solution} we used a decision tree algorithm, a Naive Bayes algorithm and a multilayer perceptron to train and evaluate our dataset. After improving the process and gathering the results we compared the different execution plans and algorithms and analyzed the impact of different design decisions of our approach.
 
 We have used Groovy to implement all the data analysis, preprocessing and evaluation tasks that we have implemented ourselves. Due to the JVM-based nature of Groovy we could easily and directly interact with WEKA, but we also had all the advantages of rapid prototyping, dynamic types, easy scripting and all the other advantages that Groovy provides on top of Java. 
 
-\subsection{Data Set / Data Analysis}
-\label{subsec:data_set}
+\section{Data Set / Data Analysis}
+\label{sec:data_set}
 The first step to getting started with machine learning is to know about the data and the underlying domain associated with it. Machine learning is not an oracle where data can be inserted and the computer spits out everything you ever wondered about. Careful analysis and domain knowledge are crucial. 
 
-\subsubsection{Data Set}
+\subsection{Data Set}
 Our data was gathered over months from active user of an Android smartphone app. The app (Farplano) gives the user an overview of the current timetable of train and bus stations close to him. The timetable is based on an open data set from SBB (Swiss Railway company). The app contains features such as automatic geolocation, full route information of bus and train lines, arbitrary connection planning and many more. In addition to that it also allowed the user (with an opt-in feature) to track his position and anonymously store the stations with timestamps that he passes. We worked on this gathered dataset from hundreds of users over many months. The raw data contains an entry for every station the user passes. A single data entry contains the following data points:
 \begin{itemize}
 	\item Anonymized User ID (a 9-character String)
@@ -28,7 +28,7 @@ The information contained in the raw dataset is relatively trivial. In order to 
 
 Remark: We have purposefully left out global state and information about usage patterns, mostly due to the added complexity as well as performance reasons. However this might be something that could be analyzed and included in future work. 
 
-\subsubsection{Data Analysis}
+\subsection{Data Analysis}
 To get a basic understanding of what kind of data we have and to be able to reason about our data set we created a number of charts, based on the features we will later use for the machine learning algorithms. 
 
 As a first analysis we looked at how the data is distributed by time and day, as can be seen in the following two charts.
@@ -84,7 +84,7 @@ A vastly more interesting and also challenging conclusion can be drawn from comp
 
 A similar conclusion can also be drawn by the more averaging figures that we created. It also shows a relatively small set with a lot of data and a long, small tail. Combined with the previous conclusions this strengthened our approach of doing statistical analysis and preparing the data set to remove data points that will skew our result. The types of preparation, analysis and restrictions we've imposed on our data set are described in detail in ~\ref{subsubsec:data_preparation}
 
-\subsection{Naive Approach}
+\section{Naive Approach}
 
 As a first approach we wanted to create a reasonable starting point to work with our data set. For this we created a naive approach in how we first measured and analyzed our data. 
 
@@ -94,8 +94,8 @@ For the analysis we then looked at the node that was to be analyzed (assuming th
 
 This naive approach with all its known limitations and issues gave us a correct prediction of 45.7\%. We have purposefully chosen not to limit our data set or to put it under certain limitations. This obviously leads to a worse overall prediction and also to some wrong predictions that will be classified as correct, since our ground truth does not necessarily fully reflect the actual reality. However our goal was to start out with a reasonable estimate on the basis of our data set. We didn`t want to prematurely optimize issues away that wouldn`t really disturb our prediction models. With that approach we could start out from the very base of our prediction and then analyze the effects that statistical optimizations and a better preparation of our data set have. Thanks to the naive approach that we created we could make sure that what we analyzed with machine learning techniques and the statistical analysis and preparations that we did were actual optimizations and gains in precision.
 
-\subsubsection{Web GUI, Visual Representation}
-\label{subsubsec:web_gui}
+\subsection{Web GUI, Visual Representation}
+\label{subsec:web_gui}
 Since we were aiming for a reasonable starting point and a general look into our data set we thought it makes sense to also create a visual representation, at least for that first step, before going further into detail. It should allow us to look at individual users and analyze the naive graph that was created for said user. Having such a visual representation helps us in reviewing data for user, seeing at how the data is distributed and can also aid in the analysis of any issues with the data. The resulting graph that was provided by our Web GUI can be seen in Figure \ref{figure:web_gui_graph}. We can see all the nodes the user has visited and the relations as well as the amount of relations between each of these nodes. The Web GUI also allowed us to move the nodes around in order to de-clutter the graph, as well as to enable or disable certain nodes. This is especially useful when a user has a huge number of nodes and we only want to look at a certain part of the users graph.
 
 \begin{figure}[!ht]
@@ -105,14 +105,14 @@ Since we were aiming for a reasonable starting point and a general look into our
 	\label{figure:web_gui_graph}
 \end{figure}
 
-\subsection{Machine Learning Preparation}
-\label{subsec:machine_learning_results}
+\section{Machine Learning Preparation}
+\label{sec:machine_learning_results}
 As outlined before applying machine learning techniques to our problem was the main goal of our thesis. After having gathered insights into our dataset by statistical means and by looking at the dataset with a naive approach we started working on machine learning. We laid out our execution plan, defining what and how we want to test the different algorithms on our dataset, what kind of algorithms we'd use and how we evaluate and compare the results. The following sections are the result of carrying out these plans.
 
-\subsubsection{Execution Plan}
+\subsection{Execution Plan}
 The reason to have a proper execution plan is to have a reproducible way of evaluating the features with different classifiers and reason about the gathered results. 
 
-The classifiers that we use are already described in a theoretical manner in section \ref{subsec:proposed_solution}. We have used a decision tree classifier and a naive Bayes classifier both provided from WEKA. As a classifier with back propagation we have used a multilayer perceptron also provided by WEKA.
+The classifiers that we use are already described in a theoretical manner in section \ref{sec:proposed_solution}. We have used a decision tree classifier and a naive Bayes classifier both provided from WEKA. As a classifier with back propagation we have used a multilayer perceptron also provided by WEKA.
 
 To test the accuracy of each of the classifiers trained with different features we are using the F1 score. The F1 score considers both the precision and the recall. In information retrieval the precision is defined as "How many selected items are relevant?" whereas the recall is defined as "How many relevant items are selected?". The combination of both precision and recall gives quite a good approximation of the accuracy of a classifier and allows us to easily compare the different results with each other. Mathematically the F1 score is defined as 
 \begin{equation}\label{equation:F1Score}
@@ -134,15 +134,15 @@ The features that we have been able to identify from our data set and that we ha
 	\item \textbf{Next station} (to be predicted)
 \end{itemize}
 
-The current station can directly be deduced from the gathered data. The same can be done thanks to the timestamp for the day of week, hour of day, minute of hour and the weekday/weekend flag. For the previous station we had to do some calculation as well as some assumptions about the data. The way we have prepared the previous station is described in more detail in section \ref{subsubsec:data_preparation}.  
+The current station can directly be deduced from the gathered data. The same can be done thanks to the timestamp for the day of week, hour of day, minute of hour and the weekday/weekend flag. For the previous station we had to do some calculation as well as some assumptions about the data. The way we have prepared the previous station is described in more detail in section \ref{subsec:data_preparation}.  
 
 The next station is the feature that we will be predicting with our algorithms. It is also called our ground truth. We know that our ground truth does not necessarily correspond to the actual reality, but it is the closest assumption we can make with the data and the resources we have at hand. Improving the ground truth would require either the actual implementation of the prediction into the Android app and letting the user give feedback on the prediction or sifting through the data manually and analyzing whether our ground truth makes sense given the user's behavior. Unfortunately both options are out of scope for this thesis, leading us to rely on our somewhat unreliable ground truth. The issue that could arise from that is that we optimize for a scenario that does not properly reflect reality and that would leave our results useless or require a lot of improvements for an actual real world use case.
 
 In our execution plans we have used different combinations of the feature set above to train and then test the data set. We have always tried to predict the next station feature.
 
 
-\subsubsection{Data Preparation / Statistical Analysis}
-\label{subsubsec:data_preparation}
+\subsection{Data Preparation / Statistical Analysis}
+\label{subsec:data_preparation}
 As part of the process to convert the raw data we have gathered into a WEKA-compatible format we also implemented the findings we gathered from our data analysis, from the naive approach and from the subsequent execution of our plans and the gathering of the results. We constantly improved the results of our predictions by taking the data with the preparation we had done so far, using the machine learning algorithms on the data and then analyzing the results. This process has not been a straightforward path where we knew what and how we needed to implement restrictions and enhancements on our data, but much more a continuous path, leading to small or significant improvements or decreases in precision. Based on the analysis of each step we took we were able to get a good precision, albeit at the cost described in this section. We outline all the transformations, restrictions and enhancements that we made on our data set here.
 
 \paragraphtitle{Data Parsing} 
@@ -181,13 +181,13 @@ Once all duplicates are removed from the entries we assign the previous and next
 Once both the previous and next station have been assigned to an entry we analyze the data for each user to remove all the low profile users. We have realized that users which have barely used the app and gathered very limited data are very hard to predict. We have set the threshold to the amount of data entries that a user needs to have to 20. It has given us a good compromise to not exclude too many users and in the process only working with very few samples while still maintaining a high precision and good quality of our predictions. It might be an option to fine tune this value, taking into account for example how concise a users data is. For a user that only ever goes to three different stations we might be able to successfully predict his future movements earlier while it is a lot harder to generate e reasonable model for a user that gathers data only sporadically and in lots of different places. However for the data set we have at hand the threshold we chose is a good compromise.
 
 \paragraphtitle{Analyze Station Usage}
-\label{subsubsec:station_usage}
+\label{subsec:station_usage}
 The next preparation step we take analyzes the usages of the stations for each user. The filtering we do based on this statistical analysis has led to the highest gain in prediction quality, mostly because we have filtered out a lot of noisy data and additional low profile users that generally pull down the overall precision. We first count the number of occurrences of the most frequently used stations of a user. If those most often used stations still have an occurrence count lower than a certain threshold we discard the user. The threshold in our experiments has been set at 10 occurrences, which has shown to be a reasonable trade-off. 
 What we also do is limit the number of stations that we want to predict. It is generally unreasonable to try and predict every possible station that the user could be based on his previous interactions or even based on the full data set. It has also shown that predictions are quite unstable when trying to predict every single possible station given the data that we have. We have therefore limited the number of stations for our prediction feature to ten stations per user. This number has also been gathered after some tests have shown that it gives a good overall prediction. In that step we therefore also remove the next station id from each entry should it not be within the ten stations that are to be predicted. In this case we add the value 'null' as the next station, signaling that we can't make a prediction based the data available in that entry. The value 'null' is also added to the values that the machine learning toolkit can actually predict. In that case it would show the system that none of the most prominent stations could be predicted. If WEKA predicts a 'null' value for a data entry and the ground truth actually does contain 'null' we also count that as a successful prediction, because after all the system also needs to know when it can't yet properly predict something. Obviously with more data and more processing power we might be able to push the number of possible stations higher, but for our evaluations we have left the threshold constant.
 
 After all those operations we have successfully prepared our raw data into a reasonable set that we can be comfortable handing off to WEKA to build the models from our data, evaluate, cross-validate and display the results. This process as well as the results are discussed in the following section.
 
-\subsection{Machine Learning with WEKA}
+\section{Machine Learning with WEKA}
 Before we present the results we want to outline the way we pass data to WEKA and the computation steps that WEKA internally does.
 
 The data that we can pass to WEKA need to be represented by Attributes. Each feature that we defined is matched by its representative attribute. The instances of the data that are passed to WEKA should all contain allowed values for the attributes. An attribute can have one of the following types (from \cite{WEKAJavaDocAttribute}):
@@ -210,29 +210,35 @@ Once the model is created we use an Evaluation to evaluate the model. There are 
 
 Once the classifiers has been trained and tested, WEKA provides an abundance of information about its predictions. We used this information to put together charts and statistical results for each of our classifier given each of the different feature sets we prepared for it.
 
-\subsection{Experiments}
+\section{Experiments}
 We have conducted three different experiments on our data set, each with different algorithms and with multiple feature sets. The algorithms are always Decision Tree, Naive Bayes and Multilayer Perceptron. On the last experiment we have omitted the Multilayer Perceptron algorithm due to severe performance issues.
 
 For each experiment and each algorithm we have used three different feature sets to train and test the algorithm:
 
 \mbox{}\\
-\begin{tabular}{l | c | r}
-	\hline
-	\textbf{Stations} & \textbf{Current Station \& Time-Based} & \textbf{All Features} \\
-	\hline
-	 Current Station  & Current Station & Current Station \\
-	 Previous Station & Hour of Day & Hour of Day \\
-	  & Minute of Hour & Minute of Hour \\
-	  & Day of Week & Day of Week \\
-	  & Weekday & Weekday \\
-	  & & Previous Station \\
-	  \hline
-\end{tabular}
+\begin{table}	
+	\begin{center}
+		\begin{tabular}{l | c | r}
+			\hline
+			\textbf{Stations} & \textbf{Current Station \& Time-Based} & \textbf{All Features} \\
+			\hline
+			 Current Station  & Current Station & Current Station \\
+			 Previous Station & Hour of Day & Hour of Day \\
+			  & Minute of Hour & Minute of Hour \\
+			  & Day of Week & Day of Week \\
+			  & Weekday & Weekday \\
+			  & & Previous Station \\
+			  \hline  
+		\end{tabular}
+	\end{center}
+	\caption{Table of Feature Combinations}
+	\label{table:feature_combinations}
+\end{table}
 
 
 
 \newpage
-\subsubsection{Comparison of all Users}
+\subsection{Comparison of all Users}
 For our first experiment we take our fully prepared data set, run each algorithm with each feature set once per user and collect the results of the evaluation. We then sort the results of the users by their F-Values for the line chart in order to get a good representation of how precision and recall correlates and the F-Measure deteriorates in our data set. The Boxplot graph gives a good statistical overview of the distribution and the highs and lows in our result set. As it is generally helpful to have multiple representations of data we have in most cases included both the line chart and boxplot graph.
 
 \paragraphtitle{Decision Trees}
@@ -395,7 +401,7 @@ For our first experiment we take our fully prepared data set, run each algorithm
 
 
 \newpage
-\subsubsection{Comparison of frequent versus non-frequent Users}
+\subsection{Comparison of frequent versus non-frequent Users}
 In this experiment we have let the algorithm run through our data set as before, however before creating the graph for our evaluation we have split the result set into high- and low-frequency users. The split is done by 50\% of our data set. We simply count the number of data entries a user has to see whether that user belongs into the high- or low-frequency belt. In the graphs below the left-hand side of the graph represent the high-frequency users and the right-hand side the low-frequency users. Each half is then ordered by their respective F-Values just as before.
 
 \paragraphtitle{Decision Trees}
@@ -468,7 +474,7 @@ In this experiment we have let the algorithm run through our data set as before,
 
 
 \newpage
-\subsubsection{Comparison of all Users with higher number of Stations}
+\subsection{Comparison of all Users with higher number of Stations}
 For our last experiment we have played a bit with the parameters of the number of stations we include in our prediction and the minimum amount of occurrences the stations have to have. The way its used is described in more detail in subsection \ref{subsubsec:data_preparation}. We ran the simulation multiple times with higher and lower thresholds to see what changes. We have taken two thresholds that represent the tests in a good way. In this experiment the maximum amount of stations is set to 15 whereas the necessary amount of occurrences is reduced to five. This has led to a steep increase in users that are actually processed (almost double). Due to the higher user count and the increased complexity, we have not included the Multilayer Perceptron Algorithm in this experiment. It was multiple orders of magnitudes slower and didn't yield significantly different results. 
 
 \paragraphtitle{Decision Trees}
@@ -577,19 +583,19 @@ For our last experiment we have played a bit with the parameters of the number o
 \end{figure}
 
 
-\subsection{Comparison of Results}
+\section{Comparison of Results}
 
-\subsubsection{Comparison of different algorithms}
+\subsection{Comparison of different algorithms}
 In general it can be said that the selection of the machine learning algorithm hasn't heavily influenced the final results. The F-Measure is quite similar in all of the algorithms, given the same feature set. What is quite different in the algorithms is the consistency of how precision and recall correlate. In our Multilayer Perceptron experiments the precision and recall lines are a lot smoother, meaning that they deteriorate in combination and are quite stable across all users. Recall is usually higher than precision, but the difference between them is stable. This was also apparent between the different feature set. For Naive Bayes and to an even larger extent the decision tree algorithm the curves for precision and recall have lots of small mountains and valleys, especially when looking at the results with lower precision. This leads to the conclusion that the results are more dependent on the specific data for the Naive Bayes and Decision Tree algorithms and we might have some over- or underfitting for these algorithms. The overall precision hasn't suffered too much, but the Multilayer Perceptron algorithm is certainly the most stable of all.
 
 For all algorithms we have experienced a relative straight line up unto approximately 85-90\% of the users where we see a quite sharp decline. For those users it might be interesting to check with a different algorithm and see whether the results are similarly low. If the precision doesn't get better we would most likely need to filter them out until more and especially more precise data has been gathered. Because a precision and recall of around 0.7 generally doesn't give us a big benefit. However for about 50\% of our users in all algorithms we have a F-Measure of 0.9, which could probably be used in a production system. Combined with some feedback from the actual user that then explicitly validate our ground truth we can most likely eliminate or at least reduce our false predictions for our already high precision use cases.
 
-\subsubsection{Comparison of different feature sets}
+\subsection{Comparison of different feature sets}
 The overall difference between the different feature sets is also quite small. Especially when looking at the F-Measure curve, they show quite similar results, including the difference in algorithms. An interesting observation is that with the addition of time-based features the precision and recall for the decision tree algorithm are a lot closer. The overall F-Measure is comparable, but the difference in precision and recall is smaller. The same change also includes quite a bit of stability for the Naive Bayes algorithm, smoothing out the precision and recall curve. The Multilayer Perceptron didn't show much difference, only some small inconsistencies at the tail of the curve. However since the Multilayer Perceptron is already quite stable the addition of time-based features hasn't helped much.
 
 The distribution of values (from our boxplot charts) across the feature sets are also quite similar. The precision and F-Measure are mostly similarly distributed for each algorithm, the recall is varying a bit. Mostly it is the extrem values that vary, albeit only the lower ones, as the upper extremes are always 1.0. For the recall of the Decision Tree and Naive Bayes however we also see slight changes in the overall distribution. These effects cannot really be attested for the Multilayer Perceptron.
 
-\subsubsection{Comparison of different experiments}
+\subsection{Comparison of different experiments}
 We can mostly compare the first and third experiment and separately see how the results of the second experiment differ and how they could benefit our overall prediction model.
 The first experiment is quite conservative in the amount of data that are actually used in our machine learning algorithm. This is based on the assumptions that the algorithms can't cover all the special cases of our data and that the overall precision heavily benefits from our preprocessing and filtering. The third experiment also build upon some parts of this preprocessing and filtering, it is however far less restrictive, thus allowing a lot more and also a lot more low-frequency user to be included in our machine learning process. The results between those two experiments have shown what was to be expected. We have a much higher spread in our third experiment between the highest and the lowest F-Measures. The overall precision and recall are also a bit lower, however not by a huge margin. One of the interesting conclusion is that our third experiment had a lot more perfect predictions (precision = recall = F-Measure = 1.0). This can most likely be attributed to the fact that some low profile users are really easy to predict, if they have very few stations that they have used. Some of these users have already been filtered out in our first experiment. Whether these predictions would also hold up in reality or whether they can just be attributed to our data set is another question that can't be answered by our models. 
 

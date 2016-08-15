@@ -3,10 +3,14 @@
 \bibitem{SBBOpenData}
 SBB AG.
 \newblock Sbb open data, 2016.
+\newblock Available at
+  \url{http://www.sbb.ch/sbb-konzern/ueber-die-sbb/zahlen-und-fakten/open-data.html}.
 
 \bibitem{MultilayerPerceptron}
 Abdelrahman Elogeel.
 \newblock Multilayer perceptron, 2016.
+\newblock Available at
+  \url{https://elogeel.wordpress.com/2010/05/05/multilayer-perceptron}.
 
 \bibitem{MachineLearningTUMunich}
 Alex Graves.
@@ -21,9 +25,13 @@ Mark~A.Hall Ian H.~Witten, Eibe~Frank.
 \bibitem{WEKAJavaDocAttribute}
 University of~Waikato.
 \newblock Java documentation of weka, 2016.
+\newblock Available at
+  \url{http://weka.sourceforge.net/doc.dev/weka/core/Attribute.html}.
 
 \bibitem{WikipediaDecisionTrees}
 Wikipedia.
 \newblock Decision tree learning, 2016.
+\newblock Available at
+  \url{https://en.wikipedia.org/wiki/Decision_tree_learning}.
 
 \end{thebibliography}
