@@ -2,6 +2,12 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Table of Feature Combinations}}{22}{table.4.1}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Table of Feature Combinations}}{24}{table.4.1}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Mean F-Measures for all users}}{25}{table.4.2}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Mean F-Measures for frequent vs. non-frequent users}}{29}{table.4.3}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Mean F-Measures for all users with higher number of stations}}{33}{table.4.4}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Mean F-Measures across all experiments}}{35}{table.4.5}
+\contentsline {table}{\numberline {4.6}{\ignorespaces Amount of users and data entries available in our data set after default preparation}}{37}{table.4.6}
+\contentsline {table}{\numberline {4.7}{\ignorespaces Amount of users and data entries available in our data set using a lower threshold to predict (Experiment 3)}}{37}{table.4.7}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

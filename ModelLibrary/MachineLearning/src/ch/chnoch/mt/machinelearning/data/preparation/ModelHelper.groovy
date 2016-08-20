@@ -28,10 +28,30 @@ class ModelHelper {
 
         IConverter converter = new UpdatedCSVToModelConverter()
         def model = converter.convert(file)
-
+//        stats(model)
         DataCleanup.parseModel(model)
+//        stats(model)
         StatisticsPreparation.prepareStations(model)
+        stats(model)
 
         return model
+    }
+
+    private static void stats(model) {
+        println 'All Users: ' + model.users.size()
+        println 'Prepared Users: ' + model.preparedUsers?.size()
+        println 'Low-Profile Users: ' + model.lowProfileUsers?.size()
+
+        def i = 0
+        model.users.forEach{ it -> i += it.entries.size()}
+        println 'All Entries: ' + i
+
+        i = 0
+        model.preparedUsers?.forEach{ it -> i += it.entries.size()}
+        println 'Prepared Entries: ' + i
+
+        i = 0
+        model.lowProfileUsers?.forEach{ it -> i += it.entries.size()}
+        println 'Low-Profile Entries: ' + i
     }
 }

@@ -1,40 +1,40 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces An example of a decision tree \cite {WikipediaDecisionTrees}}}{9}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces An example of a multilayer perceptron \cite {MultilayerPerceptron}}}{10}{figure.3.2}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces An example of a decision tree \cite {WikipediaDecisionTrees}}}{10}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces An example of a multilayer perceptron \cite {MultilayerPerceptron}}}{11}{figure.3.2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Distribution by Time of Day}}{13}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Distribution by Day of Month}}{13}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Number of Stations per User}}{14}{figure.4.3}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Number of Stops per User}}{14}{figure.4.4}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Number of Users per Station}}{15}{figure.4.5}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Distribution of Stops per Station}}{16}{figure.4.6}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Average number of accesses per station by users}}{16}{figure.4.7}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Generated Graph in Web GUI}}{18}{figure.4.8}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Stations Features for Decision Tree}}{23}{figure.4.9}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Current Station and Time-Based Features for Decision Tree}}{24}{figure.4.10}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces All Features for Decision Tree}}{24}{figure.4.11}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Stations Features for Naive Bayes}}{25}{figure.4.12}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Current Station and Time-Based Features for Naive Bayes}}{25}{figure.4.13}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces All Features for Naive Bayes}}{26}{figure.4.14}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Stations Features for Multilayer Perceptron}}{26}{figure.4.15}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Distribution by Time of Day}}{15}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Distribution by Day of Month}}{15}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Number of Stations per User}}{16}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Number of Stops per User}}{16}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Number of Users per Station}}{17}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Distribution of Stops per Station}}{17}{figure.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Average number of accesses per station by users}}{18}{figure.4.7}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Generated Graph in Web GUI}}{19}{figure.4.8}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Stations Features for Decision Tree}}{25}{figure.4.9}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Current Station and Time-Based Features for Decision Tree}}{25}{figure.4.10}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces All Features for Decision Tree}}{26}{figure.4.11}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Stations Features for Naive Bayes}}{26}{figure.4.12}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Current Station and Time-Based Features for Naive Bayes}}{26}{figure.4.13}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces All Features for Naive Bayes}}{27}{figure.4.14}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Stations Features for Multilayer Perceptron}}{27}{figure.4.15}
 \contentsline {figure}{\numberline {4.16}{\ignorespaces Current Station and Time-Based Features for Multilayer Perceptron}}{27}{figure.4.16}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces All Features for Multilayer Perceptron}}{27}{figure.4.17}
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Stations Features for Decision Tree}}{28}{figure.4.18}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces All Features for Multilayer Perceptron}}{28}{figure.4.17}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Stations Features for Decision Tree}}{29}{figure.4.18}
 \contentsline {figure}{\numberline {4.19}{\ignorespaces Current Station and Time-Based Features for Decision Tree}}{29}{figure.4.19}
-\contentsline {figure}{\numberline {4.20}{\ignorespaces All Features for Decision Tree}}{29}{figure.4.20}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces All Features for Decision Tree}}{30}{figure.4.20}
 \contentsline {figure}{\numberline {4.21}{\ignorespaces Stations Features for Naive Bayes}}{30}{figure.4.21}
 \contentsline {figure}{\numberline {4.22}{\ignorespaces Current Station and Time-Based Features for Naive Bayes}}{30}{figure.4.22}
 \contentsline {figure}{\numberline {4.23}{\ignorespaces All Features for Naive Bayes}}{31}{figure.4.23}
 \contentsline {figure}{\numberline {4.24}{\ignorespaces Stations Features for Multilayer Perceptron}}{31}{figure.4.24}
-\contentsline {figure}{\numberline {4.25}{\ignorespaces Current Station and Time-Based Features for Multilayer Perceptron}}{32}{figure.4.25}
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Current Station and Time-Based Features for Multilayer Perceptron}}{31}{figure.4.25}
 \contentsline {figure}{\numberline {4.26}{\ignorespaces All Features for Multilayer Perceptron}}{32}{figure.4.26}
 \contentsline {figure}{\numberline {4.27}{\ignorespaces Stations Features for Decision Tree}}{33}{figure.4.27}
 \contentsline {figure}{\numberline {4.28}{\ignorespaces Current Station and Time-Based Features for Decision Tree}}{34}{figure.4.28}
 \contentsline {figure}{\numberline {4.29}{\ignorespaces All Features for Decision Tree}}{34}{figure.4.29}
-\contentsline {figure}{\numberline {4.30}{\ignorespaces Stations Features for Naive Bayes}}{35}{figure.4.30}
+\contentsline {figure}{\numberline {4.30}{\ignorespaces Stations Features for Naive Bayes}}{34}{figure.4.30}
 \contentsline {figure}{\numberline {4.31}{\ignorespaces Current Station and Time-Based Features for Naive Bayes}}{35}{figure.4.31}
-\contentsline {figure}{\numberline {4.32}{\ignorespaces All Features for Naive Bayes}}{36}{figure.4.32}
+\contentsline {figure}{\numberline {4.32}{\ignorespaces All Features for Naive Bayes}}{35}{figure.4.32}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

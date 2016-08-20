@@ -2,7 +2,7 @@
 
 \bibitem{SBBOpenData}
 SBB AG.
-\newblock Sbb open data, 2016.
+\newblock S{B}{B} {Open} {Data}, 2016.
 \newblock Available at
   \url{http://www.sbb.ch/sbb-konzern/ueber-die-sbb/zahlen-und-fakten/open-data.html}.
 
@@ -24,14 +24,34 @@ Mark~A.Hall Ian H.~Witten, Eibe~Frank.
 
 \bibitem{WEKAJavaDocAttribute}
 University of~Waikato.
-\newblock Java documentation of weka, 2016.
+\newblock Java documentation of {WEKA}, 2016.
 \newblock Available at
   \url{http://weka.sourceforge.net/doc.dev/weka/core/Attribute.html}.
+
+\bibitem{RelatedWorkDataAnalysis}
+Mohammad Sajjad Ghaemi; Bruno Agard; Vahid Partovi Nia;~Martin Tr\'epanier.
+\newblock Challenges in spatial-temporal data analysis targeting public
+  transport.
+\newblock {\em IFAC}, 2015.
+
+\bibitem{RelatedWorkTemporalPatterns}
+Stefan Foell; Gerd Kortuem; Reza Rawassizadeh; Santi Phithakkithukoon;~Marco
+  Veloso and Carlos Bento.
+\newblock Mining temporal patterns of transport behaviour for predicting future
+  transport usage.
+\newblock {\em ACM conference on Pervasive and ubiquitous computing adjunct
+  publication}, 2013.
 
 \bibitem{WikipediaDecisionTrees}
 Wikipedia.
 \newblock Decision tree learning, 2016.
 \newblock Available at
   \url{https://en.wikipedia.org/wiki/Decision_tree_learning}.
+
+\bibitem{WikipediaSupervisedLearning}
+Wikipedia.
+\newblock Supervised learning, 2016.
+\newblock Available at
+  \url{https://en.wikipedia.org/wiki/Supervised_learning#Other_factors_to_consider}.
 
 \end{thebibliography}
