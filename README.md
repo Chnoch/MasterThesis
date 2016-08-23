@@ -1,5 +1,5 @@
-# MasterThesis - Simon Baumann
-## Predicting User's Interest Profile for Public Transportation
+## MasterThesis - Simon Baumann
+# Predicting User's Interest Profile for Public Transportation
 
 ## Abstract
 
