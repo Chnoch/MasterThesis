@@ -1,99 +1,15 @@
-MasterThesis
+MasterThesis - Simon Baumann
+Predicting User's Interest Profile for Public Transportation
 ============
 
-The main repository for my Master Thesis.
+# Abstract
 
-# Table of Contents
-1. Abstract (motivations of the work, a problem that is addressed, solutions proposed and evaluation, ~1/2 page)
-2. Introduction (the same as abstract but in more detail)
-3. Related work (prior works go here)
-4. Sequence prediction
-  1. Task Description (we model our problem as a sequence prediction problem)
-  2. Proposed Solutions (Detailed Description of Different Classifiers used, and how they are going to be used)
-5. Experiments and Evaluation
-  1. Introduction / Procedure
-  2. Data Set / Data Analysis
-  3. Naive Approach
-  4. Machine Learning Results
-    1. Execution Plan
-    2. Data Preparation / Statistical Analysis
-    3. Decision Trees (Random Forest is included)
-    4. Naive Bayes
-    5. HMM / Neural Networks
-  5. Comparison of Results
-6. Conclusion
-7. Future Work
+In this thesis we analyze different ways to reliable predict the interest profile of users of public transportation. Having a method where we can successfully predict future behavior enables us to create useful assistances for the user. We can support the way people access information about public transport and proactively suggest trips they are most likely to take in the near future. We also avoid wasting gathered data on the user profiles.
+To achieve our goal we applied different machine learning techniques on a real life dataset, gathered anonymously from users of a public transport related Android application. The application gives users the possibility to display the timetable of public transportation at stations close to them. In addition the app collects data about the stations the user has passed in his daily routine. We want to be able to predict the next station the user is going to as accurately as possible, given information that is available to the system in the moment.
+As raw data we have gathered data points that include the user id, the current timestamp and the station id of the closest station. We have analyzed our data set from different perspectives such as the temporal distribution of our data or geographical usage distribution. This analyzes has given us insight into how our data is structured and what limitations are present. We have also created a baseline approach to get a first test of the accuracy, where we achieved 45% correctly predicted entries.
+We then applied statistical analysis to further refine and reduce our data set. This was necessary to avoid a distortion of our predictions from users where we don’t have enough data or the data doesn’t properly represent real-life use cases. We have removed low-profile users and have reduced the amount of stations that we want to be able to predict. We compared multiple machine learning algorithms and analyzed the advantages and disadvantages of each of the algorithms. We executed different experiments with a combination of feature sets with all algorithms and evaluated the results and predictions to draw conclusions to the reliability and the meaningfulness of our approach. We achieved an average accuracy on our predictions of 89%. We further discuss what future work can be done to take advantage of the techniques that we explored in our thesis.
 
-# Execution Plan
+# Thesis
+You can find the whole thesis [here](https://github.com/Chnoch/MasterThesis/blob/master/Thesis/Master%20Thesis%20-%20Simon%20Baumann.pdf)
 
-In order to create reproducable results and to have a good understanding of what we want to test and how we actually test it we have created an execution plan. The plan defines in advance the features and the data set that we validate our ideas against and that we use in our evaluation.
-
-We are using different classifiers each with all the different feature sets. We are using the same pre processed data set for every execution.
-
-## Classifiers
-
-- Decision Trees (Based on J48, unpruned)
-- Naive Bayes
-- Random Forest
-
-- Classifier with Back Propagation (e.g. [MultilayerPerceptron](http://weka.sourceforge.net/doc.dev/weka/classifiers/functions/MultilayerPerceptron.html) or [Hidden Markov Models](http://www.doc.gold.ac.uk/~mas02mg/software/hmmweka/index.html))
-
-## Machine Learning Experiments
-- Precision/Recall/F1 vs Number of most frequent stations
-- Precision/Recall/F1 for different users (frequent/non-frequent)
-
-## Feature Sets
-
-We have gathered data for the following features. We will use different combinations of feature sets in our evaluation in order to make the most precise predictions.
-- User
-- Current Station
-- Hour of Day
-- Minute of Hour
-- Day of Week
-- Weekday/Weekendday
-- Previous Station
-- Next Station
-
-**Stations are categorical and are encoded as one-hot-vectors. Stations that are not in the most frequent set should be encoded as an additional dimention of a vector.**
-
-The ground truth, i.e. what's to be predicted is the next Station. We only use data for each user separately, as the classifiers are being too overloaded when using the full data set. So the user is automatically respected for every feature set.
-
-The following are the different feature sets that we're using:
-
-Current Station
-
----
-
-Current Station, Previous Station
-
----
-
-Current Station, Hour of Day
-
----
-
-Current Station, Hour of Day, Day of Week
-
----
-
-Current Station, Hour of Day, Weekday/Weekendday
-
----
-
-Current Station, Hour of Day, Minute of Hour, Day of Week
-
----
-
-Current Station, Previous Station, Hour of Day, Day of Week
-
----
-
-Current Station, Previous Station, Hour of Day, Weekday / Weekendday
-
----
-
-Current Station, Previous Station, Hour of Day, Minute of Hour, Day of Week, Weekday / Weekendday
-
----
-
-Hour of Day, Day of Week, Minute of Hour
+All code that we used for the thesis is available in this repository.
